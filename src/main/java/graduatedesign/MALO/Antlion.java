@@ -27,6 +27,30 @@ public class Antlion {
         updateFitness();
     }
 
+    public Antlion(Antlion antlion) {
+        this.dimension = antlion.getDimension();
+        for (double w : antlion.getWeights())
+            this.weights.add(w);
+        for (double v : antlion.getValues())
+            this.values.add(v);
+        this.capicity = antlion.getCapicity();
+        for (double p : antlion.getPosition())
+            this.position.add(p);
+        this.fitness = antlion.getFitness();
+    }
+
+    public double getCapicity() {
+        return capicity;
+    }
+
+    public List<Double> getValues() {
+        return values;
+    }
+
+    public List<Double> getWeights() {
+        return weights;
+    }
+
     public int getDimension() {
         return dimension;
     }
@@ -58,8 +82,8 @@ public class Antlion {
 //        fitness = -function.sphere(x);
     }
 
-    public void setFitness(double fitness) {
-        this.fitness = fitness;
-    }
 
+    public void setPosition(int i, Double value) {
+        position.set(i, value);
+    }
 }
