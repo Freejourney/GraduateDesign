@@ -36,6 +36,9 @@ public class Apriori {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         record = getRecord();// 获取原始数据记录
+
+
+        // for frequent 1 itemset, there is no confidence, so we should calculate it separately
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         List<List<String>> lItemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
@@ -43,6 +46,7 @@ public class Apriori {
             List<List<String>> ckItemset = getNextCandidate(lItemset);// 获取第下一次的备选集
             List<List<String>> lkItemset = getSupportedItemset(ckItemset);// 获取备选集cItemset满足支持的集合
             getConfidencedItemset(lkItemset, lItemset, dkCountMap, dCountMap);// 获取备选集cItemset满足置信度的集合
+
             if (confItemset.size() != 0)// 满足置信度的集合不为空
                 printConfItemset(confItemset);// 打印满足置信度的集合
             confItemset.clear();// 清空置信度的集合
@@ -50,7 +54,6 @@ public class Apriori {
             lItemset = lkItemset;
             dCountMap.clear();
             dCountMap.putAll(dkCountMap);
-            ;
         }
 
     }
@@ -67,7 +70,7 @@ public class Apriori {
                 System.out.print(confItemset2.get(i).get(j) + " ");
             System.out.print("-->");
             System.out.print(confItemset2.get(i).get(j++));
-            System.out.print("相对支持度：" + confItemset2.get(i).get(j++));
+            System.out.print("支持度：" + confItemset2.get(i).get(j++));
             System.out.print("自信度：" + confItemset2.get(i).get(j++) + "\n");
         }
 
