@@ -16,6 +16,11 @@ public class Antlion {
     double capicity = 0.0;
     private Function function = new Function();
 
+    private double weight;
+
+    private double testweight;
+    private double testfitness;
+
     Antlion(int dimension, double ub, double lb, List<Double> weights, List<Double> values, double capicity) {
         this.dimension = dimension;
         this.weights = weights;
@@ -75,15 +80,77 @@ public class Antlion {
         if (weight > capicity) {
             fitness = 0;
         }
-//        double[] x = new double[position.size()];
-//        for (int i = 0; i < position.size(); i++) {
-//            x[i] = position.get(i);
-//        }
-//        fitness = -function.sphere(x);
+
+        this.weight = weight;
+
+        testweight = getTestWeight();
+        testfitness = getTestFitness();
     }
 
 
     public void setPosition(int i, Double value) {
         position.set(i, value);
+    }
+
+    public double setAndUpdate(int i, double pos) {
+        double prePos = this.position.get(i);
+
+        int flag = 0;
+        if (prePos <= 0 && pos > 0) {
+            weight += weights.get(i);
+            flag = 1;
+        } else if (prePos > 0 && pos <= 0) {
+            weight -= weights.get(i);
+            flag = 2;
+        }
+
+        if (weight < capicity) {
+            if (fitness == 0) {
+                fitness = getTestFitness();
+            } else {
+                switch (flag) {
+                    case 1: fitness += values.get(i);break;
+                    case 2: fitness -= values.get(i);break;
+                    default:break;
+                }
+            }
+        } else {
+            fitness = 0;
+        }
+
+        position.set(i, pos);
+
+        testweight = getTestWeight();
+        testfitness = getTestFitness();
+
+        return fitness;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setFitness(double fitness) {
+        this.fitness = fitness;
+    }
+
+    public double getTestWeight() {
+        double weight = 0.0;
+        for (int i = 0; i < position.size(); i++)
+            if (position.get(i) > 0)
+                weight += weights.get(i);
+        return weight;
+    }
+
+    public double getTestFitness() {
+        double fitness = 0.0;
+        for (int i = 0; i < position.size(); i++)
+            if (position.get(i) > 0)
+                fitness += values.get(i);
+        return fitness;
     }
 }

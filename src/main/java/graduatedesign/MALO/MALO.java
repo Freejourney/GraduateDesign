@@ -6,6 +6,7 @@ public class MALO {
     private int num;
     private int iteration;
     private double ub, lb;
+    private int dimension;
     private List<Antlion> AntsRegistory = new ArrayList<>();
     private List<Antlion> mAntlions = new ArrayList<>();
     private List<Antlion> mAnts = new ArrayList<>();
@@ -16,6 +17,7 @@ public class MALO {
     double capicity = 0.0;
 
     MALO(int num, int iteration, int dimension, double ub, double lb, List<Double> weights, List<Double> values, double capicity) {
+        this.dimension = dimension;
         this.ub = ub;
         this.lb = lb;
         this.num = num;
@@ -47,6 +49,13 @@ public class MALO {
         return antlions;
     }
 
+    /**
+     *  1) Modified Random Walking Strategy(walk and sort)
+     *  2) Repeated Random Walking and Sort Choosing Elite Strategy
+     *  3) Repair Library + Random Walking
+     *
+     * @return
+     */
     public List<Double> searchSolution() {
         List<Double> ConvergenceData = new ArrayList<>();
         mAntlions=sortAntlions(mAntlions);
@@ -95,6 +104,9 @@ public class MALO {
                 List<Antlion> RZ = new ArrayList<>();
                 RZ.add(RF);
                 RZ.add(RZZ.get(0));
+                RZ.add(RA.get(0));
+                RZ.add(RE.get(0));
+                RZ.add(RM.get(0));
 
                 RZ = sortAntlions(RZ);
 
@@ -112,7 +124,8 @@ public class MALO {
                 mAnts.get(i).updateFitness();
                 // 混沌映射修复
                 if (mAnts.get(i).getFitness() == 0) {
-                    mAnts.set(i, getNewAntlion());
+                    mAnts.set(i, sortAntlions(Random_wald_around_antlion(getNewAntlion_1(), i)).get(0));
+//                    mAnts.set(i, getNewAntlion());
                 }
 
                 mAnts.get(i).updateFitness();
@@ -134,6 +147,8 @@ public class MALO {
 
             //
             mAntlions.set(0, EliteAntlion);
+            double tmpf = EliteAntlion.getTestFitness();
+            double tmpw = EliteAntlion.getTestWeight();
             ConvergenceData.add(EliteAntlion.getFitness());
 //            System.out.println(current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.getC());
         }
@@ -156,6 +171,8 @@ public class MALO {
                 antlion1.setPosition(i, antlion2.getPosition().get(i));
             }
         }
+
+        antlion1.setWeight(antlion2.getWeight());
         return antlion1;
     }
 
@@ -175,7 +192,7 @@ public class MALO {
 
     // ❤各蚁狮的比例有待调整
     private Antlion getRF(Antlion antlion, Antlion antlion1, Antlion antlion2) {
-        Antlion mAntlion = getNewAntlion();
+        Antlion mAntlion = getNewAntlion_1();
         for (int i = 0; i < antlion.getPosition().size(); i++) {
             double temp1 = new Random().nextDouble();
             double temp2 = new Random().nextDouble();
@@ -186,6 +203,14 @@ public class MALO {
     }
 
     // 随机游走
+
+    /**
+     * 1) implemented set & update operator for Random Walking
+     *
+     * @param antlion
+     * @param current_iter
+     * @return
+     */
     private List<Antlion> Random_wald_around_antlion(Antlion antlion, int current_iter) {
         List<Double> ub = new ArrayList<>();
         List<Double> lb = new ArrayList<>();
@@ -248,7 +273,13 @@ public class MALO {
             double c = lb.get(j);
             double d = ub.get(j);
             for (int i = 0; i < this.iteration; i++) {
-                RWs.get(i).getPosition().set(j, ((X.get(i)-a)*(d-c))/(b-a)+c);
+//                RWs.get(i).getPosition().set(j, ((X.get(i)-a)*(d-c))/(b-a)+c);
+
+                // unavailiable for individuals with 0 fitness(pulished individuals have larger weight but 0 fitness value)
+                double tmpfitness = RWs.get(i).setAndUpdate(j, ((X.get(i)-a)*(d-c))/(b-a)+c);
+                if (tmpfitness > EliteAntlion.getFitness()) {
+                    EliteAntlion = Clone(RWs.get(i));
+                }
             }
         }
 
@@ -257,6 +288,17 @@ public class MALO {
             RWs.get(i).updateFitness();
         }
         return RWs;
+    }
+
+    private Antlion Clone(Antlion antlion) {
+        Antlion antlion1 = new Antlion(this.dimension, ub, lb, weights, values, capicity);
+        for (int i = 0; i < antlion.weights.size(); i++) {
+            antlion1.setPosition(i, antlion.getPosition().get(i));
+        }
+        antlion1.setWeight(antlion.getWeight());
+        antlion1.setFitness(antlion.getFitness());
+        antlion1.updateFitness();
+        return antlion1;
     }
 
     private int RouletteWheelSelection() {
