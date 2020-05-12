@@ -92,6 +92,12 @@ public class Antlion {
         position.set(i, value);
     }
 
+    /**
+     * This way could largely increase the time consuming(for random walking)
+     * @param i
+     * @param pos
+     * @return
+     */
     public double setAndUpdate(int i, double pos) {
         double prePos = this.position.get(i);
 
