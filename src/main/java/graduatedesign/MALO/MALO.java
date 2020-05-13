@@ -147,8 +147,6 @@ public class MALO {
 
             //
             mAntlions.set(0, EliteAntlion);
-            double tmpf = EliteAntlion.getTestFitness();
-            double tmpw = EliteAntlion.getTestWeight();
             ConvergenceData.add(EliteAntlion.getFitness());
 //            System.out.println(current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.getC());
         }
@@ -276,10 +274,17 @@ public class MALO {
 //                RWs.get(i).getPosition().set(j, ((X.get(i)-a)*(d-c))/(b-a)+c);
 
                 // unavailiable for individuals with 0 fitness(pulished individuals have larger weight but 0 fitness value)
-                double tmpfitness = RWs.get(i).setAndUpdate(j, ((X.get(i)-a)*(d-c))/(b-a)+c);
-                if (tmpfitness > EliteAntlion.getFitness()) {
-                    EliteAntlion = Clone(RWs.get(i));
+                // only suitable individuals will use "setAndUpdate() method" for monitoring elites
+                if (RWs.get(i).getFitness() <= 0.1) {
+                    RWs.get(i).getPosition().set(j, ((X.get(i) - a) * (d - c)) / (b - a) + c);
+                } else {
+                    double tmpfitness = RWs.get(i).setAndUpdate(j, ((X.get(i) - a) * (d - c)) / (b - a) + c);
+                    if (tmpfitness > EliteAntlion.getFitness()) {
+                        EliteAntlion = Clone(RWs.get(i));
+                    }
                 }
+
+
             }
         }
 

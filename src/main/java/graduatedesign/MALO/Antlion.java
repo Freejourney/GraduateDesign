@@ -82,9 +82,6 @@ public class Antlion {
         }
 
         this.weight = weight;
-
-        testweight = getTestWeight();
-        testfitness = getTestFitness();
     }
 
 
@@ -94,6 +91,8 @@ public class Antlion {
 
     /**
      * This way could largely increase the time consuming(for random walking)
+     *
+     * only fitness not equals 0 will be used in this way to monitor and update
      * @param i
      * @param pos
      * @return
@@ -110,24 +109,17 @@ public class Antlion {
             flag = 2;
         }
 
-        if (weight < capicity) {
-            if (fitness == 0) {
-                fitness = getTestFitness();
-            } else {
+        if (weight <= capicity) {
                 switch (flag) {
                     case 1: fitness += values.get(i);break;
                     case 2: fitness -= values.get(i);break;
                     default:break;
                 }
-            }
         } else {
             fitness = 0;
         }
 
         position.set(i, pos);
-
-        testweight = getTestWeight();
-        testfitness = getTestFitness();
 
         return fitness;
     }
@@ -144,13 +136,13 @@ public class Antlion {
         this.fitness = fitness;
     }
 
-    public double getTestWeight() {
-        double weight = 0.0;
-        for (int i = 0; i < position.size(); i++)
-            if (position.get(i) > 0)
-                weight += weights.get(i);
-        return weight;
-    }
+//    public double getTestWeight() {
+//        double weight = 0.0;
+//        for (int i = 0; i < position.size(); i++)
+//            if (position.get(i) > 0)
+//                weight += weights.get(i);
+//        return weight;
+//    }
 
     public double getTestFitness() {
         double fitness = 0.0;
