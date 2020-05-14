@@ -2,6 +2,7 @@ package graduatedesign.PMALOApriori;
 
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -42,6 +43,7 @@ public class SparkApriori implements Serializable {
 
     private List<List<String>> finalResult = new ArrayList<>();
 
+
     public SparkApriori(){
 
     }
@@ -49,7 +51,7 @@ public class SparkApriori implements Serializable {
     //    初始化全局参数，并读入原始事务集
     public SparkApriori( JavaRDD<String> transactions,String outputPath){
         this.outputPath = outputPath;
-        this.transactions = transactions;
+        this.transactions = transactions.cache();
         this.numOfItems = this.transactions.count();
         this.minSuport = (long) Math.ceil(numOfItems * confidence);
     }
@@ -129,7 +131,7 @@ public class SparkApriori implements Serializable {
         List<String> collect4 = save.collect();
         finalResult.add(collect4);
 
-        save.saveAsTextFile(outputPath+"result-1");
+//        save.saveAsTextFile(outputPath+"result-1");
 
         lastList  = resultItemsPair.map(new Function<Tuple2<String,Integer>, HashSet<String>>() {
             public HashSet call(Tuple2<String,Integer> t) {
@@ -144,28 +146,13 @@ public class SparkApriori implements Serializable {
      * @author zby
      * @des 挖掘多维频繁项集
      */
-    public void run(List<HashSet<String>> ciList,int i) {
+    public void run(List<HashSet<String>> ciList, int i) {
         K_ciList = apriori_gen(ciList);
-
-        List<String> collect5 = transactions.collect();
-        JavaRDD<String> Items = transactions.flatMap(new FlatMapFunction<String, String>() {
-            @Override
-            public Iterator<String> call(String line) throws Exception {
-                StringTokenizer st = new StringTokenizer(line, "\t");
-                st.nextToken();
-                re.clear();
-                while (st.hasMoreTokens()) {
-                    re.add(st.nextToken());
-                }
-                return re.iterator();
-            }
-        });
 
         System.out.println("TestPoint: 2 -------------------------- ");
         JavaRDD<String> KItems = transactions.flatMap(new FlatMapFunction<String,String>(){
             @Override
             public Iterator<String> call(String line) throws Exception {
-                System.out.println("TestPoint: 3 -------------------------- ");
                 return getItems(K_ciList, line).iterator();
             }
         });
@@ -212,7 +199,7 @@ public class SparkApriori implements Serializable {
 
         List<String> collect4 = save.collect();
         finalResult.add(collect4);
-        save.saveAsTextFile(outputPath+"result-"+i);
+//        save.saveAsTextFile(outputPath+"result-"+i);
 
         /**
          * @des 将字符串形式的集合转化为HashSet形式
@@ -263,7 +250,7 @@ public class SparkApriori implements Serializable {
      * @return
      */
     public List<String> getItems(List<HashSet<String>> K_ciList,String line){
-        StringTokenizer st=new StringTokenizer(line," ");
+        StringTokenizer st=new StringTokenizer(line,"\t");
         st.nextToken();
         re.clear();
         while(st.hasMoreTokens()){
