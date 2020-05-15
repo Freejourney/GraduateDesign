@@ -1,0 +1,1000 @@
+1	"female"	"group B"	"bachelor's degree"	"standard"	"none"	C1	C2	C3
+2	"female"	"group C"	"some college"	"standard"	"completed"	D1	B2	B3
+3	"female"	"group B"	"master's degree"	"standard"	"none"	B1	A2	A3
+4	"male"	"group A"	"associate's degree"	"free/reduced"	"none"	F1	E2	F3
+5	"male"	"group C"	"some college"	"standard"	"none"	C1	C2	C3
+6	"female"	"group B"	"associate's degree"	"standard"	"none"	C1	B2	C3
+7	"female"	"group B"	"some college"	"standard"	"completed"	B1	A2	A3
+8	"male"	"group B"	"some college"	"free/reduced"	"none"	G1	F2	G3
+9	"male"	"group D"	"high school"	"free/reduced"	"completed"	D1	D2	D3
+10	"female"	"group B"	"high school"	"free/reduced"	"none"	G1	E2	F3
+11	"male"	"group C"	"associate's degree"	"standard"	"none"	E1	E2	E3
+12	"male"	"group D"	"associate's degree"	"standard"	"none"	G1	E2	F3
+13	"female"	"group B"	"high school"	"standard"	"none"	D1	B2	C3
+14	"male"	"group A"	"some college"	"standard"	"completed"	C1	C2	D3
+15	"female"	"group A"	"master's degree"	"standard"	"none"	F1	E2	E3
+16	"female"	"group C"	"some high school"	"standard"	"none"	D1	C2	C3
+17	"male"	"group C"	"high school"	"standard"	"none"	B1	B2	B3
+18	"female"	"group B"	"some high school"	"free/reduced"	"none"	J1	G2	H3
+19	"male"	"group C"	"master's degree"	"free/reduced"	"completed"	F1	F2	F3
+20	"female"	"group C"	"associate's degree"	"free/reduced"	"none"	E1	E2	D3
+21	"male"	"group D"	"high school"	"standard"	"none"	D1	D2	D3
+22	"female"	"group B"	"some college"	"free/reduced"	"completed"	D1	C2	D3
+23	"male"	"group D"	"some college"	"standard"	"none"	F1	E2	E3
+24	"female"	"group C"	"some high school"	"standard"	"none"	D1	C2	C3
+25	"male"	"group D"	"bachelor's degree"	"free/reduced"	"completed"	C1	C2	C3
+26	"male"	"group A"	"master's degree"	"free/reduced"	"none"	C1	C2	C3
+27	"male"	"group B"	"some college"	"standard"	"none"	D1	E2	E3
+28	"female"	"group C"	"bachelor's degree"	"standard"	"none"	D1	D2	C3
+29	"male"	"group C"	"high school"	"standard"	"none"	D1	D2	D3
+30	"female"	"group D"	"master's degree"	"standard"	"none"	D1	D2	C3
+31	"female"	"group D"	"some college"	"standard"	"none"	D1	C2	C3
+32	"female"	"group B"	"some college"	"standard"	"none"	D1	D2	D3
+33	"female"	"group E"	"master's degree"	"free/reduced"	"none"	E1	C2	D3
+34	"male"	"group D"	"some college"	"standard"	"none"	G1	F2	G3
+35	"male"	"group E"	"some college"	"standard"	"none"	A1	B2	B3
+36	"male"	"group E"	"associate's degree"	"standard"	"completed"	B1	B2	C3
+37	"female"	"group D"	"associate's degree"	"standard"	"none"	C1	B2	B3
+38	"female"	"group D"	"some high school"	"free/reduced"	"none"	F1	D2	E3
+39	"female"	"group D"	"associate's degree"	"free/reduced"	"completed"	C1	B2	B3
+40	"male"	"group B"	"associate's degree"	"free/reduced"	"none"	E1	E2	E3
+41	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	E1	D2	E3
+42	"female"	"group C"	"associate's degree"	"standard"	"none"	E1	C2	D3
+43	"female"	"group B"	"associate's degree"	"standard"	"none"	E1	E2	D3
+44	"male"	"group B"	"some college"	"free/reduced"	"completed"	E1	D2	D3
+45	"female"	"group E"	"associate's degree"	"free/reduced"	"none"	F1	E2	E3
+46	"male"	"group B"	"associate's degree"	"standard"	"none"	D1	E2	E3
+47	"female"	"group A"	"associate's degree"	"standard"	"completed"	E1	D2	D3
+48	"female"	"group C"	"high school"	"standard"	"none"	D1	C2	C3
+49	"female"	"group D"	"associate's degree"	"free/reduced"	"completed"	E1	C2	C3
+50	"male"	"group C"	"high school"	"standard"	"completed"	B1	B2	B3
+51	"male"	"group E"	"some college"	"standard"	"none"	E1	E2	F3
+52	"male"	"group E"	"associate's degree"	"free/reduced"	"completed"	C1	D2	D3
+53	"male"	"group C"	"some college"	"standard"	"none"	E1	F2	F3
+54	"male"	"group D"	"high school"	"standard"	"none"	B1	C2	C3
+55	"female"	"group C"	"some high school"	"free/reduced"	"completed"	C1	B2	B3
+56	"female"	"group C"	"high school"	"free/reduced"	"none"	G1	F2	F3
+57	"female"	"group E"	"associate's degree"	"standard"	"completed"	B1	B2	B3
+58	"male"	"group D"	"associate's degree"	"standard"	"none"	E1	E2	F3
+59	"male"	"group D"	"some college"	"standard"	"completed"	E1	E2	E3
+60	"female"	"group C"	"some high school"	"free/reduced"	"none"	K1	J2	K3
+61	"male"	"group E"	"bachelor's degree"	"free/reduced"	"completed"	C1	C2	C3
+62	"male"	"group A"	"some high school"	"free/reduced"	"none"	G1	G2	G3
+63	"male"	"group A"	"associate's degree"	"free/reduced"	"none"	D1	D2	E3
+64	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	C2	C3
+65	"female"	"group D"	"some high school"	"standard"	"none"	E1	E2	E3
+66	"male"	"group B"	"some high school"	"standard"	"none"	D1	D2	D3
+67	"male"	"group D"	"some high school"	"free/reduced"	"none"	F1	G2	G3
+68	"female"	"group C"	"some college"	"standard"	"none"	E1	C2	C3
+69	"male"	"group B"	"associate's degree"	"free/reduced"	"none"	D1	E2	E3
+70	"female"	"group C"	"associate's degree"	"standard"	"none"	G1	D2	E3
+71	"female"	"group D"	"some college"	"free/reduced"	"completed"	E1	D2	C3
+72	"male"	"group D"	"some college"	"standard"	"completed"	D1	E2	D3
+73	"female"	"group A"	"associate's degree"	"free/reduced"	"none"	F1	E2	F3
+74	"male"	"group C"	"some high school"	"free/reduced"	"none"	D1	E2	E3
+75	"male"	"group C"	"some high school"	"standard"	"none"	F1	F2	F3
+76	"male"	"group B"	"associate's degree"	"free/reduced"	"none"	F1	F2	G3
+77	"male"	"group E"	"some high school"	"standard"	"none"	H1	H2	H3
+78	"male"	"group A"	"bachelor's degree"	"standard"	"completed"	C1	C2	B3
+79	"female"	"group D"	"some high school"	"standard"	"completed"	D1	C2	C3
+80	"female"	"group E"	"master's degree"	"standard"	"none"	D1	D2	D3
+81	"female"	"group B"	"associate's degree"	"standard"	"none"	F1	F2	F3
+82	"male"	"group B"	"high school"	"free/reduced"	"none"	F1	F2	F3
+83	"male"	"group A"	"some college"	"free/reduced"	"completed"	F1	F2	E3
+84	"male"	"group E"	"associate's degree"	"standard"	"none"	C1	D2	D3
+85	"male"	"group D"	"high school"	"free/reduced"	"none"	F1	G2	G3
+86	"female"	"group C"	"some college"	"standard"	"none"	C1	C2	B3
+87	"female"	"group C"	"some college"	"free/reduced"	"none"	C1	B2	B3
+88	"female"	"group D"	"associate's degree"	"standard"	"none"	C1	C2	C3
+89	"female"	"group A"	"some college"	"standard"	"none"	E1	D2	D3
+90	"female"	"group D"	"some high school"	"standard"	"none"	C1	B2	B3
+91	"female"	"group C"	"bachelor's degree"	"standard"	"none"	D1	C2	C3
+92	"male"	"group C"	"high school"	"free/reduced"	"none"	H1	G2	G3
+93	"male"	"group C"	"high school"	"standard"	"none"	C1	C2	C3
+94	"male"	"group C"	"associate's degree"	"free/reduced"	"completed"	F1	F2	F3
+95	"female"	"group B"	"some college"	"standard"	"none"	C1	B2	A3
+96	"male"	"group C"	"associate's degree"	"free/reduced"	"completed"	C1	B2	B3
+97	"male"	"group B"	"some high school"	"standard"	"completed"	D1	D2	D3
+98	"female"	"group E"	"some college"	"standard"	"completed"	D1	C2	D3
+99	"female"	"group D"	"some college"	"free/reduced"	"none"	E1	D2	D3
+100	"female"	"group D"	"bachelor's degree"	"standard"	"none"	D1	D2	D3
+101	"male"	"group B"	"some college"	"standard"	"none"	C1	D2	D3
+102	"male"	"group D"	"bachelor's degree"	"standard"	"completed"	D1	C2	C3
+103	"female"	"group D"	"associate's degree"	"standard"	"none"	B1	A2	B3
+104	"male"	"group B"	"high school"	"standard"	"completed"	E1	F2	F3
+105	"male"	"group C"	"some college"	"standard"	"completed"	A1	B2	B3
+106	"female"	"group C"	"some college"	"standard"	"none"	E1	D2	C3
+107	"female"	"group D"	"master's degree"	"standard"	"none"	B1	A2	A3
+108	"male"	"group E"	"associate's degree"	"standard"	"completed"	D1	D2	D3
+109	"female"	"group B"	"associate's degree"	"free/reduced"	"none"	E1	C2	D3
+110	"female"	"group B"	"some high school"	"standard"	"none"	D1	D2	C3
+111	"female"	"group D"	"associate's degree"	"free/reduced"	"completed"	C1	B2	A3
+112	"male"	"group C"	"high school"	"standard"	"none"	D1	E2	F3
+113	"male"	"group A"	"associate's degree"	"standard"	"none"	E1	E2	F3
+114	"female"	"group D"	"some college"	"standard"	"none"	E1	E2	E3
+115	"female"	"group E"	"bachelor's degree"	"standard"	"completed"	A1	A2	A3
+116	"male"	"group C"	"high school"	"standard"	"none"	B1	C2	C3
+117	"female"	"group B"	"bachelor's degree"	"free/reduced"	"none"	C1	B2	B3
+118	"female"	"group D"	"bachelor's degree"	"standard"	"none"	C1	B2	C3
+119	"female"	"group D"	"some high school"	"standard"	"none"	E1	D2	D3
+120	"female"	"group C"	"some college"	"standard"	"none"	E1	D2	D3
+121	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	C1	A2	B3
+122	"male"	"group B"	"associate's degree"	"standard"	"completed"	A1	B2	A3
+123	"female"	"group C"	"some college"	"standard"	"completed"	B1	A2	A3
+124	"male"	"group D"	"high school"	"free/reduced"	"none"	D1	E2	E3
+125	"male"	"group E"	"some college"	"standard"	"none"	B1	C2	C3
+126	"female"	"group B"	"high school"	"standard"	"none"	B1	A2	B3
+127	"male"	"group B"	"some high school"	"standard"	"none"	C1	D2	D3
+128	"male"	"group D"	"some college"	"standard"	"completed"	D1	C2	C3
+129	"male"	"group D"	"master's degree"	"standard"	"none"	B1	B2	C3
+130	"female"	"group A"	"bachelor's degree"	"standard"	"none"	E1	F2	E3
+131	"male"	"group D"	"master's degree"	"standard"	"none"	B1	B2	B3
+132	"male"	"group C"	"some high school"	"free/reduced"	"completed"	E1	G2	G3
+133	"male"	"group E"	"some college"	"free/reduced"	"completed"	B1	C2	D3
+134	"female"	"group C"	"some college"	"standard"	"completed"	C1	B2	B3
+135	"male"	"group D"	"bachelor's degree"	"free/reduced"	"completed"	C1	C2	C3
+136	"male"	"group C"	"bachelor's degree"	"standard"	"none"	E1	E2	F3
+137	"male"	"group B"	"some high school"	"standard"	"completed"	E1	E2	F3
+138	"male"	"group E"	"high school"	"standard"	"none"	D1	E2	E3
+139	"female"	"group C"	"associate's degree"	"standard"	"none"	E1	D2	D3
+140	"male"	"group D"	"some college"	"standard"	"completed"	C1	D2	D3
+141	"female"	"group D"	"some high school"	"standard"	"none"	C1	C2	C3
+142	"female"	"group C"	"some college"	"free/reduced"	"none"	E1	D2	D3
+143	"female"	"group E"	"some college"	"free/reduced"	"completed"	F1	E2	E3
+144	"male"	"group A"	"high school"	"standard"	"none"	E1	F2	F3
+145	"male"	"group D"	"some college"	"standard"	"none"	B1	C2	C3
+146	"female"	"group C"	"some college"	"free/reduced"	"none"	H1	G2	G3
+147	"male"	"group B"	"some high school"	"standard"	"none"	B1	B2	C3
+148	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	C1	D2	D3
+149	"female"	"group D"	"bachelor's degree"	"standard"	"completed"	D1	C2	B3
+150	"male"	"group E"	"associate's degree"	"free/reduced"	"completed"	A1	A2	A3
+151	"male"	"group A"	"some high school"	"standard"	"completed"	D1	D2	D3
+152	"male"	"group A"	"bachelor's degree"	"standard"	"none"	C1	D2	D3
+153	"female"	"group B"	"associate's degree"	"standard"	"completed"	E1	D2	D3
+154	"male"	"group D"	"bachelor's degree"	"standard"	"none"	E1	F2	F3
+155	"male"	"group D"	"some high school"	"standard"	"none"	D1	D2	D3
+156	"female"	"group C"	"some college"	"standard"	"completed"	D1	B2	B3
+157	"female"	"group E"	"high school"	"free/reduced"	"completed"	D1	C2	C3
+158	"male"	"group B"	"some college"	"free/reduced"	"none"	E1	E2	E3
+159	"female"	"group B"	"associate's degree"	"standard"	"completed"	D1	B2	B3
+160	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	D1	D2	D3
+161	"male"	"group B"	"associate's degree"	"free/reduced"	"completed"	B1	C2	C3
+162	"female"	"group E"	"some college"	"free/reduced"	"completed"	C1	B2	B3
+163	"male"	"group B"	"master's degree"	"free/reduced"	"none"	F1	E2	E3
+164	"male"	"group C"	"high school"	"standard"	"none"	E1	E2	F3
+165	"female"	"group E"	"master's degree"	"standard"	"none"	B1	A2	A3
+166	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	A1	A2	A3
+167	"male"	"group C"	"high school"	"free/reduced"	"completed"	E1	E2	E3
+168	"female"	"group B"	"master's degree"	"free/reduced"	"completed"	E1	C2	C3
+169	"female"	"group B"	"high school"	"standard"	"completed"	D1	B2	C3
+170	"female"	"group C"	"some college"	"free/reduced"	"completed"	D1	C2	D3
+171	"male"	"group A"	"high school"	"standard"	"completed"	C1	C2	C3
+172	"male"	"group E"	"some high school"	"standard"	"none"	A1	B2	C3
+173	"female"	"group D"	"some college"	"standard"	"none"	C1	B2	B3
+174	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	D2	D3
+175	"female"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	F1	E2	E3
+176	"female"	"group C"	"master's degree"	"standard"	"completed"	B1	A2	B3
+177	"female"	"group B"	"high school"	"free/reduced"	"completed"	F1	E2	E3
+178	"female"	"group C"	"associate's degree"	"standard"	"completed"	C1	C2	C3
+179	"female"	"group B"	"master's degree"	"free/reduced"	"completed"	E1	D2	D3
+180	"female"	"group D"	"some high school"	"standard"	"completed"	A1	A2	A3
+181	"male"	"group C"	"master's degree"	"free/reduced"	"completed"	D1	D2	C3
+182	"female"	"group C"	"some college"	"free/reduced"	"none"	F1	D2	D3
+183	"female"	"group E"	"high school"	"standard"	"none"	F1	F2	F3
+184	"female"	"group D"	"associate's degree"	"standard"	"none"	D1	D2	D3
+185	"male"	"group C"	"some high school"	"free/reduced"	"completed"	F1	E2	F3
+186	"male"	"group C"	"associate's degree"	"free/reduced"	"completed"	D1	D2	D3
+187	"male"	"group E"	"high school"	"standard"	"none"	C1	C2	D3
+188	"male"	"group D"	"some high school"	"standard"	"completed"	D1	D2	D3
+189	"male"	"group B"	"some high school"	"free/reduced"	"none"	F1	E2	F3
+190	"female"	"group C"	"bachelor's degree"	"standard"	"none"	C1	B2	B3
+191	"female"	"group E"	"associate's degree"	"standard"	"none"	D1	D2	D3
+192	"male"	"group D"	"some college"	"standard"	"completed"	C1	B2	C3
+193	"female"	"group B"	"some high school"	"standard"	"none"	D1	D2	D3
+194	"male"	"group D"	"some college"	"standard"	"completed"	C1	D2	D3
+195	"female"	"group C"	"master's degree"	"standard"	"completed"	D1	B2	B3
+196	"male"	"group D"	"associate's degree"	"standard"	"none"	D1	E2	E3
+197	"male"	"group C"	"some high school"	"free/reduced"	"completed"	E1	D2	D3
+198	"male"	"group E"	"high school"	"free/reduced"	"none"	E1	E2	E3
+199	"female"	"group B"	"some college"	"free/reduced"	"none"	F1	E2	E3
+200	"female"	"group B"	"bachelor's degree"	"free/reduced"	"none"	C1	C2	C3
+201	"female"	"group C"	"associate's degree"	"standard"	"completed"	D1	B2	B3
+202	"female"	"group D"	"some college"	"free/reduced"	"none"	D1	B2	C3
+203	"male"	"group C"	"associate's degree"	"standard"	"none"	D1	C2	D3
+204	"female"	"group B"	"associate's degree"	"standard"	"none"	E1	D2	D3
+205	"male"	"group C"	"some college"	"standard"	"none"	E1	F2	F3
+206	"male"	"group D"	"some high school"	"standard"	"completed"	C1	C2	C3
+207	"male"	"group E"	"bachelor's degree"	"standard"	"none"	B1	D2	D3
+208	"male"	"group E"	"high school"	"standard"	"completed"	B1	C2	C3
+209	"female"	"group B"	"some college"	"free/reduced"	"none"	C1	B2	C3
+210	"female"	"group B"	"some college"	"free/reduced"	"none"	E1	D2	D3
+211	"male"	"group D"	"some high school"	"free/reduced"	"completed"	C1	C2	C3
+212	"male"	"group C"	"some college"	"free/reduced"	"none"	G1	H2	H3
+213	"female"	"group C"	"high school"	"free/reduced"	"none"	F1	D2	E3
+214	"male"	"group C"	"associate's degree"	"free/reduced"	"completed"	E1	E2	E3
+215	"male"	"group E"	"high school"	"standard"	"completed"	B1	A2	B3
+216	"male"	"group B"	"some high school"	"standard"	"completed"	B1	B2	C3
+217	"female"	"group E"	"associate's degree"	"free/reduced"	"completed"	B1	B2	B3
+218	"female"	"group C"	"high school"	"free/reduced"	"none"	G1	F2	G3
+219	"male"	"group B"	"high school"	"free/reduced"	"none"	D1	C2	D3
+220	"male"	"group B"	"some high school"	"standard"	"completed"	D1	E2	E3
+221	"female"	"group D"	"high school"	"standard"	"completed"	E1	D2	C3
+222	"male"	"group B"	"associate's degree"	"standard"	"none"	B1	B2	C3
+223	"female"	"group C"	"some high school"	"free/reduced"	"none"	E1	D2	D3
+224	"male"	"group D"	"some high school"	"standard"	"none"	B1	C2	C3
+225	"female"	"group B"	"associate's degree"	"standard"	"completed"	E1	D2	C3
+226	"female"	"group E"	"master's degree"	"free/reduced"	"none"	F1	E2	E3
+227	"female"	"group C"	"some college"	"standard"	"none"	C1	C2	C3
+228	"male"	"group D"	"high school"	"standard"	"none"	E1	F2	E3
+229	"male"	"group A"	"some high school"	"free/reduced"	"none"	D1	C2	D3
+230	"female"	"group C"	"some college"	"standard"	"completed"	B1	A2	A3
+231	"male"	"group D"	"some college"	"standard"	"none"	C1	D2	D3
+232	"male"	"group C"	"associate's degree"	"standard"	"none"	F1	F2	F3
+233	"female"	"group B"	"bachelor's degree"	"standard"	"none"	D1	B2	B3
+234	"male"	"group E"	"some high school"	"standard"	"none"	A1	B2	C3
+235	"male"	"group C"	"bachelor's degree"	"standard"	"completed"	B1	B2	B3
+236	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	C2	C3
+237	"male"	"group D"	"bachelor's degree"	"free/reduced"	"none"	D1	D2	D3
+238	"female"	"group D"	"some high school"	"standard"	"completed"	D1	E2	C3
+239	"male"	"group B"	"some college"	"standard"	"none"	E1	E2	E3
+240	"male"	"group C"	"associate's degree"	"standard"	"none"	B1	C2	C3
+241	"male"	"group D"	"high school"	"free/reduced"	"completed"	C1	D2	D3
+242	"female"	"group E"	"bachelor's degree"	"standard"	"none"	C1	B2	B3
+243	"female"	"group D"	"high school"	"standard"	"none"	E1	E2	E3
+244	"male"	"group E"	"some college"	"standard"	"none"	E1	E2	F3
+245	"male"	"group D"	"some high school"	"standard"	"none"	C1	C2	D3
+246	"male"	"group C"	"associate's degree"	"standard"	"none"	B1	C2	C3
+247	"male"	"group E"	"associate's degree"	"standard"	"none"	B1	C2	C3
+248	"female"	"group B"	"high school"	"standard"	"completed"	E1	D2	D3
+249	"female"	"group B"	"high school"	"standard"	"none"	D1	D2	D3
+250	"male"	"group C"	"high school"	"standard"	"none"	D1	E2	E3
+251	"male"	"group A"	"some high school"	"standard"	"completed"	F1	F2	F3
+252	"female"	"group D"	"some college"	"free/reduced"	"none"	C1	B2	B3
+253	"female"	"group B"	"some high school"	"standard"	"completed"	E1	D2	D3
+254	"male"	"group D"	"master's degree"	"standard"	"none"	C1	C2	C3
+255	"male"	"group D"	"high school"	"standard"	"none"	E1	E2	E3
+256	"female"	"group E"	"some college"	"standard"	"none"	D1	C2	D3
+257	"female"	"group C"	"associate's degree"	"free/reduced"	"none"	D1	C2	D3
+258	"male"	"group C"	"associate's degree"	"standard"	"completed"	C1	C2	C3
+259	"female"	"group B"	"some college"	"standard"	"none"	D1	C2	C3
+260	"female"	"group C"	"master's degree"	"free/reduced"	"completed"	D1	B2	B3
+261	"female"	"group C"	"some high school"	"free/reduced"	"completed"	D1	C2	C3
+262	"male"	"group C"	"some college"	"standard"	"completed"	C1	C2	C3
+263	"female"	"group C"	"some high school"	"free/reduced"	"none"	F1	F2	E3
+264	"female"	"group E"	"high school"	"standard"	"none"	A1	A2	B3
+265	"male"	"group D"	"high school"	"standard"	"none"	C1	C2	D3
+266	"male"	"group D"	"some high school"	"free/reduced"	"none"	E1	F2	F3
+267	"female"	"group C"	"bachelor's degree"	"standard"	"none"	D1	C2	B3
+268	"female"	"group D"	"high school"	"standard"	"none"	D1	C2	C3
+269	"female"	"group D"	"associate's degree"	"standard"	"completed"	B1	A2	A3
+270	"female"	"group E"	"some college"	"free/reduced"	"none"	C1	C2	D3
+271	"male"	"group C"	"bachelor's degree"	"standard"	"none"	D1	D2	D3
+272	"male"	"group C"	"some college"	"standard"	"none"	E1	F2	F3
+273	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	F1	E2	E3
+274	"female"	"group D"	"some college"	"standard"	"none"	D1	D2	C3
+275	"male"	"group B"	"some college"	"standard"	"completed"	B1	B2	C3
+276	"male"	"group C"	"bachelor's degree"	"standard"	"none"	B1	C2	C3
+277	"female"	"group C"	"some high school"	"standard"	"completed"	B1	A2	A3
+278	"female"	"group E"	"high school"	"standard"	"completed"	E1	D2	C3
+279	"female"	"group C"	"some high school"	"free/reduced"	"none"	D1	B2	C3
+280	"male"	"group B"	"bachelor's degree"	"free/reduced"	"none"	C1	E2	E3
+281	"male"	"group D"	"high school"	"standard"	"none"	E1	E2	F3
+282	"male"	"group D"	"high school"	"standard"	"none"	F1	F2	F3
+283	"female"	"group D"	"bachelor's degree"	"free/reduced"	"none"	C1	C2	B3
+284	"female"	"group D"	"some college"	"free/reduced"	"completed"	D1	C2	C3
+285	"female"	"group B"	"some high school"	"standard"	"none"	G1	F2	F3
+286	"male"	"group B"	"associate's degree"	"standard"	"completed"	B1	B2	B3
+287	"male"	"group E"	"associate's degree"	"standard"	"completed"	A1	B2	B3
+288	"female"	"group B"	"some high school"	"standard"	"none"	D1	B2	B3
+289	"male"	"group B"	"bachelor's degree"	"free/reduced"	"none"	B1	C2	C3
+290	"male"	"group E"	"some high school"	"standard"	"completed"	C1	C2	C3
+291	"male"	"group C"	"associate's degree"	"standard"	"none"	C1	D2	D3
+292	"male"	"group D"	"some high school"	"standard"	"none"	B1	C2	D3
+293	"male"	"group C"	"some high school"	"standard"	"completed"	D1	E2	E3
+294	"female"	"group E"	"bachelor's degree"	"standard"	"none"	D1	C2	C3
+295	"male"	"group D"	"high school"	"free/reduced"	"completed"	C1	C2	C3
+296	"male"	"group B"	"associate's degree"	"free/reduced"	"none"	D1	D2	E3
+297	"male"	"group A"	"some high school"	"standard"	"completed"	F1	F2	F3
+298	"male"	"group E"	"associate's degree"	"standard"	"completed"	C1	C2	D3
+299	"male"	"group C"	"high school"	"free/reduced"	"completed"	G1	F2	F3
+300	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	B1	B2	C3
+301	"male"	"group A"	"some college"	"free/reduced"	"completed"	B1	C2	B3
+302	"male"	"group D"	"some high school"	"free/reduced"	"none"	E1	E2	E3
+303	"female"	"group C"	"associate's degree"	"standard"	"completed"	D1	B2	B3
+304	"male"	"group B"	"associate's degree"	"standard"	"none"	C1	C2	D3
+305	"female"	"group C"	"associate's degree"	"standard"	"completed"	C1	C2	B3
+306	"male"	"group A"	"some college"	"standard"	"none"	D1	D2	D3
+307	"male"	"group E"	"some college"	"standard"	"completed"	A1	B2	B3
+308	"male"	"group C"	"some high school"	"standard"	"none"	E1	E2	F3
+309	"female"	"group B"	"associate's degree"	"free/reduced"	"none"	E1	C2	D3
+310	"female"	"group D"	"high school"	"free/reduced"	"none"	F1	E2	E3
+311	"female"	"group B"	"associate's degree"	"standard"	"none"	C1	C2	C3
+312	"male"	"group B"	"bachelor's degree"	"standard"	"none"	D1	E2	E3
+313	"male"	"group D"	"bachelor's degree"	"standard"	"completed"	D1	D2	D3
+314	"female"	"group C"	"associate's degree"	"free/reduced"	"completed"	D1	D2	D3
+315	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	E1	D2	C3
+316	"male"	"group C"	"high school"	"standard"	"none"	C1	D2	D3
+317	"female"	"group D"	"master's degree"	"standard"	"completed"	C1	B2	A3
+318	"male"	"group C"	"associate's degree"	"standard"	"none"	B1	C2	C3
+319	"male"	"group B"	"bachelor's degree"	"standard"	"none"	D1	C2	D3
+320	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	E1	D2	D3
+321	"female"	"group C"	"high school"	"free/reduced"	"completed"	D1	C2	B3
+322	"female"	"group E"	"high school"	"standard"	"none"	C1	B2	C3
+323	"female"	"group C"	"some college"	"standard"	"none"	C1	B2	C3
+324	"female"	"group C"	"some high school"	"free/reduced"	"none"	F1	E2	E3
+325	"female"	"group C"	"high school"	"free/reduced"	"none"	F1	F2	F3
+326	"female"	"group C"	"some college"	"standard"	"none"	B1	B2	A3
+327	"male"	"group C"	"some college"	"standard"	"none"	D1	D2	D3
+328	"male"	"group A"	"some college"	"free/reduced"	"none"	H1	H2	J3
+329	"male"	"group C"	"associate's degree"	"standard"	"completed"	B1	C2	C3
+330	"female"	"group B"	"some high school"	"standard"	"none"	F1	E2	E3
+331	"male"	"group C"	"high school"	"standard"	"none"	C1	E2	D3
+332	"male"	"group C"	"associate's degree"	"standard"	"none"	F1	G2	G3
+333	"male"	"group E"	"associate's degree"	"standard"	"completed"	D1	E2	E3
+334	"male"	"group B"	"associate's degree"	"standard"	"none"	B1	C2	B3
+335	"female"	"group C"	"bachelor's degree"	"standard"	"none"	B1	A2	A3
+336	"female"	"group B"	"some college"	"free/reduced"	"none"	D1	D2	D3
+337	"male"	"group D"	"some high school"	"standard"	"completed"	C1	D2	D3
+338	"male"	"group C"	"associate's degree"	"standard"	"none"	F1	E2	F3
+339	"female"	"group B"	"some high school"	"free/reduced"	"none"	H1	G2	H3
+340	"female"	"group D"	"some high school"	"free/reduced"	"completed"	G1	E2	E3
+341	"male"	"group C"	"high school"	"free/reduced"	"none"	E1	D2	E3
+342	"female"	"group C"	"high school"	"standard"	"none"	D1	C2	D3
+343	"female"	"group B"	"high school"	"standard"	"completed"	D1	C2	C3
+344	"male"	"group D"	"associate's degree"	"standard"	"completed"	D1	C2	D3
+345	"male"	"group D"	"some college"	"standard"	"none"	C1	C2	D3
+346	"female"	"group C"	"high school"	"standard"	"none"	C1	C2	C3
+347	"male"	"group B"	"some college"	"standard"	"none"	D1	D2	E3
+348	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	C1	A2	A3
+349	"male"	"group D"	"high school"	"free/reduced"	"none"	C1	C2	D3
+350	"male"	"group E"	"associate's degree"	"standard"	"none"	B1	C2	C3
+351	"female"	"group B"	"bachelor's degree"	"standard"	"none"	E1	D2	D3
+352	"male"	"group E"	"some college"	"standard"	"none"	D1	E2	E3
+353	"female"	"group C"	"some college"	"standard"	"completed"	D1	C2	C3
+354	"female"	"group C"	"associate's degree"	"standard"	"none"	F1	E2	E3
+355	"female"	"group C"	"some college"	"standard"	"none"	E1	C2	D3
+356	"female"	"group B"	"bachelor's degree"	"standard"	"none"	D1	C2	D3
+357	"male"	"group A"	"associate's degree"	"standard"	"none"	D1	D2	D3
+358	"female"	"group C"	"some college"	"free/reduced"	"completed"	F1	D2	D3
+359	"male"	"group D"	"some college"	"free/reduced"	"none"	E1	D2	D3
+360	"female"	"group D"	"some college"	"standard"	"none"	C1	B2	B3
+361	"female"	"group B"	"high school"	"standard"	"none"	E1	D2	E3
+362	"male"	"group B"	"some high school"	"standard"	"completed"	B1	B2	C3
+363	"female"	"group C"	"some college"	"standard"	"none"	E1	E2	E3
+364	"female"	"group D"	"some high school"	"free/reduced"	"none"	H1	G2	G3
+365	"male"	"group C"	"some college"	"standard"	"none"	E1	E2	E3
+366	"male"	"group A"	"bachelor's degree"	"free/reduced"	"completed"	F1	E2	E3
+367	"male"	"group C"	"high school"	"standard"	"completed"	D1	E2	E3
+368	"male"	"group C"	"bachelor's degree"	"free/reduced"	"none"	D1	D2	D3
+369	"female"	"group A"	"some high school"	"free/reduced"	"none"	F1	D2	E3
+370	"female"	"group D"	"some high school"	"standard"	"none"	C1	B2	B3
+371	"male"	"group E"	"some college"	"standard"	"none"	B1	C2	C3
+372	"female"	"group C"	"some college"	"free/reduced"	"completed"	F1	C2	D3
+373	"male"	"group D"	"some high school"	"standard"	"none"	C1	C2	C3
+374	"female"	"group D"	"some college"	"standard"	"completed"	B1	A2	A3
+375	"female"	"group D"	"bachelor's degree"	"standard"	"none"	E1	D2	C3
+376	"male"	"group E"	"associate's degree"	"free/reduced"	"none"	F1	F2	F3
+377	"female"	"group D"	"some high school"	"standard"	"none"	C1	B2	B3
+378	"female"	"group D"	"master's degree"	"free/reduced"	"completed"	B1	A2	A3
+379	"female"	"group A"	"some high school"	"standard"	"none"	C1	B2	C3
+380	"male"	"group A"	"bachelor's degree"	"standard"	"none"	D1	D2	D3
+381	"female"	"group B"	"associate's degree"	"standard"	"none"	C1	B2	B3
+382	"male"	"group C"	"associate's degree"	"standard"	"completed"	B1	A2	A3
+383	"male"	"group C"	"master's degree"	"free/reduced"	"none"	C1	B2	C3
+384	"female"	"group E"	"some high school"	"free/reduced"	"none"	G1	F2	F3
+385	"female"	"group A"	"some high school"	"free/reduced"	"none"	G1	F2	F3
+386	"female"	"group E"	"some college"	"standard"	"none"	D1	C2	C3
+387	"female"	"group E"	"bachelor's degree"	"standard"	"none"	D1	C2	D3
+388	"female"	"group C"	"associate's degree"	"free/reduced"	"none"	E1	C2	D3
+389	"female"	"group D"	"high school"	"standard"	"none"	D1	D2	D3
+390	"male"	"group D"	"master's degree"	"standard"	"none"	C1	D2	C3
+391	"male"	"group E"	"some high school"	"free/reduced"	"completed"	C1	D2	E3
+392	"female"	"group D"	"some college"	"standard"	"none"	C1	D2	C3
+393	"male"	"group E"	"some college"	"standard"	"none"	C1	D2	D3
+394	"male"	"group C"	"associate's degree"	"standard"	"completed"	E1	E2	E3
+395	"female"	"group C"	"some high school"	"standard"	"completed"	D1	C2	C3
+396	"male"	"group A"	"high school"	"free/reduced"	"none"	F1	F2	F3
+397	"female"	"group B"	"high school"	"free/reduced"	"none"	F1	D2	D3
+398	"female"	"group C"	"associate's degree"	"standard"	"none"	B1	B2	A3
+399	"male"	"group B"	"some high school"	"standard"	"none"	C1	D2	E3
+400	"male"	"group D"	"some high school"	"standard"	"none"	E1	E2	E3
+401	"female"	"group C"	"some high school"	"standard"	"completed"	E1	E2	D3
+402	"male"	"group A"	"some college"	"standard"	"none"	E1	F2	F3
+403	"female"	"group A"	"some college"	"free/reduced"	"none"	F1	D2	E3
+404	"female"	"group D"	"high school"	"standard"	"completed"	B1	A2	A3
+405	"female"	"group C"	"high school"	"standard"	"none"	E1	E2	D3
+406	"female"	"group C"	"some high school"	"standard"	"none"	D1	C2	D3
+407	"male"	"group B"	"associate's degree"	"standard"	"completed"	D1	D2	D3
+408	"female"	"group B"	"associate's degree"	"standard"	"none"	B1	C2	C3
+409	"female"	"group D"	"high school"	"free/reduced"	"completed"	E1	E2	E3
+410	"male"	"group D"	"associate's degree"	"standard"	"completed"	B1	B2	B3
+411	"female"	"group D"	"master's degree"	"standard"	"completed"	D1	C2	C3
+412	"male"	"group E"	"some college"	"standard"	"completed"	B1	B2	C3
+413	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	D2	E3
+414	"male"	"group B"	"some high school"	"standard"	"completed"	D1	D2	D3
+415	"female"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	E1	C2	C3
+416	"male"	"group E"	"high school"	"standard"	"none"	B1	C2	D3
+417	"male"	"group C"	"bachelor's degree"	"standard"	"completed"	C1	C2	D3
+418	"male"	"group C"	"associate's degree"	"standard"	"none"	C1	C2	D3
+419	"male"	"group D"	"some college"	"standard"	"none"	D1	E2	D3
+420	"male"	"group E"	"high school"	"free/reduced"	"completed"	E1	E2	E3
+421	"female"	"group C"	"associate's degree"	"free/reduced"	"completed"	B1	A2	A3
+422	"female"	"group D"	"high school"	"standard"	"completed"	E1	E2	D3
+423	"female"	"group D"	"master's degree"	"free/reduced"	"completed"	F1	E2	D3
+424	"female"	"group A"	"some high school"	"standard"	"completed"	E1	B2	C3
+425	"male"	"group B"	"some college"	"free/reduced"	"none"	F1	G2	G3
+426	"female"	"group C"	"some college"	"free/reduced"	"none"	D1	D2	D3
+427	"male"	"group C"	"bachelor's degree"	"standard"	"none"	B1	B2	B3
+428	"male"	"group C"	"some high school"	"free/reduced"	"none"	D1	C2	D3
+429	"male"	"group A"	"some high school"	"free/reduced"	"none"	D1	E2	E3
+430	"male"	"group C"	"some high school"	"free/reduced"	"none"	D1	D2	E3
+431	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	D1	D2	E3
+432	"female"	"group C"	"high school"	"standard"	"none"	D1	C2	D3
+433	"male"	"group C"	"high school"	"standard"	"none"	D1	E2	E3
+434	"female"	"group A"	"some high school"	"free/reduced"	"none"	F1	E2	F3
+435	"male"	"group C"	"some high school"	"standard"	"none"	C1	D2	D3
+436	"male"	"group C"	"some college"	"free/reduced"	"completed"	F1	F2	E3
+437	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	D2	D3
+438	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	C1	D2	C3
+439	"male"	"group C"	"high school"	"standard"	"none"	D1	E2	E3
+440	"male"	"group D"	"some high school"	"standard"	"completed"	B1	B2	B3
+441	"female"	"group C"	"some college"	"standard"	"completed"	D1	B2	C3
+442	"female"	"group D"	"high school"	"standard"	"none"	C1	B2	C3
+443	"female"	"group A"	"some high school"	"free/reduced"	"none"	E1	C2	D3
+444	"female"	"group B"	"associate's degree"	"standard"	"none"	C1	B2	C3
+445	"male"	"group A"	"some high school"	"free/reduced"	"none"	C1	B2	C3
+446	"female"	"group C"	"some high school"	"standard"	"completed"	D1	C2	C3
+447	"male"	"group D"	"some college"	"free/reduced"	"none"	D1	D2	E3
+448	"male"	"group C"	"high school"	"standard"	"completed"	B1	B2	C3
+449	"male"	"group B"	"high school"	"standard"	"none"	F1	F2	F3
+450	"male"	"group B"	"associate's degree"	"standard"	"none"	B1	C2	C3
+451	"female"	"group C"	"some college"	"free/reduced"	"completed"	D1	B2	B3
+452	"female"	"group E"	"some college"	"standard"	"none"	A1	A2	A3
+453	"female"	"group C"	"associate's degree"	"free/reduced"	"none"	D1	C2	C3
+454	"male"	"group C"	"some college"	"free/reduced"	"none"	D1	E2	F3
+455	"female"	"group C"	"associate's degree"	"free/reduced"	"none"	E1	D2	D3
+456	"male"	"group C"	"bachelor's degree"	"free/reduced"	"none"	G1	E2	F3
+457	"female"	"group D"	"bachelor's degree"	"standard"	"none"	C1	B2	B3
+458	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	E1	E2	F3
+459	"female"	"group E"	"bachelor's degree"	"standard"	"none"	A1	A2	A3
+460	"male"	"group B"	"high school"	"standard"	"completed"	C1	D2	D3
+461	"male"	"group C"	"bachelor's degree"	"free/reduced"	"none"	E1	E2	E3
+462	"male"	"group B"	"some college"	"free/reduced"	"none"	E1	E2	F3
+463	"female"	"group E"	"some college"	"standard"	"none"	C1	D2	C3
+464	"female"	"group C"	"some college"	"free/reduced"	"none"	C1	B2	A3
+465	"male"	"group A"	"bachelor's degree"	"standard"	"completed"	C1	E2	D3
+466	"female"	"group C"	"some college"	"standard"	"none"	B1	B2	A3
+467	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	H1	G2	G3
+468	"male"	"group A"	"high school"	"free/reduced"	"completed"	C1	D2	D3
+469	"female"	"group A"	"high school"	"free/reduced"	"completed"	C1	B2	B3
+470	"male"	"group C"	"some college"	"standard"	"none"	A1	C2	C3
+471	"female"	"group C"	"associate's degree"	"standard"	"completed"	B1	B2	B3
+472	"female"	"group C"	"high school"	"standard"	"none"	D1	D2	C3
+473	"female"	"group C"	"associate's degree"	"standard"	"completed"	D1	B2	B3
+474	"female"	"group D"	"some high school"	"standard"	"none"	E1	D2	D3
+475	"female"	"group B"	"associate's degree"	"standard"	"completed"	B1	B2	A3
+476	"female"	"group D"	"bachelor's degree"	"standard"	"completed"	C1	C2	B3
+477	"male"	"group E"	"bachelor's degree"	"standard"	"completed"	C1	D2	D3
+478	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	D2	C3
+479	"female"	"group D"	"master's degree"	"standard"	"none"	E1	D2	D3
+480	"male"	"group E"	"associate's degree"	"standard"	"none"	C1	C2	D3
+481	"male"	"group B"	"high school"	"standard"	"completed"	C1	C2	D3
+482	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	E1	E2	E3
+483	"male"	"group C"	"some college"	"free/reduced"	"none"	D1	D2	D3
+484	"male"	"group A"	"high school"	"standard"	"none"	E1	E2	F3
+485	"female"	"group B"	"associate's degree"	"standard"	"none"	F1	E2	E3
+486	"male"	"group C"	"high school"	"standard"	"none"	D1	C2	C3
+487	"male"	"group D"	"some college"	"free/reduced"	"none"	D1	F2	E3
+488	"female"	"group C"	"associate's degree"	"free/reduced"	"none"	E1	C2	C3
+489	"male"	"group B"	"some high school"	"standard"	"completed"	D1	E2	E3
+490	"male"	"group A"	"associate's degree"	"free/reduced"	"completed"	C1	B2	B3
+491	"female"	"group A"	"associate's degree"	"free/reduced"	"none"	D1	B2	C3
+492	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	D2	D3
+493	"female"	"group C"	"some college"	"standard"	"none"	B1	B2	B3
+494	"female"	"group C"	"bachelor's degree"	"standard"	"none"	B1	B2	B3
+495	"female"	"group B"	"high school"	"standard"	"none"	E1	D2	D3
+496	"male"	"group D"	"high school"	"standard"	"completed"	D1	D2	D3
+497	"female"	"group C"	"some college"	"standard"	"none"	E1	F2	E3
+498	"female"	"group D"	"some college"	"free/reduced"	"completed"	E1	C2	C3
+499	"female"	"group B"	"some high school"	"standard"	"none"	D1	D2	D3
+500	"male"	"group E"	"some college"	"standard"	"none"	C1	C2	C3
+501	"female"	"group D"	"master's degree"	"standard"	"none"	C1	C2	B3
+502	"female"	"group B"	"associate's degree"	"standard"	"completed"	A1	B2	A3
+503	"male"	"group C"	"some college"	"free/reduced"	"none"	D1	D2	E3
+504	"female"	"group E"	"associate's degree"	"standard"	"completed"	A1	B2	A3
+505	"female"	"group D"	"master's degree"	"free/reduced"	"none"	G1	E2	E3
+506	"female"	"group B"	"some high school"	"standard"	"none"	B1	B2	C3
+507	"male"	"group A"	"high school"	"standard"	"none"	D1	D2	D3
+508	"male"	"group B"	"bachelor's degree"	"free/reduced"	"none"	E1	E2	E3
+509	"male"	"group C"	"master's degree"	"standard"	"none"	C1	C2	C3
+510	"female"	"group C"	"bachelor's degree"	"standard"	"none"	B1	A2	B3
+511	"male"	"group D"	"some college"	"standard"	"none"	C1	C2	C3
+512	"male"	"group A"	"some high school"	"standard"	"none"	D1	F2	F3
+513	"male"	"group D"	"some high school"	"free/reduced"	"none"	D1	F2	E3
+514	"female"	"group B"	"some high school"	"standard"	"completed"	E1	D2	D3
+515	"female"	"group B"	"master's degree"	"free/reduced"	"completed"	C1	A2	A3
+516	"female"	"group C"	"some high school"	"standard"	"completed"	C1	B2	B3
+517	"female"	"group D"	"some college"	"standard"	"none"	C1	B2	B3
+518	"female"	"group E"	"some college"	"standard"	"completed"	D1	C2	C3
+519	"female"	"group D"	"some high school"	"standard"	"completed"	D1	C2	C3
+520	"female"	"group B"	"high school"	"free/reduced"	"completed"	D1	C2	C3
+521	"male"	"group D"	"some college"	"standard"	"none"	C1	F2	E3
+522	"female"	"group C"	"associate's degree"	"standard"	"none"	A1	B2	B3
+523	"male"	"group D"	"bachelor's degree"	"standard"	"none"	D1	E2	E3
+524	"male"	"group C"	"master's degree"	"free/reduced"	"none"	E1	E2	F3
+525	"male"	"group C"	"high school"	"standard"	"completed"	E1	E2	F3
+526	"male"	"group E"	"some college"	"standard"	"none"	D1	E2	E3
+527	"male"	"group C"	"some high school"	"free/reduced"	"completed"	E1	D2	E3
+528	"female"	"group C"	"high school"	"free/reduced"	"none"	G1	E2	F3
+529	"female"	"group D"	"bachelor's degree"	"free/reduced"	"none"	H1	F2	F3
+530	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	C2	D3
+531	"female"	"group C"	"associate's degree"	"standard"	"completed"	D1	D2	C3
+532	"female"	"group C"	"some high school"	"standard"	"none"	F1	E2	E3
+533	"male"	"group E"	"associate's degree"	"standard"	"completed"	D1	D2	E3
+534	"female"	"group E"	"associate's degree"	"standard"	"completed"	C1	B2	A3
+535	"male"	"group B"	"high school"	"standard"	"completed"	C1	D2	D3
+536	"female"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	D1	B2	B3
+537	"male"	"group C"	"associate's degree"	"standard"	"completed"	E1	E2	E3
+538	"female"	"group D"	"high school"	"standard"	"none"	E1	D2	D3
+539	"male"	"group E"	"bachelor's degree"	"standard"	"completed"	B1	D2	C3
+540	"male"	"group A"	"associate's degree"	"standard"	"completed"	A1	A2	B3
+541	"male"	"group C"	"high school"	"standard"	"completed"	C1	D2	D3
+542	"male"	"group D"	"associate's degree"	"free/reduced"	"completed"	C1	B2	C3
+543	"female"	"group C"	"associate's degree"	"standard"	"none"	B1	C2	C3
+544	"female"	"group D"	"associate's degree"	"standard"	"none"	B1	A2	B3
+545	"female"	"group D"	"master's degree"	"standard"	"none"	D1	D2	D3
+546	"male"	"group E"	"some high school"	"free/reduced"	"completed"	C1	B2	C3
+547	"female"	"group A"	"some high school"	"standard"	"completed"	A1	A2	A3
+548	"male"	"group C"	"high school"	"standard"	"completed"	C1	D2	D3
+549	"female"	"group C"	"high school"	"free/reduced"	"none"	D1	D2	D3
+550	"male"	"group C"	"master's degree"	"standard"	"none"	C1	C2	D3
+551	"male"	"group C"	"some high school"	"free/reduced"	"none"	C1	C2	D3
+552	"male"	"group B"	"bachelor's degree"	"free/reduced"	"completed"	B1	B2	B3
+553	"female"	"group B"	"associate's degree"	"standard"	"none"	G1	F2	F3
+554	"male"	"group D"	"some college"	"free/reduced"	"none"	C1	D2	D3
+555	"male"	"group E"	"associate's degree"	"standard"	"none"	E1	F2	G3
+556	"female"	"group C"	"some college"	"free/reduced"	"none"	G1	G2	G3
+557	"female"	"group C"	"associate's degree"	"standard"	"completed"	E1	C2	C3
+558	"male"	"group C"	"master's degree"	"free/reduced"	"none"	D1	D2	D3
+559	"female"	"group B"	"associate's degree"	"free/reduced"	"none"	E1	D2	D3
+560	"male"	"group D"	"some high school"	"standard"	"none"	C1	D2	D3
+561	"female"	"group D"	"some college"	"standard"	"completed"	C1	C2	C3
+562	"female"	"group C"	"some college"	"standard"	"none"	D1	C2	C3
+563	"male"	"group C"	"bachelor's degree"	"standard"	"completed"	A1	B2	A3
+564	"female"	"group D"	"some college"	"free/reduced"	"completed"	D1	C2	C3
+565	"male"	"group B"	"bachelor's degree"	"free/reduced"	"none"	F1	E2	F3
+566	"male"	"group B"	"associate's degree"	"standard"	"none"	F1	F2	F3
+567	"female"	"group E"	"bachelor's degree"	"free/reduced"	"completed"	A1	A2	A3
+568	"female"	"group D"	"master's degree"	"free/reduced"	"completed"	D1	C2	C3
+569	"male"	"group B"	"high school"	"free/reduced"	"none"	D1	F2	F3
+570	"male"	"group D"	"bachelor's degree"	"free/reduced"	"none"	D1	D2	D3
+571	"male"	"group B"	"some college"	"standard"	"completed"	C1	C2	D3
+572	"male"	"group A"	"bachelor's degree"	"standard"	"none"	A1	A2	A3
+573	"female"	"group C"	"some college"	"standard"	"none"	E1	D2	E3
+574	"female"	"group C"	"high school"	"free/reduced"	"completed"	F1	D2	D3
+575	"female"	"group E"	"high school"	"standard"	"none"	C1	B2	C3
+576	"male"	"group A"	"associate's degree"	"free/reduced"	"completed"	G1	E2	E3
+577	"male"	"group A"	"some college"	"standard"	"completed"	D1	E2	E3
+578	"female"	"group B"	"high school"	"standard"	"none"	B1	A2	B3
+579	"female"	"group B"	"some college"	"free/reduced"	"completed"	F1	E2	E3
+580	"female"	"group D"	"master's degree"	"standard"	"none"	E1	D2	D3
+581	"female"	"group D"	"some high school"	"standard"	"none"	B1	A2	A3
+582	"female"	"group E"	"some high school"	"standard"	"none"	C1	C2	C3
+583	"female"	"group D"	"bachelor's degree"	"free/reduced"	"none"	D1	C2	C3
+584	"female"	"group D"	"associate's degree"	"standard"	"completed"	C1	C2	C3
+585	"female"	"group D"	"some college"	"standard"	"none"	D1	C2	C3
+586	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	C2	C3
+587	"female"	"group A"	"high school"	"standard"	"none"	E1	C2	C3
+588	"female"	"group C"	"bachelor's degree"	"free/reduced"	"none"	F1	D2	D3
+589	"female"	"group C"	"some college"	"standard"	"none"	E1	D2	D3
+590	"female"	"group A"	"some high school"	"standard"	"none"	F1	D2	D3
+591	"male"	"group C"	"some college"	"free/reduced"	"none"	E1	E2	E3
+592	"male"	"group A"	"some high school"	"standard"	"none"	C1	D2	F3
+593	"male"	"group E"	"bachelor's degree"	"standard"	"none"	D1	D2	D3
+594	"female"	"group E"	"high school"	"standard"	"none"	C1	C2	C3
+595	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	A1	A2	A3
+596	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	E1	C2	C3
+597	"male"	"group B"	"high school"	"free/reduced"	"none"	H1	H2	J3
+598	"male"	"group A"	"some high school"	"standard"	"none"	E1	E2	F3
+599	"female"	"group D"	"high school"	"standard"	"none"	D1	C2	C3
+600	"female"	"group D"	"some high school"	"standard"	"none"	D1	B2	B3
+601	"female"	"group D"	"master's degree"	"standard"	"none"	E1	E2	D3
+602	"female"	"group C"	"high school"	"standard"	"none"	H1	H2	H3
+603	"female"	"group E"	"some college"	"standard"	"none"	C1	C2	C3
+604	"male"	"group D"	"high school"	"free/reduced"	"none"	E1	E2	E3
+605	"male"	"group D"	"master's degree"	"free/reduced"	"completed"	B1	B2	B3
+606	"male"	"group C"	"some high school"	"standard"	"none"	C1	C2	D3
+607	"female"	"group C"	"associate's degree"	"standard"	"none"	B1	B2	B3
+608	"female"	"group C"	"master's degree"	"free/reduced"	"none"	G1	E2	E3
+609	"female"	"group E"	"some college"	"standard"	"none"	D1	D2	D3
+610	"female"	"group B"	"associate's degree"	"standard"	"none"	E1	D2	D3
+611	"male"	"group D"	"some college"	"free/reduced"	"completed"	D1	E2	D3
+612	"female"	"group C"	"some college"	"standard"	"none"	E1	E2	D3
+613	"male"	"group C"	"bachelor's degree"	"standard"	"completed"	A1	B2	A3
+614	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	C2	C3
+615	"female"	"group A"	"associate's degree"	"standard"	"none"	B1	A2	A3
+616	"female"	"group C"	"high school"	"standard"	"none"	E1	D2	C3
+617	"female"	"group E"	"bachelor's degree"	"standard"	"none"	G1	F2	G3
+618	"male"	"group D"	"bachelor's degree"	"standard"	"none"	B1	C2	B3
+619	"male"	"group D"	"master's degree"	"standard"	"none"	A1	B2	B3
+620	"male"	"group C"	"associate's degree"	"free/reduced"	"completed"	D1	C2	D3
+621	"female"	"group C"	"high school"	"free/reduced"	"none"	G1	D2	E3
+622	"male"	"group B"	"bachelor's degree"	"free/reduced"	"none"	D1	D2	E3
+623	"male"	"group C"	"high school"	"free/reduced"	"completed"	E1	E2	E3
+624	"male"	"group A"	"some college"	"standard"	"completed"	A1	A2	B3
+625	"female"	"group E"	"bachelor's degree"	"free/reduced"	"none"	D1	E2	D3
+626	"male"	"group D"	"some college"	"standard"	"completed"	A1	A2	A3
+627	"male"	"group B"	"associate's degree"	"free/reduced"	"completed"	D1	D2	D3
+628	"male"	"group D"	"associate's degree"	"standard"	"none"	D1	F2	F3
+629	"male"	"group D"	"some college"	"free/reduced"	"none"	F1	E2	F3
+630	"female"	"group C"	"some high school"	"standard"	"completed"	F1	E2	E3
+631	"male"	"group D"	"some college"	"standard"	"none"	D1	D2	D3
+632	"male"	"group B"	"high school"	"standard"	"none"	C1	E2	D3
+633	"female"	"group B"	"bachelor's degree"	"standard"	"completed"	D1	C2	B3
+634	"female"	"group C"	"high school"	"standard"	"none"	C1	B2	B3
+635	"male"	"group D"	"some high school"	"standard"	"none"	B1	B2	C3
+636	"male"	"group A"	"high school"	"standard"	"none"	C1	C2	D3
+637	"female"	"group B"	"high school"	"free/reduced"	"completed"	D1	C2	B3
+638	"female"	"group D"	"some high school"	"standard"	"completed"	C1	A2	B3
+639	"male"	"group E"	"some college"	"standard"	"none"	B1	C2	C3
+640	"female"	"group D"	"associate's degree"	"standard"	"none"	C1	C2	C3
+641	"male"	"group D"	"high school"	"standard"	"none"	F1	E2	E3
+642	"female"	"group D"	"associate's degree"	"free/reduced"	"completed"	C1	B2	B3
+643	"female"	"group B"	"some high school"	"free/reduced"	"none"	C1	B2	C3
+644	"female"	"group E"	"high school"	"standard"	"completed"	C1	C2	C3
+645	"male"	"group B"	"high school"	"standard"	"none"	D1	D2	E3
+646	"female"	"group B"	"bachelor's degree"	"standard"	"completed"	D1	B2	B3
+647	"female"	"group D"	"associate's degree"	"standard"	"none"	E1	D2	D3
+648	"female"	"group E"	"high school"	"free/reduced"	"none"	D1	D2	D3
+649	"female"	"group B"	"high school"	"standard"	"none"	F1	E2	E3
+650	"female"	"group D"	"some college"	"standard"	"completed"	D1	C2	B3
+651	"male"	"group C"	"some high school"	"free/reduced"	"completed"	E1	E2	E3
+652	"female"	"group A"	"high school"	"standard"	"completed"	D1	C2	C3
+653	"female"	"group D"	"some college"	"standard"	"completed"	B1	B2	A3
+654	"female"	"group A"	"associate's degree"	"standard"	"completed"	D1	D2	C3
+655	"female"	"group B"	"some high school"	"standard"	"none"	C1	C2	C3
+656	"female"	"group B"	"some college"	"standard"	"none"	D1	D2	D3
+657	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	C1	D2	D3
+658	"male"	"group D"	"some high school"	"standard"	"none"	D1	D2	D3
+659	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	F1	E2	E3
+660	"male"	"group D"	"associate's degree"	"standard"	"none"	B1	B2	B3
+661	"male"	"group C"	"some college"	"free/reduced"	"none"	C1	C2	C3
+662	"male"	"group C"	"some high school"	"standard"	"none"	C1	D2	D3
+663	"female"	"group D"	"some college"	"free/reduced"	"none"	E1	C2	D3
+664	"female"	"group C"	"high school"	"standard"	"none"	D1	D2	D3
+665	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	D2	D3
+666	"female"	"group C"	"some high school"	"free/reduced"	"completed"	F1	E2	E3
+667	"female"	"group C"	"some college"	"free/reduced"	"completed"	D1	C2	C3
+668	"female"	"group B"	"bachelor's degree"	"free/reduced"	"none"	C1	B2	B3
+669	"male"	"group C"	"some college"	"standard"	"none"	C1	C2	D3
+670	"male"	"group D"	"associate's degree"	"standard"	"completed"	B1	C2	C3
+671	"female"	"group C"	"high school"	"free/reduced"	"none"	D1	C2	D3
+672	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	E1	E2	F3
+673	"female"	"group C"	"some college"	"standard"	"none"	D1	C2	C3
+674	"female"	"group C"	"associate's degree"	"standard"	"completed"	D1	B2	B3
+675	"female"	"group D"	"high school"	"standard"	"completed"	D1	C2	C3
+676	"female"	"group B"	"some college"	"standard"	"completed"	F1	D2	D3
+677	"female"	"group E"	"some college"	"standard"	"completed"	C1	C2	C3
+678	"female"	"group C"	"some high school"	"standard"	"completed"	D1	B2	C3
+679	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	B1	C2	C3
+680	"male"	"group D"	"some college"	"free/reduced"	"none"	D1	D2	E3
+681	"female"	"group D"	"high school"	"standard"	"none"	D1	C2	C3
+682	"male"	"group B"	"high school"	"standard"	"none"	E1	D2	E3
+683	"male"	"group B"	"high school"	"standard"	"none"	D1	E2	E3
+684	"female"	"group C"	"some high school"	"free/reduced"	"completed"	H1	G2	F3
+685	"male"	"group B"	"some college"	"standard"	"completed"	D1	D2	D3
+686	"female"	"group E"	"master's degree"	"standard"	"completed"	A1	A2	A3
+687	"male"	"group E"	"some college"	"standard"	"completed"	B1	C2	D3
+688	"male"	"group D"	"associate's degree"	"free/reduced"	"none"	C1	C2	C3
+689	"male"	"group A"	"high school"	"free/reduced"	"none"	E1	E2	F3
+690	"male"	"group E"	"some college"	"free/reduced"	"none"	A1	B2	B3
+691	"female"	"group C"	"associate's degree"	"standard"	"none"	F1	E2	E3
+692	"female"	"group E"	"associate's degree"	"free/reduced"	"none"	C1	C2	C3
+693	"female"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	D1	C2	B3
+694	"female"	"group D"	"associate's degree"	"standard"	"none"	C1	C2	C3
+695	"female"	"group C"	"some high school"	"standard"	"none"	F1	D2	E3
+696	"female"	"group D"	"some college"	"free/reduced"	"none"	C1	B2	B3
+697	"female"	"group C"	"associate's degree"	"standard"	"completed"	C1	B2	B3
+698	"female"	"group A"	"bachelor's degree"	"standard"	"none"	E1	C2	D3
+699	"female"	"group D"	"associate's degree"	"standard"	"completed"	E1	C2	C3
+700	"male"	"group C"	"high school"	"free/reduced"	"none"	D1	D2	E3
+701	"female"	"group E"	"bachelor's degree"	"standard"	"completed"	C1	B2	B3
+702	"female"	"group B"	"some high school"	"standard"	"none"	E1	D2	C3
+703	"male"	"group A"	"bachelor's degree"	"standard"	"completed"	B1	B2	B3
+704	"female"	"group D"	"some college"	"standard"	"none"	D1	D2	D3
+705	"female"	"group B"	"some high school"	"free/reduced"	"completed"	E1	D2	D3
+706	"male"	"group A"	"bachelor's degree"	"free/reduced"	"none"	D1	C2	D3
+707	"male"	"group D"	"high school"	"standard"	"none"	F1	G2	G3
+708	"male"	"group C"	"some college"	"standard"	"none"	D1	E2	E3
+709	"male"	"group D"	"high school"	"standard"	"none"	B1	B2	C3
+710	"female"	"group D"	"associate's degree"	"free/reduced"	"completed"	F1	D2	E3
+711	"male"	"group C"	"some college"	"standard"	"completed"	A1	B2	B3
+712	"female"	"group E"	"some high school"	"standard"	"completed"	C1	B2	B3
+713	"female"	"group D"	"some college"	"standard"	"none"	A1	A2	A3
+714	"male"	"group D"	"master's degree"	"standard"	"none"	B1	B2	B3
+715	"female"	"group B"	"some high school"	"standard"	"completed"	E1	D2	C3
+716	"female"	"group B"	"associate's degree"	"free/reduced"	"completed"	C1	A2	B3
+717	"male"	"group C"	"associate's degree"	"standard"	"completed"	C1	C2	C3
+718	"female"	"group C"	"associate's degree"	"standard"	"completed"	A1	A2	A3
+719	"female"	"group C"	"high school"	"standard"	"none"	C1	C2	C3
+720	"male"	"group E"	"associate's degree"	"free/reduced"	"completed"	A1	C2	C3
+721	"female"	"group C"	"some college"	"free/reduced"	"none"	D1	C2	D3
+722	"male"	"group D"	"some high school"	"free/reduced"	"completed"	E1	E2	E3
+723	"female"	"group B"	"some high school"	"free/reduced"	"completed"	C1	B2	B3
+724	"male"	"group C"	"high school"	"standard"	"none"	F1	F2	F3
+725	"male"	"group B"	"some college"	"standard"	"none"	F1	F2	F3
+726	"male"	"group E"	"some college"	"standard"	"completed"	B1	C2	C3
+727	"female"	"group E"	"associate's degree"	"standard"	"completed"	D1	C2	C3
+728	"male"	"group E"	"some high school"	"standard"	"completed"	D1	E2	E3
+729	"female"	"group D"	"high school"	"free/reduced"	"none"	C1	A2	B3
+730	"male"	"group C"	"some college"	"standard"	"none"	E1	G2	G3
+731	"female"	"group B"	"associate's degree"	"free/reduced"	"completed"	D1	C2	C3
+732	"male"	"group A"	"some high school"	"free/reduced"	"none"	E1	F2	F3
+733	"female"	"group C"	"some college"	"standard"	"completed"	B1	B2	A3
+734	"male"	"group D"	"some high school"	"standard"	"none"	E1	F2	F3
+735	"female"	"group E"	"some college"	"free/reduced"	"none"	E1	E2	E3
+736	"male"	"group C"	"master's degree"	"standard"	"none"	D1	E2	E3
+737	"male"	"group C"	"associate's degree"	"standard"	"none"	A1	C2	B3
+738	"female"	"group B"	"some college"	"free/reduced"	"completed"	E1	D2	C3
+739	"male"	"group D"	"associate's degree"	"standard"	"none"	B1	C2	C3
+740	"male"	"group C"	"high school"	"free/reduced"	"none"	D1	E2	E3
+741	"male"	"group D"	"bachelor's degree"	"standard"	"none"	C1	C2	C3
+742	"female"	"group A"	"associate's degree"	"free/reduced"	"none"	G1	E2	E3
+743	"female"	"group C"	"high school"	"standard"	"none"	B1	B2	B3
+744	"female"	"group C"	"associate's degree"	"standard"	"completed"	E1	C2	C3
+745	"male"	"group B"	"some college"	"free/reduced"	"none"	E1	E2	F3
+746	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	C2	C3
+747	"male"	"group D"	"high school"	"standard"	"none"	D1	C2	C3
+748	"male"	"group C"	"some college"	"standard"	"none"	D1	D2	D3
+749	"female"	"group C"	"bachelor's degree"	"free/reduced"	"none"	F1	E2	E3
+750	"male"	"group B"	"some college"	"standard"	"completed"	B1	B2	B3
+751	"male"	"group D"	"some high school"	"standard"	"completed"	C1	D2	D3
+752	"male"	"group E"	"some college"	"standard"	"none"	D1	C2	D3
+753	"male"	"group C"	"master's degree"	"free/reduced"	"completed"	C1	C2	C3
+754	"female"	"group C"	"some high school"	"standard"	"completed"	C1	B2	B3
+755	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	E1	E2	E3
+756	"female"	"group E"	"associate's degree"	"standard"	"none"	B1	A2	A3
+757	"male"	"group D"	"some college"	"standard"	"none"	E1	E2	E3
+758	"male"	"group E"	"bachelor's degree"	"free/reduced"	"completed"	D1	D2	C3
+759	"female"	"group D"	"some college"	"free/reduced"	"completed"	E1	E2	D3
+760	"male"	"group B"	"some college"	"standard"	"completed"	D1	C2	C3
+761	"female"	"group C"	"high school"	"free/reduced"	"none"	E1	C2	D3
+762	"female"	"group D"	"some high school"	"standard"	"none"	F1	E2	E3
+763	"male"	"group D"	"some high school"	"standard"	"completed"	C1	B2	B3
+764	"female"	"group B"	"high school"	"standard"	"none"	D1	D2	D3
+765	"male"	"group D"	"some college"	"standard"	"none"	E1	D2	E3
+766	"female"	"group B"	"high school"	"standard"	"none"	C1	C2	C3
+767	"female"	"group C"	"high school"	"standard"	"completed"	E1	C2	C3
+768	"male"	"group B"	"high school"	"standard"	"completed"	C1	D2	E3
+769	"female"	"group D"	"some high school"	"standard"	"none"	D1	C2	C3
+770	"male"	"group A"	"some college"	"free/reduced"	"none"	E1	E2	E3
+771	"male"	"group B"	"high school"	"standard"	"none"	E1	F2	F3
+772	"male"	"group D"	"bachelor's degree"	"standard"	"none"	C1	C2	C3
+773	"female"	"group B"	"some high school"	"free/reduced"	"completed"	E1	D2	C3
+774	"female"	"group C"	"bachelor's degree"	"free/reduced"	"none"	D1	C2	C3
+775	"male"	"group B"	"some college"	"standard"	"none"	D1	D2	E3
+776	"female"	"group B"	"some high school"	"free/reduced"	"none"	F1	E2	E3
+777	"female"	"group B"	"high school"	"standard"	"none"	D1	C2	D3
+778	"female"	"group C"	"some college"	"free/reduced"	"none"	G1	F2	F3
+779	"female"	"group A"	"some college"	"standard"	"completed"	C1	C2	B3
+780	"male"	"group E"	"associate's degree"	"standard"	"completed"	A1	B2	B3
+781	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	F1	E2	E3
+782	"female"	"group B"	"master's degree"	"standard"	"none"	C1	B2	B3
+783	"female"	"group B"	"high school"	"free/reduced"	"completed"	C1	B2	B3
+784	"female"	"group C"	"associate's degree"	"standard"	"completed"	E1	E2	D3
+785	"male"	"group C"	"bachelor's degree"	"standard"	"completed"	A1	B2	C3
+786	"female"	"group B"	"some high school"	"standard"	"completed"	G1	E2	F3
+787	"female"	"group E"	"some high school"	"free/reduced"	"none"	C1	C2	C3
+788	"female"	"group B"	"some college"	"standard"	"none"	J1	G2	G3
+789	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	D1	D2	D3
+790	"female"	"group C"	"master's degree"	"free/reduced"	"none"	E1	D2	D3
+791	"female"	"group B"	"high school"	"standard"	"none"	F1	D2	E3
+792	"female"	"group D"	"some college"	"free/reduced"	"none"	E1	D2	D3
+793	"male"	"group D"	"high school"	"free/reduced"	"none"	D1	C2	D3
+794	"male"	"group E"	"some high school"	"standard"	"completed"	B1	B2	C3
+795	"female"	"group B"	"high school"	"standard"	"none"	F1	E2	E3
+796	"female"	"group E"	"associate's degree"	"free/reduced"	"completed"	E1	D2	C3
+797	"male"	"group D"	"high school"	"standard"	"none"	D1	D2	D3
+798	"female"	"group E"	"associate's degree"	"free/reduced"	"none"	D1	B2	B3
+799	"male"	"group E"	"some college"	"standard"	"none"	D1	E2	E3
+800	"female"	"group C"	"associate's degree"	"standard"	"none"	E1	E2	E3
+801	"male"	"group C"	"some high school"	"standard"	"completed"	D1	C2	D3
+802	"male"	"group C"	"some high school"	"standard"	"completed"	C1	C2	C3
+803	"female"	"group E"	"associate's degree"	"standard"	"none"	B1	A2	A3
+804	"female"	"group B"	"some college"	"standard"	"none"	B1	B2	B3
+805	"female"	"group C"	"some college"	"standard"	"none"	C1	C2	C3
+806	"male"	"group A"	"some college"	"free/reduced"	"none"	C1	B2	C3
+807	"female"	"group D"	"some college"	"free/reduced"	"none"	D1	C2	C3
+808	"female"	"group E"	"high school"	"free/reduced"	"none"	F1	F2	G3
+809	"male"	"group C"	"high school"	"standard"	"none"	B1	C2	D3
+810	"male"	"group B"	"bachelor's degree"	"standard"	"none"	E1	E2	E3
+811	"male"	"group A"	"some high school"	"standard"	"none"	E1	G2	G3
+812	"male"	"group A"	"high school"	"free/reduced"	"none"	F1	F2	F3
+813	"female"	"group C"	"master's degree"	"standard"	"completed"	E1	D2	D3
+814	"male"	"group E"	"some high school"	"standard"	"completed"	B1	B2	C3
+815	"female"	"group C"	"high school"	"standard"	"none"	C1	C2	B3
+816	"male"	"group B"	"some high school"	"standard"	"completed"	A1	B2	B3
+817	"female"	"group A"	"bachelor's degree"	"standard"	"none"	F1	E2	D3
+818	"male"	"group D"	"bachelor's degree"	"free/reduced"	"completed"	D1	D2	C3
+819	"female"	"group B"	"high school"	"free/reduced"	"none"	E1	C2	D3
+820	"female"	"group C"	"some high school"	"standard"	"none"	C1	A2	B3
+821	"female"	"group A"	"some high school"	"standard"	"completed"	B1	B2	A3
+822	"female"	"group D"	"bachelor's degree"	"free/reduced"	"none"	C1	B2	A3
+823	"male"	"group E"	"some college"	"free/reduced"	"completed"	F1	E2	E3
+824	"female"	"group B"	"high school"	"free/reduced"	"none"	C1	B2	B3
+825	"female"	"group C"	"some high school"	"free/reduced"	"none"	F1	E2	E3
+826	"male"	"group C"	"high school"	"standard"	"none"	D1	D2	E3
+827	"female"	"group C"	"associate's degree"	"free/reduced"	"completed"	E1	D2	D3
+828	"female"	"group C"	"some high school"	"standard"	"none"	D1	D2	C3
+829	"female"	"group D"	"some high school"	"free/reduced"	"completed"	D1	B2	B3
+830	"male"	"group B"	"some high school"	"standard"	"none"	D1	E2	E3
+831	"female"	"group A"	"some college"	"free/reduced"	"none"	D1	E2	E3
+832	"female"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	C1	B2	B3
+833	"male"	"group A"	"bachelor's degree"	"standard"	"none"	D1	E2	E3
+834	"female"	"group B"	"high school"	"standard"	"completed"	C1	B2	B3
+835	"male"	"group B"	"some college"	"standard"	"none"	E1	F2	F3
+836	"female"	"group C"	"high school"	"standard"	"completed"	E1	D2	C3
+837	"male"	"group E"	"high school"	"standard"	"none"	C1	D2	E3
+838	"female"	"group A"	"high school"	"standard"	"completed"	C1	B2	C3
+839	"male"	"group B"	"associate's degree"	"free/reduced"	"completed"	E1	E2	E3
+840	"female"	"group C"	"associate's degree"	"standard"	"none"	D1	C2	C3
+841	"female"	"group D"	"high school"	"free/reduced"	"none"	G1	E2	F3
+842	"male"	"group C"	"some high school"	"standard"	"none"	D1	E2	E3
+843	"female"	"group B"	"high school"	"free/reduced"	"completed"	H1	F2	G3
+844	"male"	"group B"	"some college"	"free/reduced"	"completed"	C1	C2	C3
+845	"female"	"group D"	"some high school"	"free/reduced"	"completed"	G1	D2	D3
+846	"male"	"group E"	"master's degree"	"standard"	"none"	B1	B2	B3
+847	"male"	"group C"	"master's degree"	"standard"	"completed"	A1	B2	B3
+848	"male"	"group D"	"high school"	"standard"	"none"	D1	E2	F3
+849	"female"	"group C"	"high school"	"standard"	"none"	E1	C2	D3
+850	"male"	"group D"	"associate's degree"	"standard"	"none"	C1	C2	D3
+851	"male"	"group C"	"master's degree"	"standard"	"none"	C1	D2	D3
+852	"female"	"group A"	"high school"	"standard"	"none"	D1	D2	D3
+853	"female"	"group E"	"some college"	"standard"	"none"	B1	B2	A3
+854	"male"	"group E"	"some high school"	"standard"	"none"	B1	D2	D3
+855	"male"	"group C"	"some high school"	"standard"	"none"	D1	D2	E3
+856	"female"	"group B"	"bachelor's degree"	"standard"	"none"	A1	A2	A3
+857	"male"	"group B"	"some college"	"free/reduced"	"none"	C1	D2	D3
+858	"female"	"group C"	"bachelor's degree"	"standard"	"none"	D1	C2	B3
+859	"male"	"group B"	"high school"	"standard"	"completed"	E1	F2	F3
+860	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	B1	C2	C3
+861	"female"	"group C"	"associate's degree"	"standard"	"none"	E1	D2	E3
+862	"female"	"group E"	"master's degree"	"free/reduced"	"none"	B1	B2	B3
+863	"male"	"group D"	"bachelor's degree"	"free/reduced"	"completed"	G1	F2	G3
+864	"female"	"group C"	"some college"	"standard"	"completed"	C1	C2	C3
+865	"male"	"group C"	"associate's degree"	"standard"	"none"	A1	A2	A3
+866	"male"	"group D"	"some college"	"standard"	"completed"	B1	B2	B3
+867	"male"	"group C"	"high school"	"free/reduced"	"none"	E1	E2	E3
+868	"male"	"group B"	"associate's degree"	"standard"	"none"	D1	F2	F3
+869	"male"	"group E"	"associate's degree"	"free/reduced"	"completed"	C1	C2	C3
+870	"male"	"group C"	"associate's degree"	"free/reduced"	"none"	F1	E2	E3
+871	"male"	"group B"	"high school"	"standard"	"none"	E1	E2	F3
+872	"female"	"group C"	"some college"	"standard"	"completed"	D1	C2	C3
+873	"male"	"group B"	"associate's degree"	"standard"	"completed"	B1	B2	C3
+874	"male"	"group E"	"associate's degree"	"free/reduced"	"none"	B1	B2	B3
+875	"female"	"group C"	"bachelor's degree"	"free/reduced"	"none"	F1	D2	D3
+876	"male"	"group C"	"some college"	"free/reduced"	"none"	C1	D2	D3
+877	"male"	"group D"	"some college"	"standard"	"none"	B1	B2	B3
+878	"male"	"group C"	"some high school"	"standard"	"none"	E1	D2	E3
+879	"female"	"group D"	"some high school"	"standard"	"none"	E1	C2	C3
+880	"female"	"group D"	"associate's degree"	"standard"	"none"	D1	C2	C3
+881	"male"	"group C"	"bachelor's degree"	"standard"	"completed"	D1	D2	D3
+882	"female"	"group E"	"bachelor's degree"	"standard"	"completed"	C1	D2	D3
+883	"female"	"group B"	"high school"	"free/reduced"	"none"	D1	C2	C3
+884	"male"	"group D"	"bachelor's degree"	"free/reduced"	"none"	E1	F2	F3
+885	"female"	"group E"	"associate's degree"	"standard"	"none"	E1	E2	E3
+886	"female"	"group C"	"associate's degree"	"standard"	"completed"	D1	C2	C3
+887	"female"	"group E"	"associate's degree"	"standard"	"completed"	A1	A2	A3
+888	"male"	"group C"	"high school"	"free/reduced"	"none"	E1	C2	E3
+889	"female"	"group D"	"some college"	"free/reduced"	"none"	D1	D2	C3
+890	"male"	"group D"	"high school"	"free/reduced"	"none"	F1	E2	F3
+891	"female"	"group E"	"some college"	"standard"	"completed"	B1	B2	A3
+892	"female"	"group E"	"associate's degree"	"standard"	"none"	B1	A2	B3
+893	"female"	"group A"	"master's degree"	"free/reduced"	"none"	F1	D2	C3
+894	"male"	"group D"	"some high school"	"standard"	"completed"	B1	C2	C3
+895	"female"	"group E"	"associate's degree"	"standard"	"none"	E1	D2	D3
+896	"female"	"group E"	"some high school"	"free/reduced"	"none"	G1	G2	G3
+897	"male"	"group B"	"high school"	"free/reduced"	"none"	G1	H2	H3
+898	"female"	"group B"	"some high school"	"free/reduced"	"completed"	D1	C2	C3
+899	"male"	"group D"	"associate's degree"	"standard"	"completed"	D1	E2	D3
+900	"female"	"group D"	"some high school"	"standard"	"completed"	D1	C2	B3
+901	"male"	"group D"	"master's degree"	"standard"	"none"	B1	B2	B3
+902	"female"	"group C"	"master's degree"	"standard"	"none"	C1	C2	C3
+903	"female"	"group A"	"high school"	"free/reduced"	"completed"	G1	F2	F3
+904	"female"	"group D"	"bachelor's degree"	"free/reduced"	"completed"	A1	A2	A3
+905	"female"	"group D"	"some high school"	"free/reduced"	"none"	D1	B2	B3
+906	"male"	"group D"	"some college"	"standard"	"none"	B1	C2	C3
+907	"male"	"group B"	"high school"	"standard"	"none"	E1	F2	E3
+908	"female"	"group D"	"some college"	"standard"	"completed"	C1	B2	A3
+909	"female"	"group C"	"bachelor's degree"	"free/reduced"	"none"	D1	C2	C3
+910	"male"	"group E"	"bachelor's degree"	"standard"	"completed"	D1	D2	D3
+911	"male"	"group D"	"bachelor's degree"	"free/reduced"	"none"	F1	F2	F3
+912	"female"	"group A"	"some college"	"standard"	"none"	D1	B2	B3
+913	"female"	"group C"	"bachelor's degree"	"standard"	"completed"	E1	D2	D3
+914	"female"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	F1	D2	D3
+915	"female"	"group B"	"associate's degree"	"free/reduced"	"none"	F1	D2	E3
+916	"female"	"group E"	"some college"	"standard"	"none"	D1	D2	D3
+917	"male"	"group E"	"bachelor's degree"	"standard"	"completed"	A1	A2	A3
+918	"female"	"group C"	"high school"	"standard"	"none"	F1	D2	E3
+919	"female"	"group C"	"associate's degree"	"standard"	"completed"	E1	C2	C3
+920	"male"	"group B"	"some college"	"standard"	"completed"	A1	A2	A3
+921	"male"	"group D"	"high school"	"free/reduced"	"none"	D1	D2	D3
+922	"female"	"group C"	"high school"	"free/reduced"	"none"	G1	E2	F3
+923	"male"	"group D"	"high school"	"standard"	"none"	C1	D2	D3
+924	"female"	"group B"	"associate's degree"	"free/reduced"	"none"	E1	D2	D3
+925	"male"	"group D"	"high school"	"free/reduced"	"none"	C1	D2	D3
+926	"male"	"group E"	"some high school"	"standard"	"completed"	C1	D2	E3
+927	"male"	"group E"	"associate's degree"	"free/reduced"	"none"	D1	E2	E3
+928	"female"	"group D"	"high school"	"free/reduced"	"completed"	D1	D2	C3
+929	"male"	"group E"	"associate's degree"	"free/reduced"	"completed"	F1	F2	F3
+930	"female"	"group C"	"some high school"	"free/reduced"	"none"	F1	E2	E3
+931	"male"	"group C"	"some college"	"free/reduced"	"completed"	D1	C2	D3
+932	"male"	"group D"	"some college"	"free/reduced"	"none"	D1	E2	D3
+933	"male"	"group D"	"associate's degree"	"free/reduced"	"completed"	D1	C2	C3
+934	"male"	"group C"	"bachelor's degree"	"free/reduced"	"completed"	D1	C2	C3
+935	"male"	"group C"	"associate's degree"	"standard"	"completed"	A1	B2	B3
+936	"male"	"group D"	"some college"	"free/reduced"	"none"	D1	D2	E3
+937	"male"	"group A"	"associate's degree"	"standard"	"none"	D1	E2	E3
+938	"female"	"group E"	"high school"	"free/reduced"	"none"	E1	E2	E3
+939	"male"	"group D"	"some college"	"standard"	"completed"	B1	B2	B3
+940	"male"	"group D"	"some high school"	"standard"	"completed"	C1	D2	D3
+941	"male"	"group C"	"master's degree"	"free/reduced"	"completed"	C1	D2	C3
+942	"female"	"group D"	"master's degree"	"standard"	"none"	C1	A2	A3
+943	"male"	"group C"	"high school"	"standard"	"none"	B1	D2	D3
+944	"male"	"group A"	"some high school"	"free/reduced"	"completed"	D1	D2	D3
+945	"female"	"group B"	"high school"	"standard"	"none"	E1	D2	D3
+946	"female"	"group C"	"associate's degree"	"standard"	"none"	E1	D2	E3
+947	"male"	"group B"	"high school"	"standard"	"none"	B1	B2	C3
+948	"female"	"group D"	"some college"	"free/reduced"	"none"	F1	E2	E3
+949	"male"	"group B"	"some high school"	"free/reduced"	"completed"	F1	F2	E3
+950	"female"	"group E"	"high school"	"free/reduced"	"completed"	E1	C2	C3
+951	"male"	"group E"	"high school"	"standard"	"none"	A1	C2	C3
+952	"female"	"group D"	"some college"	"standard"	"completed"	C1	C2	B3
+953	"female"	"group E"	"some high school"	"free/reduced"	"none"	C1	C2	C3
+954	"male"	"group C"	"high school"	"standard"	"completed"	E1	E2	E3
+955	"female"	"group C"	"some college"	"standard"	"none"	D1	D2	D3
+956	"male"	"group E"	"associate's degree"	"standard"	"none"	C1	E2	D3
+957	"male"	"group C"	"some college"	"standard"	"none"	B1	B2	B3
+958	"female"	"group D"	"master's degree"	"standard"	"none"	A1	A2	A3
+959	"female"	"group D"	"high school"	"standard"	"none"	F1	D2	E3
+960	"male"	"group C"	"high school"	"standard"	"none"	C1	B2	C3
+961	"female"	"group A"	"some college"	"standard"	"none"	E1	E2	D3
+962	"female"	"group D"	"some high school"	"free/reduced"	"none"	F1	E2	E3
+963	"female"	"group E"	"associate's degree"	"standard"	"none"	A1	A2	A3
+964	"female"	"group C"	"some high school"	"free/reduced"	"completed"	D1	C2	C3
+965	"male"	"group D"	"some college"	"standard"	"none"	C1	E2	E3
+966	"female"	"group D"	"some college"	"standard"	"none"	D1	D2	C3
+967	"male"	"group A"	"some high school"	"standard"	"completed"	D1	D2	D3
+968	"male"	"group C"	"some college"	"standard"	"none"	D1	D2	E3
+969	"female"	"group E"	"associate's degree"	"standard"	"none"	D1	C2	D3
+970	"female"	"group B"	"bachelor's degree"	"standard"	"none"	C1	B2	C3
+971	"female"	"group D"	"bachelor's degree"	"standard"	"none"	B1	A2	A3
+972	"male"	"group C"	"some high school"	"standard"	"completed"	C1	C2	D3
+973	"female"	"group A"	"high school"	"free/reduced"	"completed"	E1	F2	E3
+974	"female"	"group D"	"some college"	"free/reduced"	"none"	F1	D2	D3
+975	"female"	"group A"	"some college"	"standard"	"none"	E1	D2	D3
+976	"female"	"group C"	"some college"	"standard"	"completed"	D1	B2	C3
+977	"male"	"group B"	"some college"	"free/reduced"	"completed"	E1	D2	E3
+978	"male"	"group C"	"associate's degree"	"standard"	"none"	D1	D2	E3
+979	"male"	"group D"	"high school"	"standard"	"completed"	E1	F2	F3
+980	"female"	"group C"	"associate's degree"	"standard"	"none"	A1	A2	A3
+981	"female"	"group B"	"high school"	"free/reduced"	"none"	K1	H2	H3
+982	"male"	"group D"	"some high school"	"standard"	"none"	B1	C2	C3
+983	"male"	"group B"	"some high school"	"standard"	"completed"	C1	B2	B3
+984	"female"	"group A"	"some college"	"standard"	"completed"	C1	B2	A3
+985	"female"	"group C"	"some high school"	"standard"	"none"	C1	C2	B3
+986	"male"	"group A"	"high school"	"standard"	"none"	E1	E2	E3
+987	"female"	"group C"	"associate's degree"	"standard"	"none"	G1	E2	E3
+988	"male"	"group E"	"some high school"	"standard"	"completed"	B1	C2	C3
+989	"female"	"group A"	"some high school"	"free/reduced"	"none"	F1	F2	F3
+990	"female"	"group D"	"some college"	"free/reduced"	"completed"	D1	B2	B3
+991	"male"	"group E"	"high school"	"free/reduced"	"completed"	B1	B2	C3
+992	"female"	"group B"	"some high school"	"standard"	"completed"	D1	B2	C3
+993	"female"	"group D"	"associate's degree"	"free/reduced"	"none"	E1	C2	C3
+994	"female"	"group D"	"bachelor's degree"	"free/reduced"	"none"	D1	C2	C3
+995	"male"	"group A"	"high school"	"standard"	"none"	D1	D2	D3
+996	"female"	"group E"	"master's degree"	"standard"	"completed"	B1	A2	A3
+997	"male"	"group C"	"high school"	"free/reduced"	"none"	D1	E2	E3
+998	"female"	"group C"	"high school"	"free/reduced"	"completed"	E1	C2	D3
+999	"female"	"group D"	"some college"	"standard"	"completed"	D1	C2	C3
+1000	"female"	"group D"	"some college"	"free/reduced"	"none"	C1	B2	B3

@@ -1,6 +1,7 @@
 package graduatedesign.PMALOApriori;
 
 
+import graduatedesign.utils.Preprocessing;
 import org.apache.spark.SparkConf;
 import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaPairRDD;
@@ -20,7 +21,7 @@ public class SparkApriori implements Serializable {
     //	输出路径
     private long minSuport;
     //    最小置信度*总事务数，默认置信度85%
-    private double confidence = 0.01;
+    private double confidence = 0.1;
     //    置信度
     private long numOfItems;
     //    总事务数
@@ -282,9 +283,15 @@ public class SparkApriori implements Serializable {
         String inputPath = baseUrl + "SparkSimple.txt";
         String outputPath = baseUrl+"SparkAprioriResult";
 
-        JavaRDD<String> distFile= context.textFile(inputPath);
+        String inputPath1 = baseUrl + "sp.txt";
+
+        JavaRDD<String> distFile= context.textFile(inputPath1);
         SparkApriori apriori = new SparkApriori(distFile, outputPath);
+        long starttime = System.currentTimeMillis();
         apriori.start();
+        long endtime = System.currentTimeMillis();
+
+        System.out.println("time consuming : "+(endtime-starttime));
 
         for (int i = 0; i < apriori.finalResult.size(); i++) {
             for (int j = 0; j < apriori.finalResult.get(i).size(); j++) {

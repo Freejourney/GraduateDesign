@@ -1,5 +1,6 @@
 package graduatedesign;
 
+import graduatedesign.utils.Preprocessing;
 import graduatedesign.utils.TxtReader;
 
 import java.util.ArrayList;
@@ -24,8 +25,8 @@ public class Apriori {
     static Map<Integer, Integer> dCountMap = new HashMap<Integer, Integer>(); // k-1频繁集的记数表
     static Map<Integer, Integer> dkCountMap = new HashMap<Integer, Integer>();// k频繁集的记数表
     static List<List<String>> record = new ArrayList<List<String>>();// 数据记录表
-    final static double MIN_SUPPORT = 0.2;// 最小支持度
-    final static double MIN_CONF = 0.8;// 最小置信度
+    final static double MIN_SUPPORT = 0.1;// 最小支持度
+    final static double MIN_CONF = 0.2;// 最小置信度
     static int lable = 1;// 用于输出时的一个标记，记录当前在打印第几级关联集
     static List<Double> confCount = new ArrayList<Double>();// 置信度记录表
     static List<List<String>> confItemset = new ArrayList<List<String>>();// 满足支持度的集合
@@ -35,9 +36,11 @@ public class Apriori {
      */
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        record = getRecord();// 获取原始数据记录
+//        record = getRecord();// 获取原始数据记录
 
+        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
 
+        long startTime = System.currentTimeMillis();
         // for frequent 1 itemset, there is no confidence, so we should calculate it separately
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         List<List<String>> lItemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
@@ -55,6 +58,8 @@ public class Apriori {
             dCountMap.clear();
             dCountMap.putAll(dkCountMap);
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("运行时间:" + (endTime - startTime) + "ms");
 
     }
 
