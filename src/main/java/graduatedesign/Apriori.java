@@ -18,6 +18,14 @@ import java.util.Map;
  *若满足置信度的集合为空，程序停止；
  *否则输出满足自信度的集合，以及对应的支持度和自信度，并由满足支持度的k-1级集合求出k级备选集，进入下一轮循环；
  *直至程序结束，输出全部频繁级
+    *
+    *
+    *
+    *
+    * aprioridata1 : 32 times of origin dataset
+    *
+    *
+    *
  */
 
 public class Apriori {
@@ -25,12 +33,14 @@ public class Apriori {
     static Map<Integer, Integer> dCountMap = new HashMap<Integer, Integer>(); // k-1频繁集的记数表
     static Map<Integer, Integer> dkCountMap = new HashMap<Integer, Integer>();// k频繁集的记数表
     static List<List<String>> record = new ArrayList<List<String>>();// 数据记录表
-    final static double MIN_SUPPORT = 0.1;// 最小支持度
-    final static double MIN_CONF = 0.2;// 最小置信度
+    final static double MIN_SUPPORT = 0.001;// 最小支持度
+    final static int MIN_SUPPORT_NUM = 1000;
+    final static double MIN_CONF = 0;// 最小置信度
     static int lable = 1;// 用于输出时的一个标记，记录当前在打印第几级关联集
     static List<Double> confCount = new ArrayList<Double>();// 置信度记录表
     static List<List<String>> confItemset = new ArrayList<List<String>>();// 满足支持度的集合
 
+       static int num = 0;
     /**
      * @param args
      */
@@ -38,7 +48,12 @@ public class Apriori {
         // TODO Auto-generated method stub
 //        record = getRecord();// 获取原始数据记录
 
-        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
+//        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
+//        record = new Preprocessing().parseAproriData1(Preprocessing.class.getClassLoader().getResource("aproridata1.csv").getPath());
+
+        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+//        record = new Preprocessing().parseAproriData1("DataSetA_32.csv");
+//        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
 
         long startTime = System.currentTimeMillis();
         // for frequent 1 itemset, there is no confidence, so we should calculate it separately
@@ -61,6 +76,7 @@ public class Apriori {
         long endTime = System.currentTimeMillis();
         System.out.println("运行时间:" + (endTime - startTime) + "ms");
 
+        System.out.println("Total " + num + " association rules are found");
     }
 
     /**
@@ -68,6 +84,8 @@ public class Apriori {
      * 输出满足条件的频繁集
      */
     private static void printConfItemset(List<List<String>> confItemset2) {
+        num += confItemset2.size();
+
         System.out.print("*********频繁模式挖掘结果***********\n");
         for (int i = 0; i < confItemset2.size(); i++) {
             int j = 0;
@@ -76,7 +94,7 @@ public class Apriori {
             System.out.print("-->");
             System.out.print(confItemset2.get(i).get(j++));
             System.out.print("支持度：" + confItemset2.get(i).get(j++));
-            System.out.print("自信度：" + confItemset2.get(i).get(j++) + "\n");
+            System.out.print("置信度：" + confItemset2.get(i).get(j++) + "\n");
         }
 
     }
@@ -182,7 +200,11 @@ public class Apriori {
         int k = 0;
         for (int i = 0; i < cItemset.size(); i++) {
             int count = countFrequent(cItemset.get(i));//统计记录数
-            if (count >= MIN_SUPPORT * (record.size() - 1)) {// count值大于支持度与记录数的乘积，即满足支持度要求
+
+//            if (count >= MIN_SUPPORT * (record.size() - 1)) {// count值大于支持度与记录数的乘积，即满足支持度要求
+
+            if (count >= MIN_SUPPORT_NUM) {
+
                 if (cItemset.get(0).size() == 1)
                     dCountMap.put(k++, count);
                 else

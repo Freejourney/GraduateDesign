@@ -57,4 +57,27 @@ public class Preprocessing {
         }
         return result;
     }
+
+    public List<List<String>> parseAproriData1(String path) {
+        List<List<String>> result = new ArrayList<>();
+        try {
+            FileReader fr = new FileReader(new File(path));
+            BufferedReader br = new BufferedReader(fr);
+            br.readLine();
+            String str;
+            while ((str = br.readLine())!= null) {
+                List<String> list = new ArrayList<>();
+                String[] elements = str.split(",");
+                Collections.addAll(list, elements);
+                result.add(list);
+            }
+            br.close();
+            fr.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }
