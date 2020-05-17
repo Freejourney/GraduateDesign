@@ -71,11 +71,11 @@ public class MALO {
                 List<Antlion> RE = Random_wald_around_antlion(EliteAntlion, current_iter);
 
                 // 对随机游走解进行排序，选取随机游走解中的最优解来更新新蚂蚁位置
-                RA = sortAntlions(RA);
-                RE = sortAntlions(RE);
+//                RA = sortAntlions(RA);
+//                RE = sortAntlions(RE);
 
                 List<Antlion> RM = Random_wald_around_antlion(mAnts.get(i), current_iter);
-                RM = sortAntlions(RM);
+//                RM = sortAntlions(RM);
 
                 if (RA.get(0).getFitness() > EliteAntlion.getFitness()) {
                     EliteAntlion = RA.get(0);
@@ -93,18 +93,18 @@ public class MALO {
                 Antlion RF = getRF(RA.get(0), RE.get(0), RM.get(0));
                 RF.updateFitness();
 
-                List<Antlion> RZZ = Random_wald_around_antlion(RF, current_iter);
-                RZZ = sortAntlions(RZZ);
+//                List<Antlion> RZZ = Random_wald_around_antlion(RF, current_iter);
+//                RZZ = sortAntlions(RZZ);
 
                 // 从三者中选取最佳作为新蚂蚁
                 List<Antlion> RZ = new ArrayList<>();
                 RZ.add(RF);
-                RZ.add(RZZ.get(0));
-                RZ.add(RA.get(0));
-                RZ.add(RE.get(0));
-                RZ.add(RM.get(0));
+//                RZ.add(RZZ.get(0));
+//                RZ.add(RA.get(0));
+//                RZ.add(RE.get(0));
+//                RZ.add(RM.get(0));
 
-                RZ = sortAntlions(RZ);
+//                RZ = sortAntlions(RZ);
 
                 mAnts.set(i, RZ.get(0));
             }
@@ -120,8 +120,8 @@ public class MALO {
                 mAnts.get(i).updateFitness();
                 // 混沌映射修复
                 if (mAnts.get(i).getFitness() == 0) {
-                    mAnts.set(i, sortAntlions(Random_wald_around_antlion(getNewAntlion_1(), i)).get(0));
-//                    mAnts.set(i, getNewAntlion());
+//                    mAnts.set(i, sortAntlions(Random_wald_around_antlion(getNewAntlion_1(), i)).get(0));
+                    mAnts.set(i, getNewAntlion());
                 }
 
                 mAnts.get(i).updateFitness();
@@ -171,9 +171,10 @@ public class MALO {
 
     private Antlion getNewAntlion() {
         Antlion antlion = AntsRegistory.get(new Random().nextInt(AntsRegistory.size()-1));
-        List<Antlion> nantlions = Random_wald_around_antlion(antlion, 1);
-        nantlions = sortAntlions(nantlions);
-        return nantlions.get(0);
+//        List<Antlion> nantlions = Random_wald_around_antlion(antlion, 1);
+//        nantlions = sortAntlions(nantlions);
+//        return nantlions.get(0);
+        return antlion;
     }
 
     private void addtoRegistory(Antlion eliteAntlion) {
@@ -271,9 +272,9 @@ public class MALO {
         }
 
         // 更新所有游走解的适应度值
-        for (int i = 0; i < this.iteration; i++) {
-            RWs.get(i).updateFitness();
-        }
+//        for (int i = 0; i < this.iteration; i++) {
+//            RWs.get(i).updateFitness();
+//        }
         return RWs;
     }
 

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d54bdade-ce35-46bf-a9a2-680313d90021" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/utils/Preprocessing.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/utils/Preprocessing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="233" column="17" lean-forward="false" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
+            <state relative-caret-position="221">
+              <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
               <folding>
                 <element signature="e#667#685#0" expanded="true" />
                 <element signature="e#760#778#0" expanded="true" />
@@ -70,17 +67,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+            <state relative-caret-position="243">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#347#361#0" expanded="true" />
-                <element signature="e#1207#1221#0" expanded="true" />
-                <element signature="e#1270#1278#0" expanded="true" />
-                <element signature="e#2144#2152#0" expanded="true" />
-                <element signature="e#2441#2455#0" expanded="true" />
+                <element signature="e#1206#1220#0" expanded="true" />
+                <element signature="e#1269#1277#0" expanded="true" />
+                <element signature="e#2143#2151#0" expanded="true" />
+                <element signature="e#2440#2454#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +86,8 @@
       <file leaf-file-name="MALO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2414">
-              <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/main/res/aproridata2.csv" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
       </list>
     </option>
@@ -480,7 +477,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Apriori">
     <configuration default="false" name="Apriori" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -851,9 +848,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Util" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Apriori" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Apriori" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Util" />
         <item index="3" class="java.lang.String" itemvalue="Application.SparkApriori" />
         <item index="4" class="java.lang.String" itemvalue="Application.TxtReader_s01data" />
       </list>
@@ -924,7 +921,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589434079823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implemented MALO-Apriori">
+      <created>1589725256532</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589725256532</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1002,7 +1006,8 @@
     <MESSAGE value="added elitism monitor strategy.&#10;&#10;this strategy should take care of pulished individuals(they have pretty large weight with 0 fitness), we couldn't directly update their fitness value and weight based on previous condition." />
     <MESSAGE value="the monitor strategy makes time consuming increase to two times" />
     <MESSAGE value="repaired bug with split signal(&quot; &quot; to &quot;\t&quot;);&#10;tested flatMap();" />
-    <option name="LAST_COMMIT_MESSAGE" value="repaired bug with split signal(&quot; &quot; to &quot;\t&quot;);&#10;tested flatMap();" />
+    <MESSAGE value="implemented MALO-Apriori" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented MALO-Apriori" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1454,29 +1459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="233" column="17" lean-forward="false" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
-          <folding>
-            <element signature="e#667#685#0" expanded="true" />
-            <element signature="e#760#778#0" expanded="true" />
-            <element signature="e#845#859#0" expanded="true" />
-            <element signature="e#1117#1125#0" expanded="true" />
-            <element signature="e#1195#1209#0" expanded="true" />
-            <element signature="e#4910#4918#0" expanded="true" />
-            <element signature="e#7008#7022#0" expanded="true" />
-            <element signature="e#8763#8777#0" expanded="true" />
-            <element signature="e#8882#8890#0" expanded="true" />
-            <element signature="e#9349#9357#0" expanded="true" />
-            <element signature="e#10673#10681#0" expanded="true" />
-            <element signature="e#11315#11329#0" expanded="true" />
-            <element signature="e#11378#11386#0" expanded="true" />
-            <element signature="e#12252#12260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1496,16 +1478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1516,16 +1488,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="243">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#347#361#0" expanded="true" />
-            <element signature="e#1207#1221#0" expanded="true" />
-            <element signature="e#1270#1278#0" expanded="true" />
-            <element signature="e#2144#2152#0" expanded="true" />
-            <element signature="e#2441#2455#0" expanded="true" />
+            <element signature="e#1206#1220#0" expanded="true" />
+            <element signature="e#1269#1277#0" expanded="true" />
+            <element signature="e#2143#2151#0" expanded="true" />
+            <element signature="e#2440#2454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <folding>
+            <element signature="e#667#685#0" expanded="true" />
+            <element signature="e#760#778#0" expanded="true" />
+            <element signature="e#845#859#0" expanded="true" />
+            <element signature="e#1117#1125#0" expanded="true" />
+            <element signature="e#1195#1209#0" expanded="true" />
+            <element signature="e#4910#4918#0" expanded="true" />
+            <element signature="e#7008#7022#0" expanded="true" />
+            <element signature="e#8763#8777#0" expanded="true" />
+            <element signature="e#8882#8890#0" expanded="true" />
+            <element signature="e#9349#9357#0" expanded="true" />
+            <element signature="e#10673#10681#0" expanded="true" />
+            <element signature="e#11315#11329#0" expanded="true" />
+            <element signature="e#11378#11386#0" expanded="true" />
+            <element signature="e#12252#12260#0" expanded="true" />
           </folding>
         </state>
       </provider>
