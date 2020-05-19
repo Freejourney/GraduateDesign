@@ -1,14 +1,17 @@
-package graduatedesign.MALOApriori;
+package graduatedesign.PMALOApriori;
 
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
-import org.codehaus.janino.Java;
+import org.apache.spark.api.java.function.Function;
+import org.apache.spark.api.java.function.PairFunction;
+import scala.Serializable;
+import scala.Tuple2;
 
 import java.util.*;
 
-import static graduatedesign.MALOApriori.Main.rules;
-
-public class MALO {
+public class MALO implements Serializable {
+    private static final long serialVersionUID = -1439845107436950623L;
     private int num;
     private int iteration;
     private double ub, lb;
@@ -19,20 +22,50 @@ public class MALO {
     private Antlion EliteAntlion;
 
 
+    private JavaSparkContext jsc;
 
-    MALO(int num, int iteration, int dimension, double ub, double lb) {
+    private JavaRDD<Antlion> RDDmAntlions;
+    private JavaRDD<Antlion> RDDmAnts;
+    private JavaRDD<Antlion> RDDAntsRegistory;
 
+    MALO(int num, int iteration, int dimension, double ub, double lb, JavaSparkContext jsc) {
+        this.jsc = jsc;
         this.dimension = dimension;
         this.ub = ub;
         this.lb = lb;
         this.num = num;
         this.iteration = iteration;
         for (int i = 0; i < num; i++) {
-            mAntlions.add(new Antlion(dimension, ub, lb));
-            mAnts.add(new Antlion(dimension, ub, lb));
+            mAntlions.add(new Antlion(dimension, ub, lb, i));
+            mAnts.add(new Antlion(dimension, ub, lb, i));
         }
         AntsRegistory.addAll(mAntlions);
         AntsRegistory.addAll(mAnts);
+    }
+
+    public void test() {
+        List<Rollette> RWS = new ArrayList<>();
+        for (int i = 0; i < this.num; i++) {
+//                int rolette_index = RouletteWheelSelection();
+            int rolette_index = new Random().nextInt(30);
+            if (rolette_index == -1)
+                rolette_index = 0;
+            RWS.add(new Rollette(rolette_index));
+        }
+
+        // convert rolette_indexes to RDD
+        JavaRDD<Rollette> RDDRWS = jsc.parallelize(RWS);
+
+//            RDDRWS.count();
+        // construct pair of rolette_indexes
+        JavaPairRDD<String, Integer> IndexToPositionRolette = RDDRWS.mapToPair(new PairFunction<Rollette, String, Integer>() {
+            @Override
+            public Tuple2<String, Integer> call(Rollette rollette) throws Exception {
+                return new Tuple2<>(String.valueOf(rollette.getIndex()), rollette.getIndex());
+            }
+        });
+
+        List<Tuple2<String, Integer>> collect = IndexToPositionRolette.collect();
     }
 
     public List<Antlion> sortAntlions(List<Antlion> antlions) {
@@ -59,61 +92,111 @@ public class MALO {
      * @return
      */
     public List<Double> searchSolution() {
+
+//        RDDmAntlions = jsc.parallelize(mAntlions);
+//        RDDmAnts = jsc.parallelize(mAnts);
+//        RDDAntsRegistory = jsc.parallelize(AntsRegistory);
+
+
         List<Double> ConvergenceData = new ArrayList<>();
-        mAntlions=sortAntlions(mAntlions);
+//        mAntlions=sortAntlions(mAntlions);
         EliteAntlion = mAntlions.get(0);
-//        TEliteAntlion = mAntlions.get(0);
+
         for (int current_iter = 0; current_iter < this.iteration-1; current_iter++) {
-//            EliteAntlion.UpdateFitness(current_iter);
+
+            /**
+             * Part 1 : rollete_indexes
+             */
+            // make rolette indexes
+            // TODO if fitness == 0, this method will be seriously affected
+            List<Rollette> RWS = new ArrayList<>();
             for (int i = 0; i < this.num; i++) {
-                int rolette_index = RouletteWheelSelection();
-                if (rolette_index == -1) {
+//                int rolette_index = RouletteWheelSelection();
+                int rolette_index = new Random().nextInt(30);
+                if (rolette_index == -1)
                     rolette_index = 0;
-                }
-
-                // 蚂蚁围绕轮盘选赌法选得的蚁狮游走
-                List<Antlion> RA = Random_wald_around_antlion(mAntlions.get(rolette_index), current_iter);
-                // 蚂蚁围绕精英蚁狮进行游走
-                List<Antlion> RE = Random_wald_around_antlion(EliteAntlion, current_iter);
-
-                // 对随机游走解进行排序，选取随机游走解中的最优解来更新新蚂蚁位置
-//                RA = sortAntlions(RA);
-//                RE = sortAntlions(RE);
-
-                List<Antlion> RM = Random_wald_around_antlion(mAnts.get(i), current_iter);
-//                RM = sortAntlions(RM);
-
-                if (RA.get(0).getFitness() > EliteAntlion.getFitness()) {
-                    EliteAntlion = RA.get(0);
-                    addtoRegistory(EliteAntlion);
-                }
-                if (RE.get(0).getFitness() > EliteAntlion.getFitness()) {
-                    EliteAntlion = RE.get(0);
-                    addtoRegistory(EliteAntlion);
-                }
-                if (RM.get(0).getFitness() > EliteAntlion.getFitness()) {
-                    EliteAntlion = RM.get(0);
-                    addtoRegistory(EliteAntlion);
-                }
-                // 三者位置平均为蚂蚁新位置
-                Antlion RF = getRF(RA.get(0), RE.get(0), RM.get(0));
-                RF.updateFitness();
-
-//                List<Antlion> RZZ = Random_wald_around_antlion(RF, current_iter);
-//                RZZ = sortAntlions(RZZ);
-
-                // 从三者中选取最佳作为新蚂蚁
-                List<Antlion> RZ = new ArrayList<>();
-                RZ.add(RF);
-//                RZ.add(RZZ.get(0));
-//                RZ.add(RA.get(0));
-//                RZ.add(RE.get(0));
-//                RZ.add(RM.get(0));
-
-//                RZ = sortAntlions(RZ);
-
-                mAnts.set(i, RZ.get(0));
+                RWS.add(new Rollette(rolette_index));
             }
+
+            // convert rolette_indexes to RDD
+            JavaRDD<Rollette> RDDRWS = jsc.parallelize(RWS);
+
+//            RDDRWS.count();
+            // construct pair of rolette_indexes
+            JavaPairRDD<String, Integer> IndexToPositionRolette = RDDRWS.mapToPair(new PairFunction<Rollette, String, Integer>() {
+                @Override
+                public Tuple2<String, Integer> call(Rollette rollette) throws Exception {
+                    return new Tuple2<>(String.valueOf(rollette.getIndex()), rollette.getIndex());
+                }
+            });
+
+            /**
+             * Part 2 : Pair of RDDmAntlions
+             */
+//            JavaPairRDD<String, Antlion> IndexTomAntlions = RDDmAntlions.mapToPair(new PairFunction<Antlion, String, Antlion>() {
+//                @Override
+//                public Tuple2<String, Antlion> call(Antlion antlion) throws Exception {
+//                    return new Tuple2<>(String.valueOf(antlion.getIndex()), antlion);
+//                }
+//            });
+//
+//            JavaPairRDD<String, Antlion> IndexTomAnts = RDDmAnts.mapToPair(new PairFunction<Antlion, String, Antlion>() {
+//                @Override
+//                public Tuple2<String, Antlion> call(Antlion antlion) throws Exception {
+//                    return new Tuple2<>(String.valueOf(antlion.getIndex()), antlion);
+//                }
+//            });
+//
+//            JavaPairRDD<String, Tuple2<Integer, Antlion>> Index_indexAntlion = IndexToPositionRolette.join(IndexTomAntlions);
+//            JavaPairRDD<String, Tuple2<Tuple2<Integer, Antlion>, Antlion>> IndexToPositionRolettemAnts = Index_indexAntlion.join(IndexTomAnts);
+//
+//            int finalCurrent_iter = current_iter;
+//            IndexToPositionRolettemAnts.map(new Function<Tuple2<String,Tuple2<Tuple2<Integer,Antlion>,Antlion>>, Antlion>() {
+//                @Override
+//                public Antlion call(Tuple2<String, Tuple2<Tuple2<Integer, Antlion>, Antlion>> index_indexAntlion_mAnt) throws Exception {
+//                    Antlion RA = Random_wald_around_antlion(index_indexAntlion_mAnt._2()._1()._2(), finalCurrent_iter);
+//
+//                    Antlion RE = Random_wald_around_antlion(EliteAntlion, finalCurrent_iter);
+//
+//                    Antlion RM = Random_wald_around_antlion(index_indexAntlion_mAnt._2()._2(), finalCurrent_iter);
+//
+//                    if (RA.getFitness() > EliteAntlion.getFitness()) {
+//                        EliteAntlion = RA;
+//                        addtoRegistory(EliteAntlion);
+//                    }
+//                    if (RE.getFitness() > EliteAntlion.getFitness()) {
+//                        EliteAntlion = RE;
+//                        addtoRegistory(EliteAntlion);
+//                    }
+//                    if (RM.getFitness() > EliteAntlion.getFitness()) {
+//                        EliteAntlion = RM;
+//                        addtoRegistory(EliteAntlion);
+//                    }
+//
+//                    Antlion RF = getRF(RA, RE, RM);
+//                    RF.updateFitness();
+//
+//                    Antlion RZZ = Random_wald_around_antlion(RF, finalCurrent_iter);
+//
+//                    // TODO Sort of Random_wald_around_antlion
+//
+//                    // 从三者中选取最佳作为新蚂蚁
+//                    List<Antlion> RZ = new ArrayList<>();
+//                    RZ.add(RF);
+//                    RZ.add(RZZ);
+//                    RZ.add(RA);
+//                    RZ.add(RE);
+//                    RZ.add(RM);
+//                    RZ = sortAntlions(RZ);
+//                    ReplacemAntsI(index_indexAntlion_mAnt._2()._2(), RZ.get(0));
+//                    return null;
+//                }
+//            });
+
+
+
+
+
             // 新的范围始终得在基本边界范围内
             for (int i = 0; i < this.num; i++) {
                 for (int j = 0; j < EliteAntlion.getPosition().size(); j++) {
@@ -150,10 +233,17 @@ public class MALO {
             //
             mAntlions.set(0, EliteAntlion);
             ConvergenceData.add(EliteAntlion.getFitness());
-            System.out.println(rules.size()+ "   " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
+//            System.out.println(rules.size()+ "   " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
         }
         System.out.println(ConvergenceData.toString());
         return ConvergenceData;
+    }
+
+    private void ReplacemAntsI(Antlion antlion, Antlion antlion1) {
+        for (int i = 0; i < antlion.getDimension(); i++) {
+            antlion.setPosition(i, antlion1.getPosition().get(i));
+            antlion.setFitness(antlion1.getFitness());
+        }
     }
 
     /**
@@ -211,7 +301,7 @@ public class MALO {
      * @param current_iter
      * @return
      */
-    private List<Antlion> Random_wald_around_antlion(Antlion antlion, int current_iter) {
+    private Antlion Random_wald_around_antlion(Antlion antlion, int current_iter) {
         List<Double> ub = new ArrayList<>();
         List<Double> lb = new ArrayList<>();
         for (int i = 0; i < antlion.getPosition().size(); i++) {
@@ -281,7 +371,7 @@ public class MALO {
 //        for (int i = 0; i < this.iteration; i++) {
 //            RWs.get(i).updateFitness();
 //        }
-        return RWs;
+        return RWs.get(current_iter);
     }
 
     private int RouletteWheelSelection() {
@@ -289,7 +379,7 @@ public class MALO {
         double temp = 0;
         for (int i = 0; i < this.num; i++) {
             temp += Math.abs(1/mAntlions.get(i).getFitness());
-            accumulation .add(temp);
+            accumulation.add(temp);
         }
 
         double randp = new Random().nextDouble()*accumulation.get(accumulation.size()-1);

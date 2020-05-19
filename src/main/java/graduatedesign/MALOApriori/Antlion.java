@@ -67,7 +67,7 @@ public class Antlion {
         int num = countFrequent(list);
 
         if (list.size() == 0 || num < 1000)
-            fitness = 0;
+            fitness = 0.0001;
         else {
             fitness = num * 1.0 / record.size();
             if (!rules.containsKey(String.join(",", list))) {

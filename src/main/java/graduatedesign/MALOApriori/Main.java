@@ -22,11 +22,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_8.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
-        MALO alo = new MALO(2000, 10, oneitemset.size(), 1, -1);
+        MALO alo = new MALO(20, 100, oneitemset.size(), 1, -1);
 
         long startTime = System.currentTimeMillis();
         alo.searchSolution();

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d54bdade-ce35-46bf-a9a2-680313d90021" name="Default" comment="">
+    <list default="true" id="d54bdade-ce35-46bf-a9a2-680313d90021" name="Default" comment="implemented half of Spark-MALO-Apriori;&#10;added log4j.properties to show log of pragram;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,7 +30,7 @@
     <SUITE FILE_PATH="coverage/GraduateDesign$App.coverage" NAME="App Coverage Results" MODIFIED="1588769829657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>graduatedesign.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/GraduateDesign$SparkDemo.coverage" NAME="SparkDemo Coverage Results" MODIFIED="1589433506182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/GraduateDesign$SparkDemo.coverage" NAME="SparkDemo Coverage Results" MODIFIED="1589796726841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>graduatedesign.PMALOApriori.*</FILTER>
     </SUITE>
   </component>
@@ -32,62 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Preprocessing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/utils/Preprocessing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-              <folding>
-                <element signature="e#667#685#0" expanded="true" />
-                <element signature="e#760#778#0" expanded="true" />
-                <element signature="e#845#859#0" expanded="true" />
-                <element signature="e#1117#1125#0" expanded="true" />
-                <element signature="e#1195#1209#0" expanded="true" />
-                <element signature="e#4910#4918#0" expanded="true" />
-                <element signature="e#7008#7022#0" expanded="true" />
-                <element signature="e#8763#8777#0" expanded="true" />
-                <element signature="e#8882#8890#0" expanded="true" />
-                <element signature="e#9349#9357#0" expanded="true" />
-                <element signature="e#10673#10681#0" expanded="true" />
-                <element signature="e#11315#11329#0" expanded="true" />
-                <element signature="e#11378#11386#0" expanded="true" />
-                <element signature="e#12252#12260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#347#361#0" expanded="true" />
-                <element signature="e#1206#1220#0" expanded="true" />
-                <element signature="e#1269#1277#0" expanded="true" />
-                <element signature="e#2143#2151#0" expanded="true" />
-                <element signature="e#2440#2454#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MALO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="3876">
+              <caret line="236" column="9" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,8 +52,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSetA.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSetA.csv">
+      <file leaf-file-name="SparkTester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rollette.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -106,13 +85,71 @@
         </entry>
       </file>
       <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+            <state relative-caret-position="1360">
+              <caret line="97" column="23" lean-forward="false" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#3123#3124#0" expanded="true" />
+                <element signature="e#3161#3162#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkApriori.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkApriori.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4641">
+              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MALO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,6 +181,7 @@
       <find>support</find>
       <find>支持度</find>
       <find>fitness</find>
+      <find>: graduatedesign</find>
     </findStrings>
     <replaceStrings>
       <replace>Apriori</replace>
@@ -179,7 +217,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/res/SparkSimple.txt" />
         <option value="$PROJECT_DIR$/target/classes/SparkSimple.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
         <option value="$PROJECT_DIR$/src/main/res/small-01data.txt" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALO/Main.java" />
         <option value="$PROJECT_DIR$/src/main/res/studentperformance.csv" />
@@ -192,9 +229,14 @@
         <option value="$PROJECT_DIR$/src/main/res/aproridata2.csv" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
       </list>
     </option>
   </component>
@@ -203,6 +245,367 @@
     <option name="y" value="31" />
     <option name="width" value="1926" />
     <option name="height" value="1003" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Accessibility</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Typography</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Annotations verifyingGroovy</id>
+          </State>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Class metricsJava</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CollectionsScala</id>
+          </State>
+          <State>
+            <id>ComparingCollectionsScala</id>
+          </State>
+          <State>
+            <id>Compiler issuesJava</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>Control FlowGroovy</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Data flow issuesGroovy</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Declaration redundancyGroovy</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Error handlingGroovy</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Finalization issuesJava</id>
+          </State>
+          <State>
+            <id>GPath inspectionsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>GeneralScala</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HOCON</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>IndicesCollectionsScala</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaBeans issuesJava</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Logging issuesJava</id>
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>MapsCollectionsScala</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Memory issuesJava</id>
+          </State>
+          <State>
+            <id>Method MetricsGroovy</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Method signatureScala</id>
+          </State>
+          <State>
+            <id>Modularization issuesJava</id>
+          </State>
+          <State>
+            <id>Naming ConventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>OptionsCollectionsScala</id>
+          </State>
+          <State>
+            <id>OtherCollectionsScala</id>
+          </State>
+          <State>
+            <id>OtherGroovy</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+          <State>
+            <id>ScaladocScala</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>Simplifications: filter and existsCollectionsScala</id>
+          </State>
+          <State>
+            <id>Simplifications: otherCollectionsScala</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>Syntactic ClarificationScala</id>
+          </State>
+          <State>
+            <id>Syntactic SimplificationScala</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>UI Form Problems</id>
+          </State>
+          <State>
+            <id>Validity issuesGroovy</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SerializableHasSerialVersionUIDField</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -219,7 +622,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -448,20 +851,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="graduatedesign.MALO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori" />
       <recent name="$PROJECT_DIR$/src/main/res" />
+      <recent name="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori" />
       <recent name="$PROJECT_DIR$/target/classes" />
     </key>
   </component>
@@ -477,7 +880,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Apriori">
+  <component name="RunManager" selected="Application.SparkDemo">
     <configuration default="false" name="Apriori" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -486,46 +889,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="graduatedesign.Apriori" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="GraduateDesign" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SparkApriori" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="graduatedesign.PMALOApriori.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="graduatedesign.PMALOApriori.SparkApriori" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="GraduateDesign" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TxtReader_s01data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="graduatedesign.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="graduatedesign.utils.TxtReader_s01data" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -566,6 +929,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="graduatedesign.MALOApriori.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GraduateDesign" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SparkDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="graduatedesign.PMALOApriori.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="graduatedesign.PMALOApriori.SparkDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GraduateDesign" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SparkTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="graduatedesign.PMALOApriori.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="graduatedesign.PMALOApriori.SparkTester" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -841,18 +1244,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Apriori" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SparkApriori" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TxtReader_s01data" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Util" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Util" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SparkDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SparkTester" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Apriori" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Util" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SparkApriori" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TxtReader_s01data" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SparkDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SparkTester" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Apriori" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Util" />
       </list>
     </recent_temporary>
   </component>
@@ -928,7 +1331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589725256532</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adjusted strategy of MALO to cut its finding optimizor ability to find more rules">
+      <created>1589726800327</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589726800327</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -937,20 +1347,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3087886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3087886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3253205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33653846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -961,7 +1369,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1007,7 +1417,10 @@
     <MESSAGE value="the monitor strategy makes time consuming increase to two times" />
     <MESSAGE value="repaired bug with split signal(&quot; &quot; to &quot;\t&quot;);&#10;tested flatMap();" />
     <MESSAGE value="implemented MALO-Apriori" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented MALO-Apriori" />
+    <MESSAGE value="adjusted strategy of MALO to cut its finding optimizor ability to find more rules" />
+    <MESSAGE value="implemented half of Spark-MALO-Apriori" />
+    <MESSAGE value="implemented half of Spark-MALO-Apriori;&#10;added log4j.properties to show log of pragram;" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented half of Spark-MALO-Apriori;&#10;added log4j.properties to show log of pragram;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1102,36 +1515,6 @@
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/MALO/Main.java</url>
           <line>29</line>
           <properties />
@@ -1151,7 +1534,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java</url>
-          <line>146</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
@@ -1161,8 +1544,38 @@
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java</url>
+          <line>156</line>
+          <properties />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java</url>
+          <line>200</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="94" />
+      <option name="time" value="116" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1171,41 +1584,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/FPGrowth/Preprocessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/FPGrowth/ItemsetComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/FPGrowth/FPTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="38" lean-forward="false" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/FPGrowth/FPNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/FPGrowth/DefaultPreprocessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/FPGrowth/FPGrowth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1349,16 +1727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/utils/TxtReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1406,14 +1774,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/sparkstudentperformance.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkApriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/aproridata1.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/res/data.dsv">
       <provider selected="true" editor-type-id="text-editor">
@@ -1447,7 +1807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1455,82 +1814,117 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Util.java" />
     <entry file="jar:///usr/jdk64/jdk1.8.0_112/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="false" />
-            <element signature="e#10148#10149#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="918">
+          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkApriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="4641">
+          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="97" column="23" lean-forward="false" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
           <folding>
-            <element signature="e#347#361#0" expanded="true" />
-            <element signature="e#1206#1220#0" expanded="true" />
-            <element signature="e#1269#1277#0" expanded="true" />
-            <element signature="e#2143#2151#0" expanded="true" />
-            <element signature="e#2440#2454#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#3123#3124#0" expanded="true" />
+            <element signature="e#3161#3162#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3876">
+          <caret line="236" column="9" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
           <folding>
-            <element signature="e#667#685#0" expanded="true" />
-            <element signature="e#760#778#0" expanded="true" />
-            <element signature="e#845#859#0" expanded="true" />
-            <element signature="e#1117#1125#0" expanded="true" />
-            <element signature="e#1195#1209#0" expanded="true" />
-            <element signature="e#4910#4918#0" expanded="true" />
-            <element signature="e#7008#7022#0" expanded="true" />
-            <element signature="e#8763#8777#0" expanded="true" />
-            <element signature="e#8882#8890#0" expanded="true" />
-            <element signature="e#9349#9357#0" expanded="true" />
-            <element signature="e#10673#10681#0" expanded="true" />
-            <element signature="e#11315#11329#0" expanded="true" />
-            <element signature="e#11378#11386#0" expanded="true" />
-            <element signature="e#12252#12260#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
