@@ -1,5 +1,6 @@
 package graduatedesign.PMALOApriori;
 
+import graduatedesign.utils.Preprocessing;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -19,21 +20,21 @@ public class SparkDemo implements Serializable {
     private static final long serialVersionUID = 6186486072130711718L;
 
 
-//    public static List<List<String>> record = new ArrayList<List<String>>();
-//    public static List<List<String>> oneitemset = new ArrayList<>();
-//
-//    public static HashMap<String, Double> rules = new HashMap<>();
-//
-//    private static int MIN_SUPPORT_NUM = 1000;
+    public static List<List<String>> record = new ArrayList<List<String>>();
+    public static List<List<String>> oneitemset = new ArrayList<>();
+
+    public static HashMap<String, Double> rules = new HashMap<>();
+
+    private static int MIN_SUPPORT_NUM = 1000;
 
     public static JavaSparkContext jsc;
 
 
     public static void main(String[] args) {
 
-//        record = new Preprocessing().parseAproriData1("DataSetA.csv");
-//        List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
-//        oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
+        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+        List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
+        oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
         SparkConf sparkConf = new SparkConf()
                 .setMaster("local[*]")
@@ -49,84 +50,86 @@ public class SparkDemo implements Serializable {
 
         JavaRDD<String> data = jsc.textFile(datapath);
 
-        int num = 30;
+        int num = 3000;
         int dimension = 5;
         int iteration = 100;
         int ub = 1;
         int lb = -1;
 
-        MALO malo = new MALO(num, iteration, dimension, ub, lb);
+        MALO malo = new MALO(num, iteration, oneitemset.size(), ub, lb);
         List<Double> doubles = malo.searchSolution();
 
         for (Double doub : doubles)
             System.out.println("results ---- " + doub);
+
+        System.out.println("rules : " + rules.size());
     }
 
-//    private static List<List<String>> findFirstCandidate() {
-//        List<List<String>> tableList = new ArrayList<List<String>>();
-//        List<String> lineList = new ArrayList<String>();
-//
-//        int size = 0;
-//        for (int i = 1; i < record.size(); i++) {
-//            for (int j = 1; j < record.get(i).size(); j++) {
-//                if (lineList.isEmpty()) {
-//                    lineList.add(record.get(i).get(j));
-//                } else {
-//                    boolean haveThisItem = false;
-//                    size = lineList.size();
-//                    for (int k = 0; k < size; k++) {
-//                        if (lineList.get(k).equals(record.get(i).get(j))) {
-//                            haveThisItem = true;
-//                            break;
-//                        }
-//                    }
-//                    if (haveThisItem == false)
-//                        lineList.add(record.get(i).get(j));
-//                }
-//            }
-//        }
-//        for (int i = 0; i < lineList.size(); i++) {
-//            List<String> helpList = new ArrayList<String>();
-//            helpList.add(lineList.get(i));
-//            tableList.add(helpList);
-//        }
-//        return tableList;
-//    }
-//
-//    private static List<List<String>> getSupportedItemset(
-//            List<List<String>> cItemset) {
-//
-//        List<List<String>> supportedItemset = new ArrayList<List<String>>();
-//        for (int i = 0; i < cItemset.size(); i++) {
-//            int count = countFrequent(cItemset.get(i));//统计记录数
-//
-//            if (count >= MIN_SUPPORT_NUM) {
-//                supportedItemset.add(cItemset.get(i));
-//            }
-//        }
-//        return supportedItemset;
-//    }
-//
-//    private static int countFrequent(List<String> list) {
-//        int count = 0;
-//        for (int i = 1; i < record.size(); i++) {
-//            boolean notHavaThisList = false;
-//            for (int k = 0; k < list.size(); k++) {
-//                boolean thisRecordHave = false;
-//                for (int j = 1; j < record.get(i).size(); j++) {
-//                    if (list.get(k).equals(record.get(i).get(j)))
-//                        thisRecordHave = true;
-//                }
-//                if (!thisRecordHave) {// 扫描一遍记录表的一行，发现list.get(i)不在记录表的第j行中，即list不可能在j行中
-//                    notHavaThisList = true;
-//                    break;
-//                }
-//            }
-//            if (notHavaThisList == false)
-//                count++;
-//        }
-//        return count;
-//    }
+    private static List<List<String>> findFirstCandidate() {
+        List<List<String>> tableList = new ArrayList<List<String>>();
+        List<String> lineList = new ArrayList<String>();
+
+        int size = 0;
+        for (int i = 1; i < record.size(); i++) {
+            for (int j = 1; j < record.get(i).size(); j++) {
+                if (lineList.isEmpty()) {
+                    lineList.add(record.get(i).get(j));
+                } else {
+                    boolean haveThisItem = false;
+                    size = lineList.size();
+                    for (int k = 0; k < size; k++) {
+                        if (lineList.get(k).equals(record.get(i).get(j))) {
+                            haveThisItem = true;
+                            break;
+                        }
+                    }
+                    if (haveThisItem == false)
+                        lineList.add(record.get(i).get(j));
+                }
+            }
+        }
+        for (int i = 0; i < lineList.size(); i++) {
+            List<String> helpList = new ArrayList<String>();
+            helpList.add(lineList.get(i));
+            tableList.add(helpList);
+        }
+        return tableList;
+    }
+
+    private static List<List<String>> getSupportedItemset(
+            List<List<String>> cItemset) {
+
+        List<List<String>> supportedItemset = new ArrayList<List<String>>();
+        for (int i = 0; i < cItemset.size(); i++) {
+            int count = countFrequent(cItemset.get(i));//统计记录数
+
+            if (count >= MIN_SUPPORT_NUM) {
+                supportedItemset.add(cItemset.get(i));
+            }
+        }
+        return supportedItemset;
+    }
+
+    private static int countFrequent(List<String> list) {
+        int count = 0;
+        for (int i = 1; i < record.size(); i++) {
+            boolean notHavaThisList = false;
+            for (int k = 0; k < list.size(); k++) {
+                boolean thisRecordHave = false;
+                for (int j = 1; j < record.get(i).size(); j++) {
+                    if (list.get(k).equals(record.get(i).get(j)))
+                        thisRecordHave = true;
+                }
+                if (!thisRecordHave) {// 扫描一遍记录表的一行，发现list.get(i)不在记录表的第j行中，即list不可能在j行中
+                    notHavaThisList = true;
+                    break;
+                }
+            }
+            if (notHavaThisList == false)
+                count++;
+        }
+        return count;
+    }
 
     public static class MALO implements scala.Serializable {
         private static final long serialVersionUID = -1439845107436950623L;
@@ -194,7 +197,7 @@ public class SparkDemo implements Serializable {
             for (int current_iter = 0; current_iter < this.iteration-1; current_iter++) {
 
                 /**
-                 * Part 1 : rollete_indexes
+                 * Part 1 : rollete_indexes4.1.1 并行计算频繁项集
                  */
                 // make rolette indexes
                 // TODO if fitness == 0, this method will be seriously affected
@@ -322,16 +325,25 @@ public class SparkDemo implements Serializable {
                 });
 
                 JavaPairRDD<Double, Antlion> sortedFitness_Antlions = fitness_antlions.sortByKey();
-                List<Tuple2<Double, Antlion>> nextMAntlions = sortedFitness_Antlions.take(this.num);
+                JavaRDD<Antlion> sorted_Antlions = sortedFitness_Antlions.map(new Function<Tuple2<Double, Antlion>, Antlion>() {
+                    @Override
+                    public Antlion call(Tuple2<Double, Antlion> doubleAntlionTuple2) throws Exception {
+                        return doubleAntlionTuple2._2();
+                    }
+                });
+                List<Antlion> nextAntlions = sorted_Antlions.take(this.num);
 
-                if (nextMAntlions.get(0)._1() > EliteAntlion.getFitness()) {
-                    EliteAntlion = nextMAntlions.get(0)._2();
+                RDDmAntlions = jsc.parallelize(nextAntlions);
+
+                if (nextAntlions.get(0).getFitness() > EliteAntlion.getFitness()) {
+                    EliteAntlion = nextAntlions.get(0);
                     addtoRegistory(EliteAntlion);
                 }
 
 
                 ConvergenceData.add(EliteAntlion.getFitness());
-                System.out.println(current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
+                System.out.println(rules.size()+ "   " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
+//                System.out.println("EliteAntlion : " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
 //                System.out.println(rules.size()+ "   " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
             }
             System.out.println(ConvergenceData.toString());

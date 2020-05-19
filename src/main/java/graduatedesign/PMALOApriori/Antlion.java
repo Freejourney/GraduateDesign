@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static graduatedesign.PMALOApriori.SparkDemo.oneitemset;
+import static graduatedesign.PMALOApriori.SparkDemo.rules;
+import static graduatedesign.PMALOApriori.SparkDemo.record;
+
 
 public class Antlion implements Serializable {
 
@@ -53,23 +57,23 @@ public class Antlion implements Serializable {
     }
 
     public void updateFitness() {
-//        List<String> list = new ArrayList<>();
-//        for (int i = 0; i < position.size(); i++) {
-//            if (position.get(i) > 0) {
-//                list.add(oneitemset.get(i).get(0));
-//            }
-//        }
-//
-//        int num = countFrequent(list);
-//
-//        if (list.size() == 0 || num < 1000)
-//            fitness = 0.001;
-//        else {
-//            fitness = num * 1000.0 / record.size();
-//            if (!rules.containsKey(String.join(",", list))) {
-//                rules.put(String.join(",", list), fitness);
-//            }
-//        }
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < position.size(); i++) {
+            if (position.get(i) > 0) {
+                list.add(oneitemset.get(i).get(0));
+            }
+        }
+
+        int num = countFrequent(list);
+
+        if (list.size() == 0 || num < 1000)
+            fitness = 0.001;
+        else {
+            fitness = num * 1.0 / record.size();
+            if (!rules.containsKey(String.join(",", list))) {
+                rules.put(String.join(",", list), fitness);
+            }
+        }
     }
 
 
@@ -77,39 +81,39 @@ public class Antlion implements Serializable {
         position.set(i, value);
     }
 
-//    private static int countFrequent(List<String> list) {
-//        int count = 0;
-//        for (int i = 1; i < record.size(); i++) {
-//            boolean notHavaThisList = false;
-//            for (int k = 0; k < list.size(); k++) {
-//                boolean thisRecordHave = false;
-//                for (int j = 1; j < record.get(i).size(); j++) {
-//                    if (list.get(k).equals(record.get(i).get(j)))
-//                        thisRecordHave = true;
-//                }
-//                if (!thisRecordHave) {// 扫描一遍记录表的一行，发现list.get(i)不在记录表的第j行中，即list不可能在j行中
-//                    notHavaThisList = true;
-//                    break;
-//                }
-//            }
-//            if (notHavaThisList == false)
-//                count++;
-//        }
-//        return count;
-//    }
+    private static int countFrequent(List<String> list) {
+        int count = 0;
+        for (int i = 1; i < record.size(); i++) {
+            boolean notHavaThisList = false;
+            for (int k = 0; k < list.size(); k++) {
+                boolean thisRecordHave = false;
+                for (int j = 1; j < record.get(i).size(); j++) {
+                    if (list.get(k).equals(record.get(i).get(j)))
+                        thisRecordHave = true;
+                }
+                if (!thisRecordHave) {// 扫描一遍记录表的一行，发现list.get(i)不在记录表的第j行中，即list不可能在j行中
+                    notHavaThisList = true;
+                    break;
+                }
+            }
+            if (notHavaThisList == false)
+                count++;
+        }
+        return count;
+    }
 
-//    @Override
-//    public String toString() {
-//        String result = "";
-//
-//        for (int i = 0; i < position.size(); i++) {
-//            if (position.get(i) > 0) {
-//                result += oneitemset.get(i).get(0)+" ";
-//            }
-//        }
-//
-//        return result;
-//    }
+    @Override
+    public String toString() {
+        String result = "";
+
+        for (int i = 0; i < position.size(); i++) {
+            if (position.get(i) > 0) {
+                result += oneitemset.get(i).get(0)+" ";
+            }
+        }
+
+        return result;
+    }
 
     public void setFitness(double fitness) {
         this.fitness = fitness;

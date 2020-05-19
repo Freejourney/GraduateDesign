@@ -10,6 +10,8 @@ import scala.Tuple2;
 
 import java.util.*;
 
+import static graduatedesign.PMALOApriori.SparkDemo.rules;
+
 public class MALO implements Serializable {
     private static final long serialVersionUID = -1439845107436950623L;
     private int num;
@@ -234,6 +236,7 @@ public class MALO implements Serializable {
             mAntlions.set(0, EliteAntlion);
             ConvergenceData.add(EliteAntlion.getFitness());
 //            System.out.println(rules.size()+ "   " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
+            System.out.println("rules : " + rules.size()+ "   " + current_iter + " : " + EliteAntlion.getFitness() + " : " + EliteAntlion.toString());
         }
         System.out.println(ConvergenceData.toString());
         return ConvergenceData;
