@@ -51,7 +51,7 @@ public class Apriori {
 //        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
 //        record = new Preprocessing().parseAproriData1(Preprocessing.class.getClassLoader().getResource("aproridata1.csv").getPath());
 
-        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_4.csv");
 //        record = new Preprocessing().parseAproriData1("DataSetA_32.csv");
 //        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
 
