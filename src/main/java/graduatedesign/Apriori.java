@@ -1,15 +1,13 @@
 package graduatedesign;
 
+import graduatedesign.PMALOApriori.*;
 import graduatedesign.utils.Preprocessing;
 import graduatedesign.utils.TxtReader;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
-   /**
+/**
  * @author 彭际群
  * 本程序用于频繁集的挖掘
  * 首先用List<List<String>>类型的record将矩阵形式的数据读入内存；
@@ -40,6 +38,8 @@ public class Apriori {
     static List<Double> confCount = new ArrayList<Double>();// 置信度记录表
     static List<List<String>> confItemset = new ArrayList<List<String>>();// 满足支持度的集合
 
+       public static List<Rule> mRules = new ArrayList<>();
+
        static int num = 0;
     /**
      * @param args
@@ -51,7 +51,7 @@ public class Apriori {
 //        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
 //        record = new Preprocessing().parseAproriData1(Preprocessing.class.getClassLoader().getResource("aproridata1.csv").getPath());
 
-        record = new Preprocessing().parseAproriData1("DataSetA_4.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA.csv");
 //        record = new Preprocessing().parseAproriData1("DataSetA_32.csv");
 //        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
 
@@ -59,6 +59,12 @@ public class Apriori {
         // for frequent 1 itemset, there is no confidence, so we should calculate it separately
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         List<List<String>> lItemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
+
+        for (int i = 0; i < lItemset.size(); i++) {
+            int num = countFrequent(lItemset.get(i));
+            mRules.add(new Rule(lItemset.get(i).get(0), num*1.0/record.size()));
+        }
+        num += lItemset.size();
 
         while (endTag != true) {// 只要能继续挖掘
             List<List<String>> ckItemset = getNextCandidate(lItemset);// 获取第下一次的备选集
@@ -77,6 +83,27 @@ public class Apriori {
         System.out.println("运行时间:" + (endTime - startTime) + "ms");
 
         System.out.println("Total " + num + " association rules are found");
+
+        rulesAnalysisi();
+    }
+
+    private static void rulesAnalysisi() {
+        Collections.sort(mRules, new Comparator<Rule>() {
+            @Override
+            public int compare(Rule o1, Rule o2) {
+                if (o1.getSupport() > o2.getSupport())
+                    return 1;
+                else
+                    return -1;
+            }
+        });
+
+        System.out.println("min support : "  + mRules.get(0).getRule() + " -- " + mRules.get(0).getSupport());
+        System.out.println("min 1/4 support : "  + mRules.get(mRules.size()/4-1).getRule() + " -- " + mRules.get(mRules.size()/4-1).getSupport());
+        System.out.println("middle support : "  + mRules.get(mRules.size()/2-1).getRule() + " -- " + mRules.get(mRules.size()/2).getSupport());
+        System.out.println("max 1/4 support : "  + mRules.get(mRules.size()*3/4-1).getRule() + " -- " + mRules.get(mRules.size()*3/4-1).getSupport());
+        System.out.println("max support : "  + mRules.get(mRules.size()-1).getRule() + " -- " + mRules.get(mRules.size()-1).getSupport());
+
     }
 
     /**
@@ -89,10 +116,17 @@ public class Apriori {
         System.out.print("*********频繁模式挖掘结果***********\n");
         for (int i = 0; i < confItemset2.size(); i++) {
             int j = 0;
-            for (j = 0; j < confItemset2.get(i).size() - 3; j++)
+            String tmp = "";
+            for (j = 0; j < confItemset2.get(i).size() - 3; j++) {
                 System.out.print(confItemset2.get(i).get(j) + " ");
+                tmp += confItemset2.get(i).get(j) + " ";
+            }
+            tmp += confItemset2.get(i).get(j);
+
             System.out.print("-->");
             System.out.print(confItemset2.get(i).get(j++));
+
+            mRules.add(new Rule(tmp, Double.valueOf(confItemset2.get(i).get(j))));
             System.out.print("支持度：" + confItemset2.get(i).get(j++));
             System.out.print("置信度：" + confItemset2.get(i).get(j++) + "\n");
         }

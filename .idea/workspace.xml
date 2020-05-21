@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d54bdade-ce35-46bf-a9a2-680313d90021" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/Rule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/log4j.properties" afterPath="$PROJECT_DIR$/src/main/res/log4j.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkTester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java">
+      <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="935">
+              <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,45 +60,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rollette.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java">
+      <file leaf-file-name="SparkDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="35" column="73" lean-forward="true" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSetA_16.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataSetA_16.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1703519">
+              <caret line="100207" column="21" lean-forward="false" selection-start-line="100207" selection-start-column="21" selection-end-line="100207" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
+      <file leaf-file-name="Rule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5304">
-              <caret line="322" column="50" lean-forward="false" selection-start-line="322" selection-start-column="50" selection-end-line="322" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,38 +105,38 @@
       <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="629">
               <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MALO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="112" column="40" lean-forward="true" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+            <state relative-caret-position="1326">
+              <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkApriori.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkApriori.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4641">
+              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Rule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,12 +166,14 @@
       <find>reader</find>
       <find>time</find>
       <find>bachelor's degree</find>
-      <find>support</find>
       <find>支持度</find>
       <find>fitness</find>
       <find>: graduatedesign</find>
       <find>EliteAntlion</find>
       <find>rules</find>
+      <find>results</find>
+      <find>support</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>Apriori</replace>
@@ -221,10 +226,13 @@
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/Tester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/Rule.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" />
+        <option value="$PROJECT_DIR$/src/main/res/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
       </list>
     </option>
   </component>
@@ -610,7 +618,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -839,8 +846,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -848,6 +856,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="graduatedesign" />
       <recent name="graduatedesign.MALO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -868,7 +877,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Apriori">
+  <component name="RunManager" selected="Application.SparkDemo">
     <configuration default="false" name="Apriori" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1239,9 +1248,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Apriori" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Tester" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SparkDemo" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SparkDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Apriori" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tester" />
         <item index="3" class="java.lang.String" itemvalue="Application.SparkTester" />
         <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
@@ -1349,12 +1358,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3087886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37885985" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34935898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2361111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1575,8 +1584,20 @@
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="118" />
+      <option name="time" value="120" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1585,28 +1606,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/jdk64/jdk1.8.0_112/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6647">
-          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/jdk64/jdk1.8.0_112/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="239" column="6" lean-forward="false" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/ALO/ALO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/ALO/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1647,7 +1646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1819,36 +1817,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkApriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4641">
-          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rollette.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1857,8 +1853,16 @@
         <state relative-caret-position="476">
           <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1872,53 +1876,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5304">
-          <caret line="322" column="50" lean-forward="false" selection-start-line="322" selection-start-column="50" selection-end-line="322" selection-end-column="50" />
+        <state relative-caret-position="1326">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSetA_16.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1703519">
+          <caret line="100207" column="21" lean-forward="false" selection-start-line="100207" selection-start-column="21" selection-end-line="100207" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkApriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        <state relative-caret-position="4641">
+          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="629">
           <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="112" column="40" lean-forward="true" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
+          <caret line="35" column="73" lean-forward="true" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

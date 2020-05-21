@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static graduatedesign.PMALOApriori.SparkDemo.oneitemset;
-import static graduatedesign.PMALOApriori.SparkDemo.rules;
-import static graduatedesign.PMALOApriori.SparkDemo.record;
+import static graduatedesign.PMALOApriori.SparkDemo.*;
 
 
 public class Antlion implements Serializable {
@@ -72,6 +70,7 @@ public class Antlion implements Serializable {
             fitness = num * 1.0 / record.size();
             if (!rules.containsKey(String.join(",", list))) {
                 rules.put(String.join(",", list), fitness);
+                mRules.add(new Rule(String.join(",", list), fitness));
             }
         }
     }

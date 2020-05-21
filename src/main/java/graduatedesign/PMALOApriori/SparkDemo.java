@@ -24,6 +24,7 @@ public class SparkDemo implements Serializable {
     public static List<List<String>> oneitemset = new ArrayList<>();
 
     public static HashMap<String, Double> rules = new HashMap<>();
+    public static List<Rule> mRules = new ArrayList<>();
 
     private static int MIN_SUPPORT_NUM = 1000;
 
@@ -32,7 +33,7 @@ public class SparkDemo implements Serializable {
 
     public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_64.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
@@ -46,23 +47,53 @@ public class SparkDemo implements Serializable {
         String inputPath = baseUrl + "SparkSimple.txt";
         String outputPath = baseUrl+"SparkAprioriResult";
 
-        String datapath = "DataSetA.csv";
-
-        JavaRDD<String> data = jsc.textFile(datapath);
-
-        int num = 3000;
+        int num = 20;
         int dimension = 5;
-        int iteration = 100;
+        int iteration = 50;
         int ub = 1;
         int lb = -1;
 
         MALO malo = new MALO(num, iteration, oneitemset.size(), ub, lb);
+        long startTime = System.currentTimeMillis();
         List<Double> doubles = malo.searchSolution();
+        long endTime = System.currentTimeMillis();
 
         for (Double doub : doubles)
             System.out.println("results ---- " + doub);
 
         System.out.println("rules : " + rules.size());
+        System.out.println("运行时间:" + (endTime - startTime) + "ms");
+
+        for (int i = 0; i < mRules.size(); i++) {
+            if (mRules.get(i) == null) {
+                int a = 1;
+            }
+        }
+        rulesAnalysisi();
+    }
+
+    private static void rulesAnalysisi() {
+        Collections.sort(mRules, new Comparator<Rule>() {
+            @Override
+            public int compare(Rule o1, Rule o2) {
+                if (o1.getSupport() > o2.getSupport())
+                    return 1;
+                else if (o1.getSupport() == o2.getSupport())
+                    return 0;
+                else
+                    return -1;
+            }
+        });
+
+        System.out.println("min support : "  + mRules.get(0).getRule() + " -- " + mRules.get(0).getSupport());
+        System.out.println("min 1/4 support : "  + mRules.get(mRules.size()/4-1).getRule() + " -- " + mRules.get(mRules.size()/4-1).getSupport());
+        System.out.println("middle support : "  + mRules.get(mRules.size()/2-1).getRule() + " -- " + mRules.get(mRules.size()/2).getSupport());
+        System.out.println("max 1/4 support : "  + mRules.get(mRules.size()*3/4-1).getRule() + " -- " + mRules.get(mRules.size()*3/4-1).getSupport());
+        System.out.println("max support : "  + mRules.get(mRules.size()-1).getRule() + " -- " + mRules.get(mRules.size()-1).getSupport());
+
+        for (int i = 0; i < 20; i++)
+            System.out.println("max supports : "  + mRules.get(mRules.size()-1-i).getRule() + " -- " + mRules.get(mRules.size()-1-i).getSupport());
+
     }
 
     private static List<List<String>> findFirstCandidate() {
