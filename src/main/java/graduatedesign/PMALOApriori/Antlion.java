@@ -65,7 +65,7 @@ public class Antlion implements Serializable {
         int num = countFrequent(list);
 
         if (list.size() == 0 || num < 1000)
-            fitness = 0.001;
+            fitness = Double.MIN_NORMAL;
         else {
             fitness = num * 1.0 / record.size();
             if (!rules.containsKey(String.join(",", list))) {

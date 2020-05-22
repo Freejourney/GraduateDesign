@@ -51,9 +51,9 @@ public class Apriori {
 //        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
 //        record = new Preprocessing().parseAproriData1(Preprocessing.class.getClassLoader().getResource("aproridata1.csv").getPath());
 
-        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+//        record = new Preprocessing().parseAproriData1("DataSetA.csv");
 //        record = new Preprocessing().parseAproriData1("DataSetA_32.csv");
-//        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
 
         long startTime = System.currentTimeMillis();
         // for frequent 1 itemset, there is no confidence, so we should calculate it separately
@@ -84,7 +84,7 @@ public class Apriori {
 
         System.out.println("Total " + num + " association rules are found");
 
-        rulesAnalysisi();
+//        rulesAnalysisi();
     }
 
     private static void rulesAnalysisi() {
@@ -104,6 +104,8 @@ public class Apriori {
         System.out.println("max 1/4 support : "  + mRules.get(mRules.size()*3/4-1).getRule() + " -- " + mRules.get(mRules.size()*3/4-1).getSupport());
         System.out.println("max support : "  + mRules.get(mRules.size()-1).getRule() + " -- " + mRules.get(mRules.size()-1).getSupport());
 
+        for (int i = 0; i < 20; i++)
+            System.out.println("max supports : "  + mRules.get(mRules.size()-1-i).getRule() + " -- " + mRules.get(mRules.size()-1-i).getSupport());
     }
 
     /**

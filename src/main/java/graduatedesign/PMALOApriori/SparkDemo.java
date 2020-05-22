@@ -33,7 +33,7 @@ public class SparkDemo implements Serializable {
 
     public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA_64.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
