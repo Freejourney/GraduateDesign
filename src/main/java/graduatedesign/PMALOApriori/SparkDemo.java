@@ -12,6 +12,10 @@ import scala.Tuple2;
 import java.io.Serializable;
 import java.util.*;
 
+import static graduatedesign.PMALOApriori.TopApriori.dCountMap;
+import static graduatedesign.PMALOApriori.TopApriori.dkCountMap;
+import static graduatedesign.PMALOApriori.TopApriori.endTag;
+
 
 /**
  * Created by ua28 on 5/13/20.
@@ -25,6 +29,7 @@ public class SparkDemo implements Serializable {
 
     public static HashMap<String, Double> rules = new HashMap<>();
     public static List<Rule> mRules = new ArrayList<>();
+    public static HashMap<String, Rule> mHashRules = new HashMap<>();
 
     private static int MIN_SUPPORT_NUM = 1000;
 
@@ -33,9 +38,14 @@ public class SparkDemo implements Serializable {
 
     public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA_1024.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_16.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
-        oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
+        oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合A
+
+        List<List<String>> partOneItemSet = oneitemset.subList(0, 10);
+
+        TopApriori topApriori = new TopApriori();
+        topApriori.run(partOneItemSet);
 
         SparkConf sparkConf = new SparkConf()
                 .setMaster("local[*]")
@@ -44,8 +54,8 @@ public class SparkDemo implements Serializable {
         jsc = new JavaSparkContext(sparkConf);
 
         String baseUrl = SparkApriori.class.getClassLoader().getResource("").getPath();
-        String inputPath = baseUrl + "SparkSimple.txt";
-        String outputPath = baseUrl+"SparkAprioriResult";
+//        String inputPath = baseUrl + "SparkSimple.txt";
+//        String outputPath = baseUrl+"SparkAprioriResult";
 
         int num = 20;
         int dimension = 5;
@@ -63,13 +73,13 @@ public class SparkDemo implements Serializable {
 
         System.out.println("rules : " + rules.size());
         System.out.println("运行时间:" + (endTime - startTime) + "ms");
+        System.out.println("total rules : " + mHashRules.values().size());
 
         for (int i = 0; i < mRules.size(); i++) {
             if (mRules.get(i) == null) {
                 int a = 1;
             }
         }
-        rulesAnalysisi();
     }
 
     private static void rulesAnalysisi() {
@@ -129,13 +139,37 @@ public class SparkDemo implements Serializable {
 
     private static List<List<String>> getSupportedItemset(
             List<List<String>> cItemset) {
-
+        boolean end = true;
+        List<Integer> counts = new ArrayList<>();
         List<List<String>> supportedItemset = new ArrayList<List<String>>();
+
+        int k = 0;
         for (int i = 0; i < cItemset.size(); i++) {
             int count = countFrequent(cItemset.get(i));//统计记录数
 
             if (count >= MIN_SUPPORT_NUM) {
+                if (cItemset.get(0).size() == 1)
+                    dCountMap.put(k++, count);
+                else
+                    dkCountMap.put(k++, count);
+
+                counts.add(count);
                 supportedItemset.add(cItemset.get(i));
+                end = false;
+            }
+        }
+        endTag = end;
+        for (int i = 0; i < counts.size(); i++) {
+            for (int j = 0; j < counts.size()-1; j++) {
+                if (counts.get(j) < counts.get(j+1)) {
+                    int tmp = counts.get(j);
+                    counts.set(j, counts.get(j+1));
+                    counts.set(j+1, tmp);
+
+                    List<String> tmplist = supportedItemset.get(j);
+                    supportedItemset.set(j, supportedItemset.get(j+1));
+                    supportedItemset.set(j+1, tmplist);
+                }
             }
         }
         return supportedItemset;

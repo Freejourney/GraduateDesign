@@ -22,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA_8.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_16.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 

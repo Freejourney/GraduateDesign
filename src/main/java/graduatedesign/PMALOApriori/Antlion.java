@@ -62,16 +62,34 @@ public class Antlion implements Serializable {
             }
         }
 
+        String itemKey = String.join(" ", list);
+        if (mHashRules.containsKey(itemKey)) {
+            fitness = Double.valueOf(mHashRules.get(itemKey).getSupport());
+            return;
+        }
+
+
+
+//        Double fit = (Double) bplusTree.get(list.toString());
+//        if (fit != null) {
+//            fitness = fit;
+//            return;
+//        }
+
         int num = countFrequent(list);
 
         if (list.size() == 0 || num < 1000)
             fitness = Double.MIN_NORMAL;
         else {
-            fitness = num * 1.0 / record.size();
-            if (!rules.containsKey(String.join(",", list))) {
-                rules.put(String.join(",", list), fitness);
-                mRules.add(new Rule(String.join(",", list), fitness));
-            }
+            double support = num * 1.0 / record.size();
+//            double confidence = ?;
+            fitness = support;
+            mHashRules.put(itemKey, new Rule(itemKey, support));
+
+//            if (!rules.containsKey(String.join(",", list))) {
+//                rules.put(String.join(",", list), fitness);
+//                mRules.add(new Rule(String.join(",", list), fitness));
+//            }
         }
     }
 

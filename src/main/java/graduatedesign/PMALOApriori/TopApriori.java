@@ -1,10 +1,13 @@
-package graduatedesign;
+package graduatedesign.PMALOApriori;
 
-import graduatedesign.PMALOApriori.*;
-import graduatedesign.utils.Preprocessing;
 import graduatedesign.utils.TxtReader;
 
+
+
 import java.util.*;
+
+import static graduatedesign.PMALOApriori.SparkDemo.mHashRules;
+import static graduatedesign.PMALOApriori.SparkDemo.record;
 
 
 /**
@@ -16,21 +19,20 @@ import java.util.*;
  *若满足置信度的集合为空，程序停止；
  *否则输出满足自信度的集合，以及对应的支持度和自信度，并由满足支持度的k-1级集合求出k级备选集，进入下一轮循环；
  *直至程序结束，输出全部频繁级
-    *
-    *
-    *
-    *
-    * aprioridata1 : 32 times of origin dataset
-    *
-    *
-    *
+ *
+ *
+ *
+ *
+ * aprioridata1 : 32 times of origin dataset
+ *
+ *
+ *
  */
 
-public class Apriori {
+public class TopApriori {
     static boolean endTag = false;
     static Map<Integer, Integer> dCountMap = new HashMap<Integer, Integer>(); // k-1频繁集的记数表
     static Map<Integer, Integer> dkCountMap = new HashMap<Integer, Integer>();// k频繁集的记数表
-    static List<List<String>> record = new ArrayList<List<String>>();// 数据记录表
     final static double MIN_SUPPORT = 0.001;// 最小支持度
     final static int MIN_SUPPORT_NUM = 1000;
     final static double MIN_CONF = 0.3;// 最小置信度
@@ -38,32 +40,16 @@ public class Apriori {
     static List<Double> confCount = new ArrayList<Double>();// 置信度记录表
     static List<List<String>> confItemset = new ArrayList<List<String>>();// 满足支持度的集合
 
-       public static List<Rule> mRules = new ArrayList<>();
 
-       static int num = 0;
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-//        record = getRecord();// 获取原始数据记录
 
-//        record = new Preprocessing().parseStudentPerformance(Preprocessing.class.getClassLoader().getResource("studentperformance.csv").getPath());
-//        record = new Preprocessing().parseAproriData1(Preprocessing.class.getClassLoader().getResource("aproridata1.csv").getPath());
+    int num = 0;
 
-//        record = new Preprocessing().parseAproriData1("DataSetA.csv");
-        record = new Preprocessing().parseAproriData1("DataSetA_8.csv");
-//        record = new Preprocessing().parseAproriData1("DataSetA_8.csv");
-//        record = new Preprocessing().parseAproriData1(args[0]);
-
-        long startTime = System.currentTimeMillis();
-        // for frequent 1 itemset, there is no confidence, so we should calculate it separately
-        List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
-        List<List<String>> lItemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
+    public  void run(List<List<String>> lItemset) {
+        List<List<String>> cItemset = new ArrayList<>();
 
         for (int i = 0; i < lItemset.size(); i++) {
             int num = countFrequent(lItemset.get(i));
-            mRules.add(new Rule(lItemset.get(i).get(0), num*1.0/record.size()));
+            mHashRules.put(lItemset.get(i).get(0), new Rule(lItemset.get(i).get(0), num*1.0/record.size()));
         }
         num += lItemset.size();
 
@@ -80,40 +66,14 @@ public class Apriori {
             dCountMap.clear();
             dCountMap.putAll(dkCountMap);
         }
-        long endTime = System.currentTimeMillis();
-        System.out.println("运行时间:" + (endTime - startTime) + "ms");
-
-        System.out.println("Total " + num + " association rules are found");
-
-//        rulesAnalysisi();
     }
 
-    private static void rulesAnalysisi() {
-        Collections.sort(mRules, new Comparator<Rule>() {
-            @Override
-            public int compare(Rule o1, Rule o2) {
-                if (o1.getSupport() > o2.getSupport())
-                    return 1;
-                else
-                    return -1;
-            }
-        });
-
-        System.out.println("min support : "  + mRules.get(0).getRule() + " -- " + mRules.get(0).getSupport());
-        System.out.println("min 1/4 support : "  + mRules.get(mRules.size()/4-1).getRule() + " -- " + mRules.get(mRules.size()/4-1).getSupport());
-        System.out.println("middle support : "  + mRules.get(mRules.size()/2-1).getRule() + " -- " + mRules.get(mRules.size()/2).getSupport());
-        System.out.println("max 1/4 support : "  + mRules.get(mRules.size()*3/4-1).getRule() + " -- " + mRules.get(mRules.size()*3/4-1).getSupport());
-        System.out.println("max support : "  + mRules.get(mRules.size()-1).getRule() + " -- " + mRules.get(mRules.size()-1).getSupport());
-
-        for (int i = 0; i < 20; i++)
-            System.out.println("max supports : "  + mRules.get(mRules.size()-1-i).getRule() + " -- " + mRules.get(mRules.size()-1-i).getSupport());
-    }
 
     /**
      * @param confItemset2
      * 输出满足条件的频繁集
      */
-    private static void printConfItemset(List<List<String>> confItemset2) {
+    private void printConfItemset(List<List<String>> confItemset2) {
         num += confItemset2.size();
 
         System.out.print("*********频繁模式挖掘结果***********\n");
@@ -129,7 +89,8 @@ public class Apriori {
             System.out.print("-->");
             System.out.print(confItemset2.get(i).get(j++));
 
-            mRules.add(new Rule(tmp, Double.valueOf(confItemset2.get(i).get(j))));
+//            mRules.add(new graduatedesign.Rule(tmp, Double.valueOf(confItemset2.get(i).get(j))));
+            mHashRules.put(tmp, new Rule(tmp, Double.valueOf(confItemset2.get(i).get(j))));
             System.out.print("支持度：" + confItemset2.get(i).get(j++));
             System.out.print("置信度：" + confItemset2.get(i).get(j++) + "\n");
         }
@@ -143,7 +104,7 @@ public class Apriori {
      * @param dCountMap2
      * 根据lkItemset，lItemset，dkCountMap2，dCountMap2求出满足自信度的集合
      */
-    private static List<List<String>> getConfidencedItemset(
+    private List<List<String>> getConfidencedItemset(
             List<List<String>> lkItemset, List<List<String>> lItemset,
             Map<Integer, Integer> dkCountMap2, Map<Integer, Integer> dCountMap2) {
         for (int i = 0; i < lkItemset.size(); i++) {
@@ -163,7 +124,7 @@ public class Apriori {
      * 若满足则在全局变量confItemset添加list
      * 如不满足则返回null
      */
-    private static List<String> getConfItem(List<String> list,
+    private List<String> getConfItem(List<String> list,
                                             List<List<String>> lItemset, Integer count,
                                             Map<Integer, Integer> dCountMap2) {
         for (int i = 0; i < list.size(); i++) {
@@ -189,7 +150,7 @@ public class Apriori {
      * @param lItemset
      * 查找testList中的内容在lItemset的位置
      */
-    private static int findConf(List<String> testList,
+    private int findConf(List<String> testList,
                                 List<List<String>> lItemset) {
         for (int i = 0; i < lItemset.size(); i++) {
             boolean notHaveTag = false;
@@ -211,7 +172,7 @@ public class Apriori {
      * 检验list中是否包含string
      * @return boolean
      */
-    private static boolean haveThisItem(String string, List<String> list) {
+    private boolean haveThisItem(String string, List<String> list) {
         for (int i = 0; i < list.size(); i++)
             if (string.equals(list.get(i)))
                 return true;
@@ -220,7 +181,7 @@ public class Apriori {
     /**
      获取数据库记录
      */
-    private static List<List<String>> getRecord() {
+    private List<List<String>> getRecord() {
         TxtReader readRecord = new TxtReader();
         return readRecord.getRecord();
     }
@@ -229,7 +190,7 @@ public class Apriori {
      * @param cItemset
      * 求出cItemset中满足最低支持度集合
      */
-    private static List<List<String>> getSupportedItemset(
+    private List<List<String>> getSupportedItemset(
             List<List<String>> cItemset) {
         // TODO Auto-generated method stub
         boolean end = true;
@@ -258,7 +219,7 @@ public class Apriori {
      * @param list
      * 统计数据库记录record中出现list中的集合的个数
      */
-    private static int countFrequent(List<String> list) {
+    private int countFrequent(List<String> list) {
         int count = 0;
         for (int i = 1; i < record.size(); i++) {
             boolean notHavaThisList = false;
@@ -284,7 +245,7 @@ public class Apriori {
      * @return nextItemset
      * 根据cItemset求出下一级的备选集合组，求出的备选集合组中的每个集合的元素的个数比cItemset中的集合的元素大1
      */
-    private static List<List<String>> getNextCandidate(
+    private List<List<String>> getNextCandidate(
             List<List<String>> cItemset) {
         List<List<String>> nextItemset = new ArrayList<List<String>>();
         for (int i = 0; i < cItemset.size(); i++) {
@@ -315,7 +276,7 @@ public class Apriori {
      * @return boolean
      * 检验nextItemset中是否包含copyValueHelpList
      */
-    private static boolean isHave(List<String> copyValueHelpList,
+    private boolean isHave(List<String> copyValueHelpList,
                                   List<List<String>> nextItemset) {
         for (int i = 0; i < nextItemset.size(); i++)
             if (copyValueHelpList.equals(nextItemset.get(i)))
@@ -329,7 +290,7 @@ public class Apriori {
      * @return
      *检验 tempList是不是cItemset的子集
      */
-    private static boolean isSubsetInC(List<String> tempList,
+    private boolean isSubsetInC(List<String> tempList,
                                        List<List<String>> cItemset) {
         boolean haveTag = false;
         for (int i = 0; i < tempList.size(); i++) {// k集合tempList的子集是否都在k-1级频繁级中
@@ -353,7 +314,7 @@ public class Apriori {
     /**
      *根据数据库记录求出第一级备选集
      */
-    private static List<List<String>> findFirstCandidate() {
+    private List<List<String>> findFirstCandidate() {
         List<List<String>> tableList = new ArrayList<List<String>>();
         List<String> lineList = new ArrayList<String>();
 
@@ -385,4 +346,5 @@ public class Apriori {
     }
 
 }
+
 
