@@ -1,15 +1,11 @@
-package graduatedesign.MALOApriori;
+package graduatedesign.PSO;
+
 
 import graduatedesign.utils.Preprocessing;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 
 public class Main {
 
@@ -20,21 +16,16 @@ public class Main {
 
     private static int MIN_SUPPORT_NUM = 1000;
 
-    public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA.csv");
+    public static void main(String[] args) {
+        record = new Preprocessing().parseAproriData1("DataSetA_16.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
-        MALO alo = new MALO(20, 100, oneitemset.size(), 1, -1);
-
-        long startTime = System.currentTimeMillis();
-        alo.searchSolution();
-        long endTime = System.currentTimeMillis();
-        System.out.println("运行时间:" + (endTime - startTime) + "ms");
-
+        // write your code here
+        PSO pso = new PSO(-1, 1, 100, oneitemset.size(), 0.5, 100, 2, 2);
+        pso.searchSolution();
     }
-
 
     private static List<List<String>> findFirstCandidate() {
         List<List<String>> tableList = new ArrayList<List<String>>();

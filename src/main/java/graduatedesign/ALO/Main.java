@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 public class Main {
 
     private static List<List<Double>> Weights = new ArrayList<>();
@@ -20,14 +21,18 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        URL resource = Main.class.getClassLoader().getResource("data.dsv");
-        toArrayByFileReader1(resource.getPath());
+//        URL resource = Main.class.getClassLoader().getResource("data.dsv");
+//        toArrayByFileReader1(resource.getPath());
 
-        for (int t = 5; t < 6; t++) {
+        URL resource = Main.class.getClassLoader().getResource("small-01data.txt");
+        extractDataFromFile(resource.getPath());
+
+
+        for (int t = 0; t < 10; t++) {
             System.out.println("KP"+t+": -------------------------------------------");
             List<Double> Results = new ArrayList<>();
             List<Double> ConvergenceData = new ArrayList<>();
-            for (int i = 0; i < 50; i++) {
+            for (int i = 0; i < 30; i++) {
                 System.out.print(i+" : ");
                 ALO alo = new ALO(30, 140, Dimension.get(t), 1, -1, Weights.get(t), Values.get(t), Max_capicity.get(t));
                 long startTime = System.currentTimeMillis();
@@ -97,6 +102,76 @@ public class Main {
 
         if (standardDeviation == 0) {
             flag++;
+        }
+    }
+
+    public static void extractDataFromFile(String name) {
+        ArrayList<String> list = new ArrayList<>();
+
+        try {
+            FileReader fr = new FileReader(name);
+            BufferedReader bf = new BufferedReader(fr);
+            String str;
+            bf.readLine();
+            while ((str = bf.readLine())!=null) {
+                list.add(str);
+            }
+            bf.close();
+            fr.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        for (String str : list) {
+            String[] roughSplit = str.split("\t");
+            Dimension.add(Integer.valueOf(roughSplit[1]));
+            Max_value.add(Double.valueOf(roughSplit[2]));
+            String wcp = roughSplit[3];
+
+            int state = 0;
+            int i = 0;
+            int begin = 0;
+            int end = 0;
+            while (i != wcp.length()) {
+                switch (state) {
+                    case 0:
+                        if (wcp.charAt(i)=='(') {
+                            state = 1;
+                            begin = i+1;
+                        }
+                        break;
+                    case 1:
+                        if (wcp.charAt(i)==')') {
+                            end = i;
+                            String wsubstring = wcp.substring(begin, end);
+                            String[] ws = wsubstring.split(",");
+                            List<Double> tmplist = new ArrayList<>();
+                            for (String w : ws)
+                                tmplist.add(Double.valueOf(w));
+
+                            if (Weights.size() > Values.size()) {
+                                Values.add(tmplist);
+                            } else {
+                                Weights.add(tmplist);
+                            }
+                            state = 2;
+                        }
+                        break;
+                    case 2:
+                        if (wcp.charAt(i) == '=') {
+                            begin = i+1;
+                        }
+                        if (wcp.charAt(i) == ',' && begin > end) {
+                            end = i;
+                            String csubstring = wcp.substring(begin, end);
+                            Max_capicity.add(Double.valueOf(csubstring));
+                            state = 0;
+                        }
+                        break;
+                    default: break;
+                }
+                i++;
+            }
         }
     }
 

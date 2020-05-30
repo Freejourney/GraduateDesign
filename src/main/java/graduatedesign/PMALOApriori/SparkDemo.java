@@ -45,6 +45,7 @@ public class SparkDemo implements Serializable {
         List<List<String>> partOneItemSet = oneitemset.subList(0, 10);
 
         TopApriori topApriori = new TopApriori();
+        long startTime = System.currentTimeMillis();
         topApriori.run(partOneItemSet);
 
         SparkConf sparkConf = new SparkConf()
@@ -64,7 +65,7 @@ public class SparkDemo implements Serializable {
         int lb = -1;
 
         MALO malo = new MALO(num, iteration, oneitemset.size(), ub, lb);
-        long startTime = System.currentTimeMillis();
+
         List<Double> doubles = malo.searchSolution();
         long endTime = System.currentTimeMillis();
 
