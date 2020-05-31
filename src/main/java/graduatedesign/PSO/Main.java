@@ -18,13 +18,16 @@ public class Main {
 
 
     public static void main(String[] args) {
-        record = new Preprocessing().parseAproriData1("DataSetA_16.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_64.csv");
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合
 
         // write your code here
         PSO pso = new PSO(-1, 1, 100, oneitemset.size(), 0.5, 100, 2, 2);
+        long startTime = System.currentTimeMillis();
         pso.searchSolution();
+        long endTime = System.currentTimeMillis();
+        System.out.println("cost time : " + (endTime-startTime));
     }
 
     private static List<List<String>> findFirstCandidate() {

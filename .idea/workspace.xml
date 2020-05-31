@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d54bdade-ce35-46bf-a9a2-680313d90021" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/PSO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Particle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/ParticleSwarm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/graduatedesign/ALO/Main.class" afterPath="$PROJECT_DIR$/target/classes/graduatedesign/ALO/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/ALO/Main.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/ALO/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java" afterPath="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,13 +32,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+            <state relative-caret-position="17">
+              <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#232#246#0" expanded="true" />
               </folding>
             </state>
@@ -61,24 +54,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALO/Antlion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PSO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/PSO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
+            <state relative-caret-position="578">
               <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,13 +67,9 @@
       <file leaf-file-name="ParticleSwarm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/ParticleSwarm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
+            <state relative-caret-position="187">
               <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,37 +77,9 @@
       <file leaf-file-name="Particle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Particle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="1122">
               <caret line="86" column="32" lean-forward="false" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1270#1271#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1521#1522#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1643#1644#0" expanded="true" />
-                <element signature="e#2524#2525#0" expanded="true" />
-                <element signature="e#2559#2560#0" expanded="true" />
-                <element signature="e#2603#2604#0" expanded="true" />
-                <element signature="e#2643#2644#0" expanded="true" />
-                <element signature="e#2709#2710#0" expanded="true" />
-                <element signature="e#2767#2768#0" expanded="true" />
-                <element signature="e#2802#2803#0" expanded="true" />
-                <element signature="e#2833#2834#0" expanded="true" />
-                <element signature="e#2868#2869#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,26 +87,14 @@
       <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
+            <state relative-caret-position="1071">
               <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MALO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -167,14 +104,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALO/Main.java">
+      <file leaf-file-name="SparkDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="174" selection-end-column="5" />
+            <state relative-caret-position="901">
+              <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="54" selection-end-column="84" />
               <folding>
-                <element signature="method#extractDataFromFile#0;class#Main#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopApriori.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/TopApriori.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Antlion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -213,10 +170,12 @@
       <find />
       <find>Comparable</find>
       <find>conf</find>
+      <find>mRules</find>
     </findStrings>
     <replaceStrings>
       <replace>Apriori</replace>
       <replace>String</replace>
+      <replace>ruleList</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -274,10 +233,10 @@
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/ALO/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/Apriori.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/ParticleSwarm.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/PSO.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Particle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java" />
       </list>
     </option>
@@ -710,9 +669,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1001,6 +957,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1533,7 +1492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590765498194</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added PSO algorithm for association rules mining">
+      <created>1590850374229</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590850374229</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1542,19 +1508,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27553445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27553445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781065" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26495728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27457264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1565,8 +1530,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1617,7 +1583,8 @@
     <MESSAGE value="implemented half of Spark-MALO-Apriori;&#10;added log4j.properties to show log of pragram;" />
     <MESSAGE value="finished tests for apriori and spark-malo-apriori" />
     <MESSAGE value="implemented fusing of Apriori and MALO;&#10;&#10;For part of the top oneItemSet, I use Apriori algorithm to search all rules.&#10;&#10;For next, I use MALO algorithm to search good solutions." />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented fusing of Apriori and MALO;&#10;&#10;For part of the top oneItemSet, I use Apriori algorithm to search all rules.&#10;&#10;For next, I use MALO algorithm to search good solutions." />
+    <MESSAGE value="added PSO algorithm for association rules mining" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PSO algorithm for association rules mining" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1785,7 +1752,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java</url>
-          <line>80</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
@@ -1802,7 +1769,7 @@
           <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="132" />
+      <option name="time" value="133" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1975,24 +1942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/TopApriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/MALO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3876">
@@ -2007,17 +1956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-            <element signature="e#905#906#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#970#971#0" expanded="false" />
-            <element signature="e#1000#1001#0" expanded="false" />
-            <element signature="e#1598#1599#0" expanded="false" />
-            <element signature="e#1636#1637#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2062,7 +2000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2070,7 +2007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2078,7 +2014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2094,20 +2029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#337#338#0" expanded="false" />
-            <element signature="e#377#378#0" expanded="false" />
-            <element signature="e#409#410#0" expanded="false" />
-            <element signature="e#443#444#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#519#520#0" expanded="false" />
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#627#628#0" expanded="false" />
-            <element signature="e#679#680#0" expanded="false" />
-            <element signature="e#723#724#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2117,20 +2038,6 @@
           <caret line="53" column="72" lean-forward="false" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="75" />
-          <folding>
-            <element signature="e#847#861#0" expanded="true" />
-            <element signature="e#4256#4270#0" expanded="true" />
-            <element signature="e#4319#4327#0" expanded="true" />
-            <element signature="e#5193#5201#0" expanded="true" />
-            <element signature="e#5567#5581#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2155,19 +2062,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/MALO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="272">
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/MALOApriori/Antlion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
+        <state relative-caret-position="1071">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2181,70 +2088,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/ParticleSwarm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
+        <state relative-caret-position="187">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Particle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="1122">
           <caret line="86" column="32" lean-forward="false" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#2524#2525#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
-            <element signature="e#2767#2768#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2833#2834#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/PSO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#232#246#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2253,6 +2107,50 @@
         <state relative-caret-position="340">
           <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/Antlion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/TopApriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/PSO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PMALOApriori/SparkDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="54" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graduatedesign/PSO/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+          <folding>
+            <element signature="e#232#246#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

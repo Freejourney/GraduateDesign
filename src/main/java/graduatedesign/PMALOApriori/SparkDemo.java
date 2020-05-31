@@ -5,7 +5,9 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.api.java.function.FlatMapFunction;
 import org.apache.spark.api.java.function.Function;
+import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import scala.Tuple2;
 
@@ -34,11 +36,13 @@ public class SparkDemo implements Serializable {
     private static int MIN_SUPPORT_NUM = 1000;
 
     public static JavaSparkContext jsc;
-
+    public static JavaRDD<String> lines;
 
     public static void main(String[] args) {
 
-        record = new Preprocessing().parseAproriData1("DataSetA_16.csv");
+        String file = "DataSetA.csv";
+
+        record = new Preprocessing().parseAproriData1(file);
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
         oneitemset = getSupportedItemset(cItemset);// 获取备选集cItemset满足支持的集合A
 
@@ -47,12 +51,15 @@ public class SparkDemo implements Serializable {
         TopApriori topApriori = new TopApriori();
         long startTime = System.currentTimeMillis();
         topApriori.run(partOneItemSet);
+        long endTime1 = System.currentTimeMillis();
+        System.out.println("Apriori Algorithm cost time : " + (endTime1-startTime));
 
         SparkConf sparkConf = new SparkConf()
                 .setMaster("local[*]")
                 .setAppName("SparkDemo");
 
         jsc = new JavaSparkContext(sparkConf);
+        lines = jsc.textFile(file);
 
         String baseUrl = SparkApriori.class.getClassLoader().getResource("").getPath();
 //        String inputPath = baseUrl + "SparkSimple.txt";
@@ -74,7 +81,33 @@ public class SparkDemo implements Serializable {
 
         System.out.println("rules : " + rules.size());
         System.out.println("运行时间:" + (endTime - startTime) + "ms");
+        System.out.println("Apriori Algorithm cost time : " + (endTime1-startTime));
         System.out.println("total rules : " + mHashRules.values().size());
+
+//        Set<Map.Entry<String, Rule>> entries = mHashRules.entrySet();
+//        List<Rule> ruleList = new ArrayList<>();
+//        for (Map.Entry<String, Rule> keyvalue : entries) {
+//            ruleList.add(keyvalue.getValue());
+//        }
+//
+//        ruleList.sort(new Comparator<Rule>() {
+//            @Override
+//            public int compare(Rule o1, Rule o2) {
+//                if(o1.getSupport() > o2.getSupport())
+//                    return 1;
+//                return -1;
+//            }
+//        });
+//
+//
+//        System.out.println("min support : "  + ruleList.get(0).getRule() + " -- " + ruleList.get(0).getSupport());
+//        System.out.println("min 1/4 support : "  + ruleList.get(ruleList.size()/4-1).getRule() + " -- " + ruleList.get(ruleList.size()/4-1).getSupport());
+//        System.out.println("middle support : "  + ruleList.get(ruleList.size()/2-1).getRule() + " -- " + ruleList.get(ruleList.size()/2).getSupport());
+//        System.out.println("max 1/4 support : "  + ruleList.get(ruleList.size()*3/4-1).getRule() + " -- " + ruleList.get(ruleList.size()*3/4-1).getSupport());
+//        System.out.println("max support : "  + ruleList.get(ruleList.size()-1).getRule() + " -- " + ruleList.get(ruleList.size()-1).getSupport());
+//
+//        for (int i = 0; i < 20; i++)
+//            System.out.println("max supports : "  + ruleList.get(ruleList.size()-1-i).getRule() + " -- " + ruleList.get(ruleList.size()-1-i).getSupport());
 
         for (int i = 0; i < mRules.size(); i++) {
             if (mRules.get(i) == null) {
@@ -569,6 +602,159 @@ public class SparkDemo implements Serializable {
 
             // ?? 什么情况下会运行到这里？？
             return -1;
+        }
+    }
+
+
+    public static class Antlion implements Serializable {
+
+        private static final long serialVersionUID = 361783270431667235L;
+        private int index;
+        private List<Double> position = new ArrayList<>();
+        private int dimension;
+        private double fitness;
+
+        Antlion(int dimension, double ub, double lb, int index) {
+            this.index = index;
+            this.dimension = dimension;
+            for (int i = 0; i < dimension; i++) {
+                position.add(new Random().nextDouble()*(ub-lb)+lb);
+            }
+            updateFitness();
+        }
+
+        public Antlion(Antlion antlion) {
+            this.dimension = antlion.getDimension();
+            for (double p : antlion.getPosition())
+                this.position.add(p);
+            this.fitness = antlion.getFitness();
+        }
+
+        public int getIndex() {
+            return index;
+        }
+
+        public void setIndex(int index) {
+            this.index = index;
+        }
+
+        public int getDimension() {
+            return dimension;
+        }
+
+        public List<Double> getPosition() {
+            return position;
+        }
+
+        public double getFitness() {
+            return fitness;
+        }
+
+        public void updateFitness() {
+            List<String> list = new ArrayList<>();
+            for (int i = 0; i < position.size(); i++) {
+                if (position.get(i) > 0) {
+                    list.add(oneitemset.get(i).get(0));
+                }
+            }
+
+            String itemKey = String.join(" ", list);
+            if (mHashRules.containsKey(itemKey)) {
+                fitness = Double.valueOf(mHashRules.get(itemKey).getSupport());
+                return;
+            }
+
+
+
+//        Double fit = (Double) bplusTree.get(list.toString());
+//        if (fit != null) {
+//            fitness = fit;
+//            return;
+//        }
+
+//            long num = countFrequentSpark(list);
+            int num = countFrequent(list);
+
+            if (list.size() == 0 || num < 1000)
+                fitness = Double.MIN_NORMAL;
+            else {
+                double support = num * 1.0 / record.size();
+//            double confidence = ?;
+                fitness = support;
+                mHashRules.put(itemKey, new Rule(itemKey, support));
+
+//            if (!rules.containsKey(String.join(",", list))) {
+//                rules.put(String.join(",", list), fitness);
+//                mRules.add(new Rule(String.join(",", list), fitness));
+//            }
+            }
+        }
+
+
+        public void setPosition(int i, Double value) {
+            position.set(i, value);
+        }
+
+        private long countFrequentSpark(List<String> items) {
+
+            JavaRDD<String> filtered = lines.filter(new Function<String, Boolean>() {
+                @Override
+                public Boolean call(String s) throws Exception {
+                    String[] splited = s.split(",");
+                    int flag = 0;
+                    for (String item : items) {
+                        for (String tem : splited) {
+                            if (tem.equals(item)) {
+                                flag++;
+                                break;
+                            }
+                        }
+                    }
+                    if (flag == items.size())
+                        return true;
+                    return false;
+                }
+            });
+
+            return filtered.count();
+        }
+
+        private static int countFrequent(List<String> list) {
+            int count = 0;
+            for (int i = 1; i < record.size(); i++) {
+                boolean notHavaThisList = false;
+                for (int k = 0; k < list.size(); k++) {
+                    boolean thisRecordHave = false;
+                    for (int j = 1; j < record.get(i).size(); j++) {
+                        if (list.get(k).equals(record.get(i).get(j)))
+                            thisRecordHave = true;
+                    }
+                    if (!thisRecordHave) {// 扫描一遍记录表的一行，发现list.get(i)不在记录表的第j行中，即list不可能在j行中
+                        notHavaThisList = true;
+                        break;
+                    }
+                }
+                if (notHavaThisList == false)
+                    count++;
+            }
+            return count;
+        }
+
+        @Override
+        public String toString() {
+            String result = "";
+
+            for (int i = 0; i < position.size(); i++) {
+                if (position.get(i) > 0) {
+                    result += oneitemset.get(i).get(0)+" ";
+                }
+            }
+
+            return result;
+        }
+
+        public void setFitness(double fitness) {
+            this.fitness = fitness;
         }
     }
 
