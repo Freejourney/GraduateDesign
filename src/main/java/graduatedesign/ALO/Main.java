@@ -21,18 +21,18 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-//        URL resource = Main.class.getClassLoader().getResource("data.dsv");
-//        toArrayByFileReader1(resource.getPath());
+        URL resource = Main.class.getClassLoader().getResource("data.dsv");
+        toArrayByFileReader1(resource.getPath());
 
-        URL resource = Main.class.getClassLoader().getResource("small-01data.txt");
-        extractDataFromFile(resource.getPath());
+//        URL resource = Main.class.getClassLoader().getResource("small-01data.txt");
+//        extractDataFromFile(resource.getPath());
 
 
         for (int t = 0; t < 10; t++) {
             System.out.println("KP"+t+": -------------------------------------------");
             List<Double> Results = new ArrayList<>();
             List<Double> ConvergenceData = new ArrayList<>();
-            for (int i = 0; i < 30; i++) {
+            for (int i = 0; i < 3; i++) {
                 System.out.print(i+" : ");
                 ALO alo = new ALO(30, 140, Dimension.get(t), 1, -1, Weights.get(t), Values.get(t), Max_capicity.get(t));
                 long startTime = System.currentTimeMillis();

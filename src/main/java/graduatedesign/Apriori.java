@@ -41,6 +41,8 @@ public class Apriori {
        public static List<Rule> mRules = new ArrayList<>();
 
        static int num = 0;
+
+    static List<Double> supports = new ArrayList<>();
     /**
      * @param args
      */
@@ -52,7 +54,7 @@ public class Apriori {
 //        record = new Preprocessing().parseAproriData1(Preprocessing.class.getClassLoader().getResource("aproridata1.csv").getPath());
 
 //        record = new Preprocessing().parseAproriData1("DataSetA.csv");
-        record = new Preprocessing().parseAproriData1("DataSetA_8.csv");
+        record = new Preprocessing().parseAproriData1("DataSetA_32.csv");
 //        record = new Preprocessing().parseAproriData1("DataSetA_8.csv");
 //        record = new Preprocessing().parseAproriData1(args[0]);
 
@@ -65,7 +67,7 @@ public class Apriori {
             int num = countFrequent(lItemset.get(i));
             mRules.add(new Rule(lItemset.get(i).get(0), num*1.0/record.size()));
         }
-        num += lItemset.size();
+//        num += lItemset.size();
 
         while (endTag != true) {// 只要能继续挖掘
             List<List<String>> ckItemset = getNextCandidate(lItemset);// 获取第下一次的备选集
@@ -85,28 +87,28 @@ public class Apriori {
 
         System.out.println("Total " + num + " association rules are found");
 
-//        rulesAnalysisi();
-    }
-
-    private static void rulesAnalysisi() {
-        Collections.sort(mRules, new Comparator<Rule>() {
+        supports.sort(new Comparator<Double>() {
             @Override
-            public int compare(Rule o1, Rule o2) {
-                if (o1.getSupport() > o2.getSupport())
-                    return 1;
-                else
-                    return -1;
+            public int compare(Double o1, Double o2) {
+                return o2.compareTo(o1);
             }
         });
 
-        System.out.println("min support : "  + mRules.get(0).getRule() + " -- " + mRules.get(0).getSupport());
-        System.out.println("min 1/4 support : "  + mRules.get(mRules.size()/4-1).getRule() + " -- " + mRules.get(mRules.size()/4-1).getSupport());
-        System.out.println("middle support : "  + mRules.get(mRules.size()/2-1).getRule() + " -- " + mRules.get(mRules.size()/2).getSupport());
-        System.out.println("max 1/4 support : "  + mRules.get(mRules.size()*3/4-1).getRule() + " -- " + mRules.get(mRules.size()*3/4-1).getSupport());
-        System.out.println("max support : "  + mRules.get(mRules.size()-1).getRule() + " -- " + mRules.get(mRules.size()-1).getSupport());
 
-        for (int i = 0; i < 20; i++)
-            System.out.println("max supports : "  + mRules.get(mRules.size()-1-i).getRule() + " -- " + mRules.get(mRules.size()-1-i).getSupport());
+
+        rulesAnalysisi();
+    }
+
+    private static void rulesAnalysisi() {
+
+        System.out.println("max support : "  + supports.get(0)  + " -- " + supports.get(0) );
+        System.out.println("max 1/4 support : "  + supports.get(supports.size()/4-1)  + " -- " + supports.get(supports.size()/4-1) );
+        System.out.println("middle support : "  + supports.get(supports.size()/2-1)  + " -- " + supports.get(supports.size()/2) );
+        System.out.println("max 3/4 support : "  + supports.get(supports.size()*3/4-1)  + " -- " + supports.get(supports.size()*3/4-1) );
+        System.out.println("min support : "  + supports.get(supports.size()-1)  + " -- " + supports.get(supports.size()-1) );
+
+//        for (int i = 0; i < 20; i++)
+//            System.out.println("max supports : "  + supports.get(supports.size()-1-i)  + " -- " + supports.get(mRules.size()-1-i) );
     }
 
     /**
@@ -130,6 +132,7 @@ public class Apriori {
             System.out.print(confItemset2.get(i).get(j++));
 
             mRules.add(new Rule(tmp, Double.valueOf(confItemset2.get(i).get(j))));
+            supports.add(Double.valueOf(confItemset2.get(i).get(j)));
             System.out.print("支持度：" + confItemset2.get(i).get(j++));
             System.out.print("置信度：" + confItemset2.get(i).get(j++) + "\n");
         }

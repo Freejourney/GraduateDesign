@@ -31,7 +31,7 @@ public class Main {
             System.out.println("KP"+t+": -------------------------------------------");
             List<Double> Results = new ArrayList<>();
             List<Double> ConvergenceData = new ArrayList<>();
-            for (int i = 0; i < 30; i++) {
+            for (int i = 0; i < 3; i++) {
                 System.out.print(i+" : ");
                 MALO alo = new MALO(30, 140, Dimension.get(t), 1, -1, Weights.get(t), Values.get(t), Max_capicity.get(t));
                 long startTime = System.currentTimeMillis();

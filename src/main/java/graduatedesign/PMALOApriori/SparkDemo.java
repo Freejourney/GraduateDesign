@@ -40,7 +40,7 @@ public class SparkDemo implements Serializable {
 
     public static void main(String[] args) {
 
-        String file = "DataSetA.csv";
+        String file = "DataSetA_4.csv";
 
         record = new Preprocessing().parseAproriData1(file);
         List<List<String>> cItemset = findFirstCandidate();// 获取第一次的备选集
@@ -84,30 +84,29 @@ public class SparkDemo implements Serializable {
         System.out.println("Apriori Algorithm cost time : " + (endTime1-startTime));
         System.out.println("total rules : " + mHashRules.values().size());
 
-//        Set<Map.Entry<String, Rule>> entries = mHashRules.entrySet();
-//        List<Rule> ruleList = new ArrayList<>();
-//        for (Map.Entry<String, Rule> keyvalue : entries) {
-//            ruleList.add(keyvalue.getValue());
-//        }
+        Set<Map.Entry<String, Rule>> entries = mHashRules.entrySet();
+        List<Rule> ruleList = new ArrayList<>();
+        for (Map.Entry<String, Rule> keyvalue : entries) {
+            ruleList.add(keyvalue.getValue());
+        }
+
+        ruleList.sort(new Comparator<Rule>() {
+            @Override
+            public int compare(Rule o1, Rule o2) {
+                return Double.valueOf(o1.getSupport()).compareTo(o2.getSupport());
+            }
+        });
+
+        int size = ruleList.size()-12;
+
+        System.out.println("min support : "  + ruleList.get(0).getRule() + " -- " + ruleList.get(0).getSupport());
+        System.out.println("min 1/4 support : "  + ruleList.get(size/4-1).getRule() + " -- " + ruleList.get(size/4-1).getSupport());
+        System.out.println("middle support : "  + ruleList.get(size/2-1).getRule() + " -- " + ruleList.get(size/2).getSupport());
+        System.out.println("max 1/4 support : "  + ruleList.get(size*3/4-1).getRule() + " -- " + ruleList.get(size*3/4-1).getSupport());
+        System.out.println("max support : "  + ruleList.get(size-1).getRule() + " -- " + ruleList.get(size-1).getSupport());
 //
-//        ruleList.sort(new Comparator<Rule>() {
-//            @Override
-//            public int compare(Rule o1, Rule o2) {
-//                if(o1.getSupport() > o2.getSupport())
-//                    return 1;
-//                return -1;
-//            }
-//        });
-//
-//
-//        System.out.println("min support : "  + ruleList.get(0).getRule() + " -- " + ruleList.get(0).getSupport());
-//        System.out.println("min 1/4 support : "  + ruleList.get(ruleList.size()/4-1).getRule() + " -- " + ruleList.get(ruleList.size()/4-1).getSupport());
-//        System.out.println("middle support : "  + ruleList.get(ruleList.size()/2-1).getRule() + " -- " + ruleList.get(ruleList.size()/2).getSupport());
-//        System.out.println("max 1/4 support : "  + ruleList.get(ruleList.size()*3/4-1).getRule() + " -- " + ruleList.get(ruleList.size()*3/4-1).getSupport());
-//        System.out.println("max support : "  + ruleList.get(ruleList.size()-1).getRule() + " -- " + ruleList.get(ruleList.size()-1).getSupport());
-//
-//        for (int i = 0; i < 20; i++)
-//            System.out.println("max supports : "  + ruleList.get(ruleList.size()-1-i).getRule() + " -- " + ruleList.get(ruleList.size()-1-i).getSupport());
+        for (int i = 0; i < 20; i++)
+            System.out.println("max supports : "  + ruleList.get(ruleList.size()-1-i).getRule() + " -- " + ruleList.get(ruleList.size()-1-i).getSupport());
 
         for (int i = 0; i < mRules.size(); i++) {
             if (mRules.get(i) == null) {
